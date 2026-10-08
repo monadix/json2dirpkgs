@@ -1,0 +1,110 @@
+name: Build and cache
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'pkgs/**'
+      - 'sources/**'
+      - 'data/selection.json'
+      - 'flake.nix'
+      - 'flake.lock'
+      - '.github/workflows/cache.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    outputs:
+      dependencies: ${{ steps.matrix.outputs.dependencies }}
+      implementations: ${{ steps.matrix.outputs.implementations }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Check upload credentials
+        env:
+          CACHIX_AUTH_TOKEN: ${{ secrets.CACHIX_AUTH_TOKEN }}
+        run: |
+          if [[ -z "$CACHIX_AUTH_TOKEN" ]]; then
+            echo '::error::Add the CACHIX_AUTH_TOKEN repository secret with a write token for the json2dirpkgs cache.'
+            exit 1
+          fi
+      - name: Discover packages
+        id: matrix
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          dependencies = sorted(p.stem for p in Path('pkgs/development').glob('*.nix'))
+          implementations = sorted(i['name'] for i in json.loads(Path('data/selection.json').read_text())['implementations'])
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              for name, packages in [('dependencies', dependencies), ('implementations', implementations)]:
+                  if not packages or len(packages) > 256 or len(packages) != len(set(packages)):
+                      raise ValueError(f'Invalid {name} matrix: {len(packages)} entries')
+                  print(f'{name}={json.dumps(packages)}', file=output)
+          PY
+
+  dependencies:
+    needs: prepare
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        package: ${{ fromJSON(needs.prepare.outputs.dependencies) }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: cachix/install-nix-action@13d8dd58da0234aa297dedd986986ccb8e7f3e24 # v31
+        with:
+          extra_nix_config: |
+            max-jobs = 2
+            cores = 2
+      - uses: cachix/cachix-action@38b082610b782e7e93e209c35fd730d399dee866 # v17
+        with:
+          name: json2dirpkgs
+          skipPush: true
+      - name: Build shared dependency
+        env:
+          PACKAGE: ${{ matrix.package }}
+        run: nix build --no-link --print-out-paths ".#legacyPackages.x86_64-linux.$PACKAGE" > "$RUNNER_TEMP/outputs"
+      - name: Upload output closures
+        env:
+          CACHIX_AUTH_TOKEN: ${{ secrets.CACHIX_AUTH_TOKEN }}
+        run: cachix push json2dirpkgs < "$RUNNER_TEMP/outputs"
+
+  implementations:
+    needs: [prepare, dependencies]
+    # Still build implementations if an unrelated shared tool failed.
+    if: ${{ !cancelled() && needs.prepare.result == 'success' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        package: ${{ fromJSON(needs.prepare.outputs.implementations) }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: cachix/install-nix-action@13d8dd58da0234aa297dedd986986ccb8e7f3e24 # v31
+        with:
+          extra_nix_config: |
+            max-jobs = 2
+            cores = 2
+      - uses: cachix/cachix-action@38b082610b782e7e93e209c35fd730d399dee866 # v17
+        with:
+          name: json2dirpkgs
+          skipPush: true
+      - name: Build implementation
+        env:
+          PACKAGE: ${{ matrix.package }}
+        run: nix build --no-link --print-out-paths ".#packages.x86_64-linux.$PACKAGE" > "$RUNNER_TEMP/outputs"
+      - name: Upload output closures
+        env:
+          CACHIX_AUTH_TOKEN: ${{ secrets.CACHIX_AUTH_TOKEN }}
+        run: cachix push json2dirpkgs < "$RUNNER_TEMP/outputs"

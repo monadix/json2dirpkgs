@@ -69,5 +69,5 @@ from `pkgs/development/`. Measure those separately when estimating storage for
 compiler binaries used to rebuild implementations; they are often absent from
 the implementations' runtime closures.
 
-A public binary cache is optional. This repository does not create a Cachix
-account or publish binaries automatically.
+GitHub Actions publishes package changes on `main` to the `json2dirpkgs` Cachix
+cache. See [cache publishing](docs/cache.md) for credentials and build behavior.
