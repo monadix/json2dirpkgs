@@ -24,6 +24,14 @@ Swift uses a shared standard library because the pinned Nixpkgs toolchain omits
 the static Swift runtime; account for this difference when comparing benchmarks
 with the original tester build.
 
+Prebuilt packages are available from the public binary cache at
+<https://json2dirpkgs.cachix.org>. Add these settings to `nix.conf` to use it:
+
+```conf
+extra-substituters = https://json2dirpkgs.cachix.org
+extra-trusted-public-keys = json2dirpkgs.cachix.org-1:65NBBfjvYOT+/ebY7XFg/XXSWTTsrCvGJuEhEVcRSGM=
+```
+
 ## Layout
 
 - `pkgs/by-name/`: individual implementation recipes.
