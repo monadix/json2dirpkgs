@@ -1,0 +1,3101 @@
+{
+  "resultsRevision": "8cbaecd62fe582084cbbb7be2813f7e481d0582f",
+  "testerRevision": "f06440f17b7b3ebff43931f40b1a63c9c3fd2e9e",
+  "resultsTimestamp": "2026-10-07 15:40 UTC",
+  "implementations": [
+    {
+      "name": "json2dir-ada",
+      "group": "group0",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Ada (GNAT), standard library only, hand-written JSON parser, POSIX calls via pragma Import",
+      "repo": "https://github.com/json2dir-guru/json2dir-ada",
+      "language": "Ada",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-ada",
+        "description": "Ada (GNAT), standard library only, hand-written JSON parser, POSIX calls via pragma Import",
+        "language": "Ada",
+        "repo": "https://github.com/json2dir-guru/json2dir-ada",
+        "source": "projects/json2dir-ada",
+        "build": "mkdir -p {src}/out && cd {src} && PATH={runtimes}/gnat-16.1.0-1/bin:$PATH gnatmake -q -O2 -D out json2dir.adb -o out/json2dir",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-algol60",
+      "group": "group2",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Historic"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "ALGOL 60 evaluator (GNU MARST 2.8 translated to C, gcc) emitting a shell script, plus a POSIX sh launcher",
+      "repo": "https://github.com/json2dir-guru/json2dir-algol60",
+      "language": "ALGOL 60",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-algol60",
+        "description": "ALGOL 60 evaluator (GNU MARST 2.8 translated to C, gcc) emitting a shell script, plus a POSIX sh launcher",
+        "language": "ALGOL 60",
+        "repo": "https://github.com/json2dir-guru/json2dir-algol60",
+        "source": "projects/json2dir-algol60",
+        "build": "sh {src}/build.sh {runtimes}/marst-2.8",
+        "command": "JSON2DIR_EVAL={src}/out/json2dir-eval {src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-algol68",
+      "group": "group3",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Historic"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "ALGOL 68 evaluator (Algol 68 Genie 2.8.4) emitting a shell script, plus a POSIX sh launcher",
+      "repo": "https://github.com/json2dir-guru/json2dir-algol68",
+      "language": "ALGOL 68",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-algol68",
+        "description": "ALGOL 68 evaluator (Algol 68 Genie 2.8.4) emitting a shell script, plus a POSIX sh launcher",
+        "language": "ALGOL 68",
+        "repo": "https://github.com/json2dir-guru/json2dir-algol68",
+        "source": "projects/json2dir-algol68",
+        "command": "JSON2DIR_A68G={runtimes}/algol68g-2.8.4/a68g {src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-aot",
+      "group": "group4",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        ".NET"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "C# compiled with .NET 8 Native AOT, hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-aot",
+      "language": "C#, .NET 8 Native AOT",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-aot",
+        "description": "C# compiled with .NET 8 Native AOT, hand-written JSON parser",
+        "language": "C#, .NET 8 Native AOT",
+        "repo": "https://github.com/json2dir-guru/json2dir-aot",
+        "source": "projects/json2dir-aot",
+        "build": "export DOTNET_ROOT={runtimes}/dotnet-8.0.425 NUGET_PACKAGES={runtimes}/dotnet-8.0.425/nuget-packages DOTNET_CLI_HOME={runtimes}/dotnet-8.0.425/home DOTNET_CLI_TELEMETRY_OPTOUT=1 DOTNET_NOLOGO=1 DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1\n# Native AOT links with the system clang and zlib.\n{runtimes}/dotnet-8.0.425/dotnet publish -c Release -r linux-x64 --nologo -v quiet -o {src}/out {src}/json2dir.csproj",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-apl",
+      "group": "group5",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Array"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "GNU APL evaluator (array-style UTF-8 check, hand-written JSON parser) emitting a shell script, plus a POSIX sh launcher",
+      "repo": "https://github.com/json2dir-guru/json2dir-apl",
+      "language": "APL",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-apl",
+        "description": "GNU APL evaluator (array-style UTF-8 check, hand-written JSON parser) emitting a shell script, plus a POSIX sh launcher",
+        "language": "APL",
+        "repo": "https://github.com/json2dir-guru/json2dir-apl",
+        "source": "projects/json2dir-apl",
+        "command": "JSON2DIR_APL={runtimes}/gnu-apl-2.0/bin/apl {src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-arnoldc",
+      "group": "group6",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Esoteric"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "json2dir in ArnoldC (launcher approach)",
+      "repo": "https://github.com/json2dir-guru/json2dir-arnoldc",
+      "language": "ArnoldC",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-arnoldc",
+        "description": "json2dir in ArnoldC (launcher approach)",
+        "language": "ArnoldC",
+        "repo": "https://github.com/json2dir-guru/json2dir-arnoldc",
+        "source": "projects/json2dir-arnoldc",
+        "build": "mkdir -p {src}/out && cp {src}/json2dir.arnoldc {src}/out/ && cd {src}/out && {runtimes}/jdk-21.0.12.1/bin/java -jar {runtimes}/arnoldc-0.1/ArnoldC.jar json2dir.arnoldc",
+        "command": "JSON2DIR_JAVA={runtimes}/jdk-21.0.12.1/bin/java {src}/json2dir",
+        "timeout": 60
+      }
+    },
+    {
+      "name": "json2dir-asm",
+      "group": "group7",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Assembly / IR"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "x86-64 Linux assembly (MASM syntax, JWasm), raw syscalls, hand-written ELF header, no libc",
+      "repo": "https://github.com/json2dir-guru/json2dir-asm",
+      "language": "x86-64 assembly (JWasm)",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-asm",
+        "description": "x86-64 Linux assembly (MASM syntax, JWasm), raw syscalls, hand-written ELF header, no libc",
+        "language": "x86-64 assembly (JWasm)",
+        "repo": "https://github.com/json2dir-guru/json2dir-asm",
+        "source": "projects/json2dir-asm",
+        "build": "mkdir -p {src}/out && {runtimes}/jwasm-2.21/jwasm -q -bin -Fo={src}/out/json2dir.bin {src}/json2dir.asm && mv -f {src}/out/json2dir.bin {src}/out/json2dir && chmod +x {src}/out/json2dir",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-awk",
+      "group": "group8",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Shell"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "GNU awk evaluator (plain gawk, byte mode) emitting a shell script, plus a POSIX sh launcher",
+      "repo": "https://github.com/json2dir-guru/json2dir-awk",
+      "language": "AWK",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-awk",
+        "description": "GNU awk evaluator (plain gawk, byte mode) emitting a shell script, plus a POSIX sh launcher",
+        "language": "AWK",
+        "repo": "https://github.com/json2dir-guru/json2dir-awk",
+        "source": "projects/json2dir-awk",
+        "command": "JSON2DIR_GAWK={runtimes}/gawk-5.1.0/gawk {src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-basic",
+      "group": "group0",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "BASIC (FreeBASIC), one file, hand-written JSON parser, libc calls for the file system",
+      "repo": "https://github.com/json2dir-guru/json2dir-basic",
+      "language": "BASIC (FreeBASIC)",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-basic",
+        "description": "BASIC (FreeBASIC), one file, hand-written JSON parser, libc calls for the file system",
+        "language": "BASIC (FreeBASIC)",
+        "repo": "https://github.com/json2dir-guru/json2dir-basic",
+        "source": "projects/json2dir-basic",
+        "build": "mkdir -p {src}/out && {runtimes}/freebasic-1.10.1/bin/fbc -O 2 {src}/json2dir.bas -x {src}/out/json2dir",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-bcpl",
+      "group": "group1",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Historic"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "json2dir in BCPL (launcher approach): Martin Richards' Cintcode BCPL evaluator emitting a shell script, plus a POSIX sh launcher",
+      "repo": "https://github.com/json2dir-guru/json2dir-bcpl",
+      "language": "BCPL",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-bcpl",
+        "description": "json2dir in BCPL (launcher approach): Martin Richards' Cintcode BCPL evaluator emitting a shell script, plus a POSIX sh launcher",
+        "language": "BCPL",
+        "repo": "https://github.com/json2dir-guru/json2dir-bcpl",
+        "source": "projects/json2dir-bcpl",
+        "build": "mkdir -p {src}/out && cd {src} && BCPLROOT={runtimes}/bcpl-2026-07-08/BCPL/cintcode BCPLPATH={runtimes}/bcpl-2026-07-08/BCPL/cintcode/cin BCPLHDRS={runtimes}/bcpl-2026-07-08/BCPL/cintcode/g {runtimes}/bcpl-2026-07-08/BCPL/cintcode/bin/cintsys -q -c 'bcpl json2dir.b to out/json2dir' < /dev/null",
+        "command": "JSON2DIR_BCPL={runtimes}/bcpl-2026-07-08/BCPL/cintcode {src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-bqn",
+      "group": "group3",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Array"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "BQN on CBQN, array-style UTF-8/JSON validation, \u2022file plus \u2022FFI to libc",
+      "repo": "https://github.com/json2dir-guru/json2dir-bqn",
+      "language": "BQN",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-bqn",
+        "description": "BQN on CBQN, array-style UTF-8/JSON validation, \u2022file plus \u2022FFI to libc",
+        "language": "BQN",
+        "repo": "https://github.com/json2dir-guru/json2dir-bqn",
+        "source": "projects/json2dir-bqn",
+        "command": "{runtimes}/cbqn-c893d3e7/BQN {src}/json2dir.bqn"
+      }
+    },
+    {
+      "name": "json2dir-brainfuck",
+      "group": "group5",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Esoteric"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "json2dir in Brainfuck (launcher approach)",
+      "repo": "https://github.com/json2dir-guru/json2dir-brainfuck",
+      "language": "Brainfuck",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-brainfuck",
+        "description": "json2dir in Brainfuck (launcher approach)",
+        "language": "Brainfuck",
+        "repo": "https://github.com/json2dir-guru/json2dir-brainfuck",
+        "source": "projects/json2dir-brainfuck",
+        "command": "JSON2DIR_BF=\"{runtimes}/tritium-525d346/bfi -b -n\" {src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-c17",
+      "group": "group7",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "C family"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "ISO C17 + POSIX in one file (_Generic, _Static_assert, anonymous unions, char32_t), gcc -std=c17 -pedantic-errors, hand-written UTF-8 check and JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-c17",
+      "language": "C17",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-c17",
+        "description": "ISO C17 + POSIX in one file (_Generic, _Static_assert, anonymous unions, char32_t), gcc -std=c17 -pedantic-errors, hand-written UTF-8 check and JSON parser",
+        "language": "C17",
+        "repo": "https://github.com/json2dir-guru/json2dir-c17",
+        "source": "projects/json2dir-c17",
+        "build": "mkdir -p {src}/out && gcc -std=c17 -pedantic-errors -Wall -Wextra -O2 -o {src}/out/json2dir {src}/json2dir.c",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-c23",
+      "group": "group8",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "C family"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "C23 (ISO/IEC 9899:2024) + POSIX in one file, compiled with clang 23 -std=c23, hand-written UTF-8 check and JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-c23",
+      "language": "C23",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-c23",
+        "description": "C23 (ISO/IEC 9899:2024) + POSIX in one file, compiled with clang 23 -std=c23, hand-written UTF-8 check and JSON parser",
+        "language": "C23",
+        "repo": "https://github.com/json2dir-guru/json2dir-c23",
+        "source": "projects/json2dir-c23",
+        "build": "mkdir -p {src}/out && {runtimes}/llvm-23.1.3/bin/clang -std=c23 -pedantic-errors -Wall -Wextra -O2 -o {src}/out/json2dir {src}/json2dir.c",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-c89",
+      "group": "group9",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "C family"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "ANSI C (C89) + POSIX in one file, gcc -std=c89 -pedantic-errors, hand-written UTF-8 check and JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-c89",
+      "language": "ANSI C (C89)",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-c89",
+        "description": "ANSI C (C89) + POSIX in one file, gcc -std=c89 -pedantic-errors, hand-written UTF-8 check and JSON parser",
+        "language": "ANSI C (C89)",
+        "repo": "https://github.com/json2dir-guru/json2dir-c89",
+        "source": "projects/json2dir-c89",
+        "build": "mkdir -p {src}/out && gcc -std=c89 -pedantic-errors -Wall -Wextra -O2 -o {src}/out/json2dir {src}/json2dir.c",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-cforall",
+      "group": "group0",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "C family"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Cforall (C-for-all), one file, built with cfa from source",
+      "repo": "https://github.com/json2dir-guru/json2dir-cforall",
+      "language": "Cforall",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-cforall",
+        "description": "Cforall (C-for-all), one file, built with cfa from source",
+        "language": "Cforall",
+        "repo": "https://github.com/json2dir-guru/json2dir-cforall",
+        "source": "projects/json2dir-cforall",
+        "build": "mkdir -p {src}/out && {runtimes}/cforall-1.0.0/bin/cfa -nodebug -O2 {src}/json2dir.cfa -o {src}/out/json2dir",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-checkedc",
+      "group": "group1",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "C family"
+      ],
+      "verification": "Contracts / checked types",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Checked C (checked pointers with bounds, CHECKED_SCOPE on) + POSIX in one file, compiled with Checked C clang 12.0.2, hand-written UTF-8 check and JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-checkedc",
+      "language": "Checked C",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-checkedc",
+        "description": "Checked C (checked pointers with bounds, CHECKED_SCOPE on) + POSIX in one file, compiled with Checked C clang 12.0.2, hand-written UTF-8 check and JSON parser",
+        "language": "Checked C",
+        "repo": "https://github.com/json2dir-guru/json2dir-checkedc",
+        "source": "projects/json2dir-checkedc",
+        "build": "mkdir -p {src}/out && {runtimes}/checkedc-12.0.2/bin/clang -O2 -o {src}/out/json2dir {src}/json2dir.c",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-chez",
+      "group": "group3",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Functional",
+        "Lisp family"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Chez Scheme 10.4.1, one file, hand-written parser, FFI to libc",
+      "repo": "https://github.com/json2dir-guru/json2dir-chez",
+      "language": "Chez Scheme",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-chez",
+        "description": "Chez Scheme 10.4.1, one file, hand-written parser, FFI to libc",
+        "language": "Chez Scheme",
+        "repo": "https://github.com/json2dir-guru/json2dir-chez",
+        "source": "projects/json2dir-chez",
+        "build": "cd {src} && echo '(compile-program \"json2dir.ss\")' | {runtimes}/chez-10.4.1/bin/scheme -q",
+        "command": "{runtimes}/chez-10.4.1/bin/scheme --program {src}/json2dir.so"
+      }
+    },
+    {
+      "name": "json2dir-cil",
+      "group": "group4",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Assembly / IR",
+        ".NET"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Hand-written CIL (.NET IL assembly), assembled with ilasm, hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-cil",
+      "language": "hand-written CIL (ilasm)",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-cil",
+        "description": "Hand-written CIL (.NET IL assembly), assembled with ilasm, hand-written JSON parser",
+        "language": "hand-written CIL (ilasm)",
+        "repo": "https://github.com/json2dir-guru/json2dir-cil",
+        "source": "projects/json2dir-cil",
+        "build": "mkdir -p {src}/out && {runtimes}/ilasm-8.0.0/pkg/runtimes/linux-x64/native/ilasm -dll -quiet -output={src}/out/json2dir.dll {src}/json2dir.il && cp {src}/json2dir.runtimeconfig.json {src}/out/",
+        "command": "DOTNET_ROOT={runtimes}/dotnet-8.0.425 {runtimes}/dotnet-8.0.425/dotnet {src}/out/json2dir.dll"
+      }
+    },
+    {
+      "name": "json2dir-cilk",
+      "group": "group5",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "C family"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Cilk (OpenCilk 2.1) + POSIX in one file: parallel validation with cilk_for and a reducer, parallel subdirectory filling with cilk_spawn, hand-written UTF-8 check and JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-cilk",
+      "language": "Cilk (OpenCilk)",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-cilk",
+        "description": "Cilk (OpenCilk 2.1) + POSIX in one file: parallel validation with cilk_for and a reducer, parallel subdirectory filling with cilk_spawn, hand-written UTF-8 check and JSON parser",
+        "language": "Cilk (OpenCilk)",
+        "repo": "https://github.com/json2dir-guru/json2dir-cilk",
+        "source": "projects/json2dir-cilk",
+        "build": "mkdir -p {src}/out && {runtimes}/opencilk-2.1.0/bin/clang -fopencilk -O2 -Wall -Wextra -static -o {src}/out/json2dir {src}/json2dir.c",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-clojure",
+      "group": "group6",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "JVM",
+        "Functional",
+        "Lisp family"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "json2dir in Clojure: clojure.core and JDK interop only, hand-written JSON parser, AOT-compiled",
+      "repo": "https://github.com/json2dir-guru/json2dir-clojure",
+      "language": "Clojure",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-clojure",
+        "description": "json2dir in Clojure: clojure.core and JDK interop only, hand-written JSON parser, AOT-compiled",
+        "language": "Clojure",
+        "repo": "https://github.com/json2dir-guru/json2dir-clojure",
+        "source": "projects/json2dir-clojure",
+        "build": "mkdir -p {src}/out && {runtimes}/jdk-21.0.12.1/bin/java -Dclojure.compile.path={src}/out -cp {runtimes}/clojure-1.12.6/clojure-1.12.6.jar:{runtimes}/clojure-1.12.6/spec.alpha-0.5.238.jar:{runtimes}/clojure-1.12.6/core.specs.alpha-0.4.74.jar:{src}/src:{src}/out clojure.main -e \"(compile 'json2dir.core)\"",
+        "command": "LC_ALL=C.UTF-8 {runtimes}/jdk-21.0.12.1/bin/java -XX:TieredStopAtLevel=1 -XX:+UseSerialGC -cp {runtimes}/clojure-1.12.6/clojure-1.12.6.jar:{runtimes}/clojure-1.12.6/spec.alpha-0.5.238.jar:{runtimes}/clojure-1.12.6/core.specs.alpha-0.4.74.jar:{src}/out json2dir.core",
+        "timeout": 30
+      }
+    },
+    {
+      "name": "json2dir-cobol",
+      "group": "group8",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "GnuCOBOL (free format), hand-written JSON parser, libc via CALL, one file",
+      "repo": "https://github.com/json2dir-guru/json2dir-cobol",
+      "language": "COBOL",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-cobol",
+        "description": "GnuCOBOL (free format), hand-written JSON parser, libc via CALL, one file",
+        "language": "COBOL",
+        "repo": "https://github.com/json2dir-guru/json2dir-cobol",
+        "source": "projects/json2dir-cobol",
+        "build": "mkdir -p {src}/out && {runtimes}/gnucobol-3.1.2/cobc -x -O {src}/json2dir.cob -o {src}/out/json2dir",
+        "command": "{runtimes}/gnucobol-3.1.2/run {src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-commonlisp",
+      "group": "group9",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Functional",
+        "Lisp family"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Common Lisp on SBCL with sb-posix, saved as an executable core",
+      "repo": "https://github.com/json2dir-guru/json2dir-commonlisp",
+      "language": "Common Lisp",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-commonlisp",
+        "description": "Common Lisp on SBCL with sb-posix, saved as an executable core",
+        "language": "Common Lisp",
+        "repo": "https://github.com/json2dir-guru/json2dir-commonlisp",
+        "source": "projects/json2dir-commonlisp",
+        "build": "mkdir -p {src}/out && cd {src} && SBCL_HOME={runtimes}/sbcl-2.5.8/lib/sbcl {runtimes}/sbcl-2.5.8/bin/sbcl --noinform --non-interactive --no-sysinit --no-userinit --eval '(with-compilation-unit () (load \"json2dir.lisp\"))' --eval '(sb-ext:save-lisp-and-die \"out/json2dir\" :executable t :toplevel (function json2dir:main) :save-runtime-options t)'",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-compcert",
+      "group": "group0",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "C family"
+      ],
+      "verification": "Verified compiler",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "C99 + POSIX in one file, compiled with CompCert 3.12 (ccomp -O), hand-written UTF-8 check and JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-compcert",
+      "language": "C, compiled with CompCert",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-compcert",
+        "description": "C99 + POSIX in one file, compiled with CompCert 3.12 (ccomp -O), hand-written UTF-8 check and JSON parser",
+        "language": "C, compiled with CompCert",
+        "repo": "https://github.com/json2dir-guru/json2dir-compcert",
+        "source": "projects/json2dir-compcert",
+        "build": "mkdir -p {src}/out && {runtimes}/compcert-3.12/ccomp -O -o {src}/out/json2dir {src}/json2dir.c",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-cpp",
+      "group": "group2",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "C family"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Modern C++ (C++20) in one file, standard library + POSIX, hand-written UTF-8 check and JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-cpp",
+      "language": "C++",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-cpp",
+        "description": "Modern C++ (C++20) in one file, standard library + POSIX, hand-written UTF-8 check and JSON parser",
+        "language": "C++",
+        "repo": "https://github.com/json2dir-guru/json2dir-cpp",
+        "source": "projects/json2dir-cpp",
+        "build": "mkdir -p {src}/out && g++ -std=c++20 -O2 -Wall -o {src}/out/json2dir {src}/json2dir.cpp",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-crystal",
+      "group": "group3",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Crystal, one file, standard library only, hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-crystal",
+      "language": "Crystal",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-crystal",
+        "description": "Crystal, one file, standard library only, hand-written JSON parser",
+        "language": "Crystal",
+        "repo": "https://github.com/json2dir-guru/json2dir-crystal",
+        "source": "projects/json2dir-crystal",
+        "build": "CRYSTAL_CACHE_DIR=/tmp/crystal-cache-json2dir-crystal {runtimes}/crystal-1.21.1/bin/crystal build --release --no-color -o {src}/out/json2dir {src}/json2dir.cr",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-cs",
+      "group": "group15",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        ".NET"
+      ],
+      "verification": "None",
+      "origin": "Third-party",
+      "approach": "Native",
+      "description": "The whole tool as a single C# expression",
+      "repo": "https://github.com/daniilvaino/json2dir-cs",
+      "language": "C#",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-cs",
+        "description": "The whole tool as a single C# expression",
+        "language": "C#",
+        "repo": "https://github.com/daniilvaino/json2dir-cs",
+        "build": "export DOTNET_CLI_TELEMETRY_OPTOUT=1 DOTNET_NOLOGO=1\n# Ubuntu's dotnet has no apphost for its distro RID; the tool runs through `dotnet json2dir.dll` anyway.\ndotnet build -c Release --nologo -v quiet -p:UseAppHost=false json2dir",
+        "command": "DOTNET_CLI_TELEMETRY_OPTOUT=1 dotnet {src}/json2dir/bin/Release/net10.0/json2dir.dll"
+      }
+    },
+    {
+      "name": "json2dir-d",
+      "group": "group5",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "D (DMD), one source file, druntime/Phobos only with a hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-d",
+      "language": "D",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-d",
+        "description": "D (DMD), one source file, druntime/Phobos only with a hand-written JSON parser",
+        "language": "D",
+        "repo": "https://github.com/json2dir-guru/json2dir-d",
+        "source": "projects/json2dir-d",
+        "build": "{runtimes}/dmd-2.113.0/linux/bin64/dmd -O -of={src}/out/json2dir -od=/tmp/json2dir-d-obj {src}/json2dir.d",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-dafny",
+      "group": "group6",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        ".NET",
+        "Proof / dependent types"
+      ],
+      "verification": "Machine-checked proofs",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Dafny compiled to C# (.NET 8): verified parser, UTF-8 and name validation, thin C# I/O externs",
+      "repo": "https://github.com/json2dir-guru/json2dir-dafny",
+      "language": "Dafny",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-dafny",
+        "description": "Dafny compiled to C# (.NET 8): verified parser, UTF-8 and name validation, thin C# I/O externs",
+        "language": "Dafny",
+        "repo": "https://github.com/json2dir-guru/json2dir-dafny",
+        "source": "projects/json2dir-dafny",
+        "build": "export DOTNET_ROOT={runtimes}/dotnet-8.0.425 PATH={runtimes}/dotnet-8.0.425:$PATH NUGET_PACKAGES={runtimes}/dafny-4.11.0/nuget-packages DOTNET_CLI_HOME={runtimes}/dafny-4.11.0/home DOTNET_CLI_TELEMETRY_OPTOUT=1 DOTNET_NOLOGO=1 DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1\n{runtimes}/dafny-4.11.0/dafny/dafny build --target:cs {src}/json2dir.dfy {src}/Externs.cs -o {src}/out/json2dir",
+        "command": "DOTNET_ROOT={runtimes}/dotnet-8.0.425 {src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-dart",
+      "group": "group7",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Dart, one file, AOT-compiled with dart compile exe; libc via dart:ffi",
+      "repo": "https://github.com/json2dir-guru/json2dir-dart",
+      "language": "Dart",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-dart",
+        "description": "Dart, one file, AOT-compiled with dart compile exe; libc via dart:ffi",
+        "language": "Dart",
+        "repo": "https://github.com/json2dir-guru/json2dir-dart",
+        "source": "projects/json2dir-dart",
+        "build": "mkdir -p {src}/out && PUB_CACHE={runtimes}/dart-sdk-3.13.5/pub-cache {runtimes}/dart-sdk-3.13.5/dart-sdk/bin/dart compile exe {src}/bin/json2dir.dart -o {src}/out/json2dir",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-eiffel",
+      "group": "group8",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Historic"
+      ],
+      "verification": "Contracts / checked types",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Eiffel (Gobo gec) with Design by Contract, kernel library only, hand-written JSON parser, POSIX calls via external \"C\"",
+      "repo": "https://github.com/json2dir-guru/json2dir-eiffel",
+      "language": "Eiffel",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-eiffel",
+        "description": "Eiffel (Gobo gec) with Design by Contract, kernel library only, hand-written JSON parser, POSIX calls via external \"C\"",
+        "language": "Eiffel",
+        "repo": "https://github.com/json2dir-guru/json2dir-eiffel",
+        "source": "projects/json2dir-eiffel",
+        "build": "mkdir -p {src}/out && cd {src}/out && GOBO={runtimes}/gobo-26.09 {runtimes}/gobo-26.09/bin/gec ../json2dir.ecf",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-elixir",
+      "group": "group0",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Functional"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Elixir on the BEAM (Erlang/OTP), Elixir + OTP stdlib only, hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-elixir",
+      "language": "Elixir",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-elixir",
+        "description": "Elixir on the BEAM (Erlang/OTP), Elixir + OTP stdlib only, hand-written JSON parser",
+        "language": "Elixir",
+        "repo": "https://github.com/json2dir-guru/json2dir-elixir",
+        "source": "projects/json2dir-elixir",
+        "command": "PATH={runtimes}/erlang-28.5.0.7/bin:$PATH {runtimes}/elixir-1.20.4/bin/elixir {src}/json2dir.exs",
+        "timeout": 20
+      }
+    },
+    {
+      "name": "json2dir-emojicode",
+      "group": "group1",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Emojicode 1.0 beta 2, one source file plus a tiny native package (lstat, O_EXCL create, fchmod), hand-written UTF-8 check and JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-emojicode",
+      "language": "Emojicode",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-emojicode",
+        "description": "Emojicode 1.0 beta 2, one source file plus a tiny native package (lstat, O_EXCL create, fchmod), hand-written UTF-8 check and JSON parser",
+        "language": "Emojicode",
+        "repo": "https://github.com/json2dir-guru/json2dir-emojicode",
+        "source": "projects/json2dir-emojicode",
+        "build": "sh {src}/build.sh {runtimes}/emojicode-1.0-beta.2",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-erlang",
+      "group": "group2",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Functional"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Erlang/OTP escript, kernel/stdlib only, hand-written binary-matching JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-erlang",
+      "language": "Erlang",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-erlang",
+        "description": "Erlang/OTP escript, kernel/stdlib only, hand-written binary-matching JSON parser",
+        "language": "Erlang",
+        "repo": "https://github.com/json2dir-guru/json2dir-erlang",
+        "source": "projects/json2dir-erlang",
+        "command": "{runtimes}/erlang-28.5.0.7/bin/escript {src}/json2dir.erl",
+        "timeout": 20
+      }
+    },
+    {
+      "name": "json2dir-false",
+      "group": "group3",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Esoteric"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "json2dir in FALSE (launcher approach)",
+      "repo": "https://github.com/json2dir-guru/json2dir-false",
+      "language": "FALSE",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-false",
+        "description": "json2dir in FALSE (launcher approach)",
+        "language": "FALSE",
+        "repo": "https://github.com/json2dir-guru/json2dir-false",
+        "source": "projects/json2dir-false",
+        "command": "JSON2DIR_FALSE={runtimes}/false-1.2b/false {src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-fennel",
+      "group": "group4",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Scripting",
+        "Functional",
+        "Lisp family"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Fennel compiled to Lua, run on LuaJIT: hand-written JSON parser, libc via the built-in FFI",
+      "repo": "https://github.com/json2dir-guru/json2dir-fennel",
+      "language": "Fennel",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-fennel",
+        "description": "Fennel compiled to Lua, run on LuaJIT: hand-written JSON parser, libc via the built-in FFI",
+        "language": "Fennel",
+        "repo": "https://github.com/json2dir-guru/json2dir-fennel",
+        "source": "projects/json2dir-fennel",
+        "build": "mkdir -p {src}/out && {runtimes}/fennel-1.6.1/fennel --compile {src}/json2dir.fnl > {src}/out/json2dir.lua.tmp && mv -f {src}/out/json2dir.lua.tmp {src}/out/json2dir.lua",
+        "command": "{runtimes}/luajit-2.1.1788856981/bin/luajit-2.1.1788856981 {src}/out/json2dir.lua"
+      }
+    },
+    {
+      "name": "json2dir-forth",
+      "group": "group6",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Historic"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Forth on Gforth 0.7.3, hand-written UTF-8 check and JSON parser, POSIX calls via Gforth's C interface",
+      "repo": "https://github.com/json2dir-guru/json2dir-forth",
+      "language": "Forth",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-forth",
+        "description": "Forth on Gforth 0.7.3, hand-written UTF-8 check and JSON parser, POSIX calls via Gforth's C interface",
+        "language": "Forth",
+        "repo": "https://github.com/json2dir-guru/json2dir-forth",
+        "source": "projects/json2dir-forth",
+        "command": "{runtimes}/gforth-0.7.3/gforth {src}/json2dir.fs -e bye"
+      }
+    },
+    {
+      "name": "json2dir-fortran",
+      "group": "group7",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Modern Fortran (2008+) with ISO_C_BINDING, one file",
+      "repo": "https://github.com/json2dir-guru/json2dir-fortran",
+      "language": "Fortran",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-fortran",
+        "description": "Modern Fortran (2008+) with ISO_C_BINDING, one file",
+        "language": "Fortran",
+        "repo": "https://github.com/json2dir-guru/json2dir-fortran",
+        "source": "projects/json2dir-fortran",
+        "build": "mkdir -p {src}/out && {runtimes}/gfortran-11/gfortran -std=f2008 -O2 -static-libgfortran -J {src}/out {src}/json2dir.f90 -o {src}/out/json2dir",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-freepascal",
+      "group": "group9",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Free Pascal 3.2.2, RTL only (BaseUnix syscalls), hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-freepascal",
+      "language": "Free Pascal",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-freepascal",
+        "description": "Free Pascal 3.2.2, RTL only (BaseUnix syscalls), hand-written JSON parser",
+        "language": "Free Pascal",
+        "repo": "https://github.com/json2dir-guru/json2dir-freepascal",
+        "source": "projects/json2dir-freepascal",
+        "build": "mkdir -p {src}/out && {runtimes}/fpc-3.2.2/lib/fpc/3.2.2/ppcx64 -n -O2 -Xs -v0 -Fu{runtimes}/fpc-3.2.2/lib/fpc/3.2.2/units/x86_64-linux/rtl -FU{src}/out -o{src}/out/json2dir {src}/json2dir.pas",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-fsharp",
+      "group": "group0",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        ".NET",
+        "Functional"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "F# compiled with .NET 8 Native AOT, hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-fsharp",
+      "language": "F#",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-fsharp",
+        "description": "F# compiled with .NET 8 Native AOT, hand-written JSON parser",
+        "language": "F#",
+        "repo": "https://github.com/json2dir-guru/json2dir-fsharp",
+        "source": "projects/json2dir-fsharp",
+        "build": "export DOTNET_ROOT={runtimes}/dotnet-8.0.425 NUGET_PACKAGES={runtimes}/dotnet-8.0.425/nuget-packages DOTNET_CLI_HOME={runtimes}/dotnet-8.0.425/home DOTNET_CLI_TELEMETRY_OPTOUT=1 DOTNET_NOLOGO=1 DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1\n# Native AOT links with the system clang and zlib.\n{runtimes}/dotnet-8.0.425/dotnet publish -c Release -r linux-x64 --nologo -v quiet -o {src}/out {src}/json2dir.fsproj",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-gleam",
+      "group": "group1",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Functional"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Gleam on the BEAM (Erlang/OTP), gleam_stdlib only, hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-gleam",
+      "language": "Gleam",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-gleam",
+        "description": "Gleam on the BEAM (Erlang/OTP), gleam_stdlib only, hand-written JSON parser",
+        "language": "Gleam",
+        "repo": "https://github.com/json2dir-guru/json2dir-gleam",
+        "source": "projects/json2dir-gleam",
+        "build": "cd {src} && XDG_CACHE_HOME={runtimes}/gleam-1.19.0/cache PATH={runtimes}/erlang-28.5.0.7/bin:$PATH {runtimes}/gleam-1.19.0/gleam export erlang-shipment",
+        "command": "PATH={runtimes}/erlang-28.5.0.7/bin:$PATH sh {src}/build/erlang-shipment/entrypoint.sh run",
+        "timeout": 20
+      }
+    },
+    {
+      "name": "json2dir-gnuc",
+      "group": "group2",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "C family"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "GNU C (gcc -std=gnu17) in one file: nested functions, statement expressions, cleanup attributes, case ranges, computed goto; POSIX *at() calls, hand-written UTF-8 check and JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-gnuc",
+      "language": "GNU C",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-gnuc",
+        "description": "GNU C (gcc -std=gnu17) in one file: nested functions, statement expressions, cleanup attributes, case ranges, computed goto; POSIX *at() calls, hand-written UTF-8 check and JSON parser",
+        "language": "GNU C",
+        "repo": "https://github.com/json2dir-guru/json2dir-gnuc",
+        "source": "projects/json2dir-gnuc",
+        "build": "mkdir -p {src}/out && gcc -std=gnu17 -O2 -Wall -o {src}/out/json2dir {src}/json2dir.c",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-go",
+      "group": "group3",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Go, one file, standard library only, hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-go",
+      "language": "Go",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-go",
+        "description": "Go, one file, standard library only, hand-written JSON parser",
+        "language": "Go",
+        "repo": "https://github.com/json2dir-guru/json2dir-go",
+        "source": "projects/json2dir-go",
+        "build": "cd {src} && GOROOT={runtimes}/go-1.27.1/go GOPATH={runtimes}/go-1.27.1/gopath GOCACHE={runtimes}/go-1.27.1/cache GOMODCACHE={runtimes}/go-1.27.1/modcache GOTOOLCHAIN=local {runtimes}/go-1.27.1/go/bin/go build -o {src}/out/json2dir .",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-groovy",
+      "group": "group4",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "JVM"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Groovy 5 (@CompileStatic, compiled with groovyc), one source file, Groovy + JDK only with a hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-groovy",
+      "language": "Groovy",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-groovy",
+        "description": "Groovy 5 (@CompileStatic, compiled with groovyc), one source file, Groovy + JDK only with a hand-written JSON parser",
+        "language": "Groovy",
+        "repo": "https://github.com/json2dir-guru/json2dir-groovy",
+        "source": "projects/json2dir-groovy",
+        "build": "JAVA_HOME={runtimes}/jdk-21.0.12.1 sh {runtimes}/groovy-5.1.3/bin/groovyc -d {src}/out {src}/json2dir.groovy",
+        "command": "LC_ALL=C.UTF-8 {runtimes}/jdk-21.0.12.1/bin/java -XX:TieredStopAtLevel=1 -XX:+UseSerialGC -cp {runtimes}/groovy-5.1.3/lib/groovy-5.1.3.jar:{src}/out Json2dir",
+        "timeout": 30
+      }
+    },
+    {
+      "name": "json2dir-hare",
+      "group": "group5",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Hare, one file, standard library only, hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-hare",
+      "language": "Hare",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-hare",
+        "description": "Hare, one file, standard library only, hand-written JSON parser",
+        "language": "Hare",
+        "repo": "https://github.com/json2dir-guru/json2dir-hare",
+        "source": "projects/json2dir-hare",
+        "build": "mkdir -p {src}/out && cd {src} && PATH={runtimes}/hare-0.26.0/bin:$PATH HARECACHE=/tmp/harecache-json2dir-hare {runtimes}/hare-0.26.0/bin/hare build -o {src}/out/json2dir {src}/json2dir.ha",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-haskell",
+      "group": "group6",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Functional"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Haskell (GHC 9.6, base/bytestring/containers/unix only), hand-written strict JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-haskell",
+      "language": "Haskell",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-haskell",
+        "description": "Haskell (GHC 9.6, base/bytestring/containers/unix only), hand-written strict JSON parser",
+        "language": "Haskell",
+        "repo": "https://github.com/json2dir-guru/json2dir-haskell",
+        "source": "projects/json2dir-haskell",
+        "build": "mkdir -p {src}/out && {runtimes}/ghcup/.ghcup/bin/ghc -O -L{runtimes}/ghcup/libgmp-dev/usr/lib/x86_64-linux-gnu -outputdir /tmp/json2dir-hs-build -o {src}/out/json2dir {src}/json2dir.hs",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-holyc",
+      "group": "group8",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "C family"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "HolyC compiled with holyc-lang (hcc) to a native Linux binary, one file",
+      "repo": "https://github.com/json2dir-guru/json2dir-holyc",
+      "language": "HolyC",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-holyc",
+        "description": "HolyC compiled with holyc-lang (hcc) to a native Linux binary, one file",
+        "language": "HolyC",
+        "repo": "https://github.com/json2dir-guru/json2dir-holyc",
+        "source": "projects/json2dir-holyc",
+        "build": "mkdir -p {src}/out && {runtimes}/holyc-0.0.15/bin/hcc {src}/json2dir.HC -o {src}/out/json2dir",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-idris2",
+      "group": "group9",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Functional",
+        "Proof / dependent types"
+      ],
+      "verification": "Machine-checked proofs",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Idris 2 0.8.0 on Chez Scheme: total UTF-8 check, JSON parser and validation; names carry a proof that they are simple; libc via the FFI",
+      "repo": "https://github.com/json2dir-guru/json2dir-idris2",
+      "language": "Idris 2",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-idris2",
+        "description": "Idris 2 0.8.0 on Chez Scheme: total UTF-8 check, JSON parser and validation; names carry a proof that they are simple; libc via the FFI",
+        "language": "Idris 2",
+        "repo": "https://github.com/json2dir-guru/json2dir-idris2",
+        "source": "projects/json2dir-idris2",
+        "build": "cd {src} && {runtimes}/idris2-0.8.0/idris2 --source-dir src --build-dir /tmp/idris2-json2dir -o json2dir src/Main.idr",
+        "command": "/tmp/idris2-json2dir/exec/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-intercal",
+      "group": "group0",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Esoteric"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "C-INTERCAL evaluator (ick 0.30, generated by a Python macro assembler) emitting a shell script, plus a POSIX sh launcher",
+      "repo": "https://github.com/json2dir-guru/json2dir-intercal",
+      "language": "INTERCAL",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-intercal",
+        "description": "C-INTERCAL evaluator (ick 0.30, generated by a Python macro assembler) emitting a shell script, plus a POSIX sh launcher",
+        "language": "INTERCAL",
+        "repo": "https://github.com/json2dir-guru/json2dir-intercal",
+        "source": "projects/json2dir-intercal",
+        "build": "mkdir -p {src}/out && cp {src}/json2dir.i {src}/out/json2dir.i && {runtimes}/intercal-0.30/ick -b {src}/out/json2dir.i",
+        "command": "{src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-j",
+      "group": "group1",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Array"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "J (jsoftware J9), base library only; hand-written JSON parser, libc via 15!:0",
+      "repo": "https://github.com/json2dir-guru/json2dir-j",
+      "language": "J",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-j",
+        "description": "J (jsoftware J9), base library only; hand-written JSON parser, libc via 15!:0",
+        "language": "J",
+        "repo": "https://github.com/json2dir-guru/json2dir-j",
+        "source": "projects/json2dir-j",
+        "command": "{runtimes}/j9-9.6.14/bin/jconsole {src}/json2dir.ijs"
+      }
+    },
+    {
+      "name": "json2dir-janet",
+      "group": "group2",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Scripting",
+        "Functional",
+        "Lisp family"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Janet, core library only, one file",
+      "repo": "https://github.com/json2dir-guru/json2dir-janet",
+      "language": "Janet",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-janet",
+        "description": "Janet, core library only, one file",
+        "language": "Janet",
+        "repo": "https://github.com/json2dir-guru/json2dir-janet",
+        "source": "projects/json2dir-janet",
+        "command": "{runtimes}/janet-1.42.1/bin/janet {src}/json2dir.janet"
+      }
+    },
+    {
+      "name": "json2dir-java",
+      "group": "group3",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "JVM"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Java 21, one source file, JDK only with a hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-java",
+      "language": "Java",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-java",
+        "description": "Java 21, one source file, JDK only with a hand-written JSON parser",
+        "language": "Java",
+        "repo": "https://github.com/json2dir-guru/json2dir-java",
+        "source": "projects/json2dir-java",
+        "build": "{runtimes}/jdk-21.0.12.1/bin/javac -d {src}/out {src}/Json2dir.java",
+        "command": "LC_ALL=C.UTF-8 {runtimes}/jdk-21.0.12.1/bin/java -XX:TieredStopAtLevel=1 -XX:+UseSerialGC -cp {src}/out Json2dir",
+        "timeout": 20
+      }
+    },
+    {
+      "name": "json2dir-jq",
+      "group": "group4",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "DSL / tool"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "jq evaluator (hand-written strict UTF-8 check and JSON parser in jq, raw input) emitting a shell script, plus a POSIX sh launcher",
+      "repo": "https://github.com/json2dir-guru/json2dir-jq",
+      "language": "jq",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-jq",
+        "description": "jq evaluator (hand-written strict UTF-8 check and JSON parser in jq, raw input) emitting a shell script, plus a POSIX sh launcher",
+        "language": "jq",
+        "repo": "https://github.com/json2dir-guru/json2dir-jq",
+        "source": "projects/json2dir-jq",
+        "command": "JSON2DIR_JQ={runtimes}/jq-1.8.1/jq {src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-js",
+      "group": "group5",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Scripting"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Plain JavaScript on Node.js, one file",
+      "repo": "https://github.com/json2dir-guru/json2dir-js",
+      "language": "plain JavaScript",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-js",
+        "description": "Plain JavaScript on Node.js, one file",
+        "language": "plain JavaScript",
+        "repo": "https://github.com/json2dir-guru/json2dir-js",
+        "source": "projects/json2dir-js",
+        "command": "{runtimes}/node-v24.21.0/bin/node {src}/json2dir.js"
+      }
+    },
+    {
+      "name": "json2dir-jsonnet",
+      "group": "group7",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "DSL / tool"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "Jsonnet evaluator (go-jsonnet, std only) emitting a shell script, plus a POSIX sh launcher",
+      "repo": "https://github.com/json2dir-guru/json2dir-jsonnet",
+      "language": "Jsonnet",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-jsonnet",
+        "description": "Jsonnet evaluator (go-jsonnet, std only) emitting a shell script, plus a POSIX sh launcher",
+        "language": "Jsonnet",
+        "repo": "https://github.com/json2dir-guru/json2dir-jsonnet",
+        "source": "projects/json2dir-jsonnet",
+        "command": "JSON2DIR_JSONNET={runtimes}/jsonnet-0.22.0/jsonnet {src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-k",
+      "group": "group0",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Array"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "ngn/k evaluator (array-style UTF-8 check and JSON parser) emitting a shell script, plus a POSIX sh launcher",
+      "repo": "https://github.com/json2dir-guru/json2dir-k",
+      "language": "K",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-k",
+        "description": "ngn/k evaluator (array-style UTF-8 check and JSON parser) emitting a shell script, plus a POSIX sh launcher",
+        "language": "K",
+        "repo": "https://github.com/json2dir-guru/json2dir-k",
+        "source": "projects/json2dir-k",
+        "command": "JSON2DIR_K={runtimes}/ngnk-b9eeb91/k {src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-koka",
+      "group": "group1",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Functional"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Koka, one file, standard library plus C externs for POSIX calls, effect handler for parse errors, hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-koka",
+      "language": "Koka",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-koka",
+        "description": "Koka, one file, standard library plus C externs for POSIX calls, effect handler for parse errors, hand-written JSON parser",
+        "language": "Koka",
+        "repo": "https://github.com/json2dir-guru/json2dir-koka",
+        "source": "projects/json2dir-koka",
+        "build": "{runtimes}/koka-3.2.9/bin/koka -O2 -i{src} --builddir=/tmp/koka-build-json2dir-koka -o {src}/out/json2dir {src}/json2dir.kk && chmod +x {src}/out/json2dir",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-kotlin",
+      "group": "group2",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "JVM"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Kotlin (JVM), one source file, stdlib + JDK only with a hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-kotlin",
+      "language": "Kotlin",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-kotlin",
+        "description": "Kotlin (JVM), one source file, stdlib + JDK only with a hand-written JSON parser",
+        "language": "Kotlin",
+        "repo": "https://github.com/json2dir-guru/json2dir-kotlin",
+        "source": "projects/json2dir-kotlin",
+        "build": "JAVA_HOME={runtimes}/jdk-21.0.12.1 bash {runtimes}/kotlinc-2.4.20/kotlinc/bin/kotlinc {src}/json2dir.kt -include-runtime -d {src}/out/json2dir.jar",
+        "command": "LC_ALL=C.UTF-8 {runtimes}/jdk-21.0.12.1/bin/java -XX:TieredStopAtLevel=1 -XX:+UseSerialGC -jar {src}/out/json2dir.jar",
+        "timeout": 20
+      }
+    },
+    {
+      "name": "json2dir-kr",
+      "group": "group3",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "C family"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "K&R C (pre-ANSI, 1978 style: old-style definitions, no prototypes/void/const/enum) in one file, built with gcc -std=gnu89, hand-written UTF-8 check and JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-kr",
+      "language": "K&R C",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-kr",
+        "description": "K&R C (pre-ANSI, 1978 style: old-style definitions, no prototypes/void/const/enum) in one file, built with gcc -std=gnu89, hand-written UTF-8 check and JSON parser",
+        "language": "K&R C",
+        "repo": "https://github.com/json2dir-guru/json2dir-kr",
+        "source": "projects/json2dir-kr",
+        "build": "mkdir -p {src}/out && gcc -std=gnu89 -fno-builtin -O2 -o {src}/out/json2dir {src}/json2dir.c",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-ksh",
+      "group": "group4",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Shell"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Pure ksh93 (93u+m): shell built-ins plus ksh93's own libcmd mkdir/ln/chmod/rm, one file",
+      "repo": "https://github.com/json2dir-guru/json2dir-ksh",
+      "language": "ksh93",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-ksh",
+        "description": "Pure ksh93 (93u+m): shell built-ins plus ksh93's own libcmd mkdir/ln/chmod/rm, one file",
+        "language": "ksh93",
+        "repo": "https://github.com/json2dir-guru/json2dir-ksh",
+        "source": "projects/json2dir-ksh",
+        "command": "{runtimes}/ksh93-1.0.10/ksh {src}/json2dir.ksh"
+      }
+    },
+    {
+      "name": "json2dir-lean",
+      "group": "group20",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Functional",
+        "Proof / dependent types"
+      ],
+      "verification": "Machine-checked proofs",
+      "origin": "Third-party",
+      "approach": "Native",
+      "description": "Lean 4 port with proofs for key parsing and value classification",
+      "repo": "https://github.com/tsalkenov/json2dir-lean",
+      "language": "Lean 4",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-lean",
+        "description": "Lean 4 port with proofs for key parsing and value classification",
+        "language": "Lean 4",
+        "repo": "https://github.com/tsalkenov/json2dir-lean",
+        "build": "PATH={runtimes}/lean-4.30.0/bin:$PATH lake build",
+        "command": "{src}/.lake/build/bin/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-lolcode",
+      "group": "group6",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Esoteric"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "LOLCODE 1.3 (lci 0.11.2) evaluator emitting a shell script, plus a POSIX sh launcher",
+      "repo": "https://github.com/json2dir-guru/json2dir-lolcode",
+      "language": "LOLCODE",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-lolcode",
+        "description": "LOLCODE 1.3 (lci 0.11.2) evaluator emitting a shell script, plus a POSIX sh launcher",
+        "language": "LOLCODE",
+        "repo": "https://github.com/json2dir-guru/json2dir-lolcode",
+        "source": "projects/json2dir-lolcode",
+        "command": "JSON2DIR_LCI={runtimes}/lci-0.11.2/bin/lci {src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-lua",
+      "group": "group7",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Scripting"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "json2dir in Lua 5.4 (launcher approach)",
+      "repo": "https://github.com/json2dir-guru/json2dir-lua",
+      "language": "Lua 5.4",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-lua",
+        "description": "json2dir in Lua 5.4 (launcher approach)",
+        "language": "Lua 5.4",
+        "repo": "https://github.com/json2dir-guru/json2dir-lua",
+        "source": "projects/json2dir-lua",
+        "command": "JSON2DIR_LUA={runtimes}/lua-5.4.9/bin/lua {src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-luajit",
+      "group": "group8",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Scripting"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Pure LuaJIT, one file: hand-written JSON parser, libc via the built-in FFI",
+      "repo": "https://github.com/json2dir-guru/json2dir-luajit",
+      "language": "LuaJIT",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-luajit",
+        "description": "Pure LuaJIT, one file: hand-written JSON parser, libc via the built-in FFI",
+        "language": "LuaJIT",
+        "repo": "https://github.com/json2dir-guru/json2dir-luajit",
+        "source": "projects/json2dir-luajit",
+        "command": "{runtimes}/luajit-2.1.1788856981/bin/luajit-2.1.1788856981 {src}/json2dir.lua"
+      }
+    },
+    {
+      "name": "json2dir-mercury",
+      "group": "group0",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Functional",
+        "Logic"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Mercury (stdlib + foreign_proc C), hand-written UTF-8 check and JSON parser, hlc.gc grade",
+      "repo": "https://github.com/json2dir-guru/json2dir-mercury",
+      "language": "Mercury",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-mercury",
+        "description": "Mercury (stdlib + foreign_proc C), hand-written UTF-8 check and JSON parser, hlc.gc grade",
+        "language": "Mercury",
+        "repo": "https://github.com/json2dir-guru/json2dir-mercury",
+        "source": "projects/json2dir-mercury",
+        "build": "mkdir -p {src}/out && cp {src}/json2dir.m {src}/out/ && cd {src}/out && PATH={runtimes}/mercury-22.01.8/bin:$PATH mmc --grade hlc.gc --make json2dir",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-modula2",
+      "group": "group1",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Modula-2 (GNU Modula-2, PIM) with hand-written JSON parser and libc bindings",
+      "repo": "https://github.com/json2dir-guru/json2dir-modula2",
+      "language": "Modula-2",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-modula2",
+        "description": "Modula-2 (GNU Modula-2, PIM) with hand-written JSON parser and libc bindings",
+        "language": "Modula-2",
+        "repo": "https://github.com/json2dir-guru/json2dir-modula2",
+        "source": "projects/json2dir-modula2",
+        "build": "mkdir -p {src}/out && cd {src}/out && {runtimes}/gm2-12.3.0/gm2 -static -O2 -I{src} -fobject-path={src}/out {src}/json2dir.mod -o {src}/out/json2dir -lm",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-mojo",
+      "group": "group2",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Mojo (Modular), one file, stdlib only, native binary",
+      "repo": "https://github.com/json2dir-guru/json2dir-mojo",
+      "language": "Mojo",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-mojo",
+        "description": "Mojo (Modular), one file, stdlib only, native binary",
+        "language": "Mojo",
+        "repo": "https://github.com/json2dir-guru/json2dir-mojo",
+        "source": "projects/json2dir-mojo",
+        "build": "mkdir -p {src}/out && . {runtimes}/pixi-0.81.0/mojo-env.sh && mojo build {src}/json2dir.mojo -o {src}/out/json2dir",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-neovim",
+      "group": "group4",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Scripting"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Lua inside Neovim (nvim -l), vim.uv for all I/O, hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-neovim",
+      "language": "Neovim Lua",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-neovim",
+        "description": "Lua inside Neovim (nvim -l), vim.uv for all I/O, hand-written JSON parser",
+        "language": "Neovim Lua",
+        "repo": "https://github.com/json2dir-guru/json2dir-neovim",
+        "source": "projects/json2dir-neovim",
+        "command": "{runtimes}/nvim-0.12.5/bin/nvim --clean --headless -l {src}/json2dir.lua"
+      }
+    },
+    {
+      "name": "json2dir-nim",
+      "group": "group5",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Nim, one file, standard library only, hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-nim",
+      "language": "Nim",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-nim",
+        "description": "Nim, one file, standard library only, hand-written JSON parser",
+        "language": "Nim",
+        "repo": "https://github.com/json2dir-guru/json2dir-nim",
+        "source": "projects/json2dir-nim",
+        "build": "{runtimes}/nim-2.2.12/bin/nim c -d:release --hints:off --nimcache:/tmp/nimcache-json2dir-nim -o:{src}/out/json2dir {src}/json2dir.nim",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-objc",
+      "group": "group7",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "C family"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Objective-C on the bare GNU libobjc runtime (own root class, no Foundation), one file",
+      "repo": "https://github.com/json2dir-guru/json2dir-objc",
+      "language": "Objective-C",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-objc",
+        "description": "Objective-C on the bare GNU libobjc runtime (own root class, no Foundation), one file",
+        "language": "Objective-C",
+        "repo": "https://github.com/json2dir-guru/json2dir-objc",
+        "source": "projects/json2dir-objc",
+        "build": "mkdir -p {src}/out && {runtimes}/objc-gcc11/objcc -O2 -Wall -o {src}/out/json2dir {src}/json2dir.m",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-ocaml",
+      "group": "group8",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Functional"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "OCaml (stdlib + Unix), hand-written JSON parser, native build",
+      "repo": "https://github.com/json2dir-guru/json2dir-ocaml",
+      "language": "OCaml",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-ocaml",
+        "description": "OCaml (stdlib + Unix), hand-written JSON parser, native build",
+        "language": "OCaml",
+        "repo": "https://github.com/json2dir-guru/json2dir-ocaml",
+        "source": "projects/json2dir-ocaml",
+        "build": "mkdir -p {src}/out && cd {src} && {runtimes}/ocaml-4.13.1/ocamlopt unix.cmxa json2dir.ml -o out/json2dir",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-odin",
+      "group": "group1",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Odin, core library only, hand-written JSON parser and raw Linux syscalls",
+      "repo": "https://github.com/json2dir-guru/json2dir-odin",
+      "language": "Odin",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-odin",
+        "description": "Odin, core library only, hand-written JSON parser and raw Linux syscalls",
+        "language": "Odin",
+        "repo": "https://github.com/json2dir-guru/json2dir-odin",
+        "source": "projects/json2dir-odin",
+        "build": "mkdir -p {src}/out && cd {src} && {runtimes}/odin-dev-2026-10/odin build . -o:speed -out:{src}/out/json2dir",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-perl",
+      "group": "group3",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Scripting"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Perl 5, core only, hand-written JSON parser, one file",
+      "repo": "https://github.com/json2dir-guru/json2dir-perl",
+      "language": "Perl",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-perl",
+        "description": "Perl 5, core only, hand-written JSON parser, one file",
+        "language": "Perl",
+        "repo": "https://github.com/json2dir-guru/json2dir-perl",
+        "source": "projects/json2dir-perl",
+        "command": "{runtimes}/perl-5.44.0/bin/perl {src}/json2dir.pl"
+      }
+    },
+    {
+      "name": "json2dir-php",
+      "group": "group4",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Scripting"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Core PHP 8.1 (built-in json_decode), one file",
+      "repo": "https://github.com/json2dir-guru/json2dir-php",
+      "language": "PHP",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-php",
+        "description": "Core PHP 8.1 (built-in json_decode), one file",
+        "language": "PHP",
+        "repo": "https://github.com/json2dir-guru/json2dir-php",
+        "source": "projects/json2dir-php",
+        "command": "{runtimes}/php-8.1.2/php {src}/json2dir.php"
+      }
+    },
+    {
+      "name": "json2dir-pli",
+      "group": "group7",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "PL/I (Iron Spring PL/I 1.4.1), hand-written UTF-8 check and JSON parser, Linux system calls via the PL/I runtime, no libc",
+      "repo": "https://github.com/json2dir-guru/json2dir-pli",
+      "language": "PL/I",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-pli",
+        "description": "PL/I (Iron Spring PL/I 1.4.1), hand-written UTF-8 check and JSON parser, Linux system calls via the PL/I runtime, no libc",
+        "language": "PL/I",
+        "repo": "https://github.com/json2dir-guru/json2dir-pli",
+        "source": "projects/json2dir-pli",
+        "build": "sh {src}/build.sh {runtimes}/ironspring-pli-1.4.1/pli-1.4.1",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-pony",
+      "group": "group8",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Pony with its standard library and a hand-written JSON parser, one file",
+      "repo": "https://github.com/json2dir-guru/json2dir-pony",
+      "language": "Pony",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-pony",
+        "description": "Pony with its standard library and a hand-written JSON parser, one file",
+        "language": "Pony",
+        "repo": "https://github.com/json2dir-guru/json2dir-pony",
+        "source": "projects/json2dir-pony",
+        "build": "{runtimes}/ponyc-0.65.0/bin/ponyc -o {src}/out -b json2dir {src}",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-prolog",
+      "group": "group9",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Logic"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "SWI-Prolog, one file, hand-written DCG JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-prolog",
+      "language": "Prolog",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-prolog",
+        "description": "SWI-Prolog, one file, hand-written DCG JSON parser",
+        "language": "Prolog",
+        "repo": "https://github.com/json2dir-guru/json2dir-prolog",
+        "source": "projects/json2dir-prolog",
+        "command": "{runtimes}/swipl-8.4.2/swipl {src}/json2dir.pl"
+      }
+    },
+    {
+      "name": "json2dir-puppet",
+      "group": "group0",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "DSL / tool"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "Puppet language manifest (hand-written JSON parser, file resources) run by puppet apply (openvox-agent 8.29.0), plus a POSIX sh launcher",
+      "repo": "https://github.com/json2dir-guru/json2dir-puppet",
+      "language": "Puppet",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-puppet",
+        "description": "Puppet language manifest (hand-written JSON parser, file resources) run by puppet apply (openvox-agent 8.29.0), plus a POSIX sh launcher",
+        "language": "Puppet",
+        "repo": "https://github.com/json2dir-guru/json2dir-puppet",
+        "source": "projects/json2dir-puppet",
+        "command": "JSON2DIR_PUPPET={runtimes}/openvox-agent-8.29.0/puppet {src}/json2dir",
+        "timeout": 60
+      }
+    },
+    {
+      "name": "json2dir-purescript",
+      "group": "group1",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Functional"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "PureScript compiled to JavaScript (spago bundle), run on Node.js; core libraries only, hand-written JSON parser and strict UTF-8 decoder, tiny node:fs FFI",
+      "repo": "https://github.com/json2dir-guru/json2dir-purescript",
+      "language": "PureScript",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-purescript",
+        "description": "PureScript compiled to JavaScript (spago bundle), run on Node.js; core libraries only, hand-written JSON parser and strict UTF-8 decoder, tiny node:fs FFI",
+        "language": "PureScript",
+        "repo": "https://github.com/json2dir-guru/json2dir-purescript",
+        "source": "projects/json2dir-purescript",
+        "build": "cd {src} && export PATH={runtimes}/purescript-0.15.16/purescript:{runtimes}/node-v24.21.0/bin:$PATH npm_config_cache={runtimes}/purescript-0.15.16/npm-cache XDG_CACHE_HOME={runtimes}/purescript-0.15.16/cache && { [ -d node_modules ] || npm ci --no-audit --no-fund; } && npx spago bundle",
+        "command": "{runtimes}/node-v24.21.0/bin/node {src}/out/json2dir.js",
+        "timeout": 20
+      }
+    },
+    {
+      "name": "json2dir-pwsh",
+      "group": "group2",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Shell"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Pure PowerShell 7 with a hand-written JSON parser, one file",
+      "repo": "https://github.com/json2dir-guru/json2dir-pwsh",
+      "language": "PowerShell",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-pwsh",
+        "description": "Pure PowerShell 7 with a hand-written JSON parser, one file",
+        "language": "PowerShell",
+        "repo": "https://github.com/json2dir-guru/json2dir-pwsh",
+        "source": "projects/json2dir-pwsh",
+        "command": "{runtimes}/pwsh-7.6.6/pwsh -NoProfile -NonInteractive -File {src}/json2dir.ps1",
+        "timeout": 30
+      }
+    },
+    {
+      "name": "json2dir-python",
+      "group": "group3",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Scripting"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Python 3 standard library only, one file",
+      "repo": "https://github.com/json2dir-guru/json2dir-python",
+      "language": "Python",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-python",
+        "description": "Python 3 standard library only, one file",
+        "language": "Python",
+        "repo": "https://github.com/json2dir-guru/json2dir-python",
+        "source": "projects/json2dir-python",
+        "command": "{runtimes}/python-3.13.16/bin/python3 -I {src}/json2dir.py"
+      }
+    },
+    {
+      "name": "json2dir-racket",
+      "group": "group5",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Functional",
+        "Lisp family"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Racket (racket/base only), hand-written JSON parser over bytes, compiled .zo",
+      "repo": "https://github.com/json2dir-guru/json2dir-racket",
+      "language": "Racket",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-racket",
+        "description": "Racket (racket/base only), hand-written JSON parser over bytes, compiled .zo",
+        "language": "Racket",
+        "repo": "https://github.com/json2dir-guru/json2dir-racket",
+        "source": "projects/json2dir-racket",
+        "build": "cd {src} && {runtimes}/racket-9.3/bin/racket -l racket/base -l compiler/cm -e '(managed-compile-zo \"json2dir.rkt\")'",
+        "command": "{runtimes}/racket-9.3/bin/racket {src}/json2dir.rkt"
+      }
+    },
+    {
+      "name": "json2dir-raku",
+      "group": "group6",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Scripting"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Raku (Rakudo on MoarVM), core only: JSON grammar, IO::Path",
+      "repo": "https://github.com/json2dir-guru/json2dir-raku",
+      "language": "Raku",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-raku",
+        "description": "Raku (Rakudo on MoarVM), core only: JSON grammar, IO::Path",
+        "language": "Raku",
+        "repo": "https://github.com/json2dir-guru/json2dir-raku",
+        "source": "projects/json2dir-raku",
+        "command": "{runtimes}/rakudo-2026.09-01/bin/rakudo {src}/json2dir.raku"
+      }
+    },
+    {
+      "name": "json2dir-rexx",
+      "group": "group7",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Scripting"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Open Object Rexx 5, classic REXX style with RexxUtil and rxunixsys, one file",
+      "repo": "https://github.com/json2dir-guru/json2dir-rexx",
+      "language": "REXX",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-rexx",
+        "description": "Open Object Rexx 5, classic REXX style with RexxUtil and rxunixsys, one file",
+        "language": "REXX",
+        "repo": "https://github.com/json2dir-guru/json2dir-rexx",
+        "source": "projects/json2dir-rexx",
+        "command": "{runtimes}/oorexx-5.2.0/rexx {src}/json2dir.rex"
+      }
+    },
+    {
+      "name": "json2dir-rocq",
+      "group": "group0",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Functional",
+        "Proof / dependent types"
+      ],
+      "verification": "Machine-checked proofs",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Rocq 8.15 (Coq): UTF-8, JSON parser and validation proved in Rocq, extracted to OCaml; OCaml driver does I/O only",
+      "repo": "https://github.com/json2dir-guru/json2dir-rocq",
+      "language": "Rocq (extracted to OCaml)",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-rocq",
+        "description": "Rocq 8.15 (Coq): UTF-8, JSON parser and validation proved in Rocq, extracted to OCaml; OCaml driver does I/O only",
+        "language": "Rocq (extracted to OCaml)",
+        "repo": "https://github.com/json2dir-guru/json2dir-rocq",
+        "source": "projects/json2dir-rocq",
+        "build": "mkdir -p {src}/out && cd {src}/src && {runtimes}/coq-8.15.0/coqc -Q . J2D Json2dir.v && {runtimes}/coq-8.15.0/coqc -Q . J2D Extract.v && cd ../out && cp ../src/main.ml . && {runtimes}/ocaml-4.13.1/ocamlopt -w -a unix.cmxa json2dir_core.mli json2dir_core.ml main.ml -o json2dir",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-ruby",
+      "group": "group1",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Scripting"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Plain Ruby, stdlib only, one file",
+      "repo": "https://github.com/json2dir-guru/json2dir-ruby",
+      "language": "Ruby",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-ruby",
+        "description": "Plain Ruby, stdlib only, one file",
+        "language": "Ruby",
+        "repo": "https://github.com/json2dir-guru/json2dir-ruby",
+        "source": "projects/json2dir-ruby",
+        "command": "{runtimes}/ruby-3.0.2/ruby {src}/json2dir.rb"
+      }
+    },
+    {
+      "name": "json2dir-scala",
+      "group": "group2",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "JVM",
+        "Functional"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Scala 3 (JVM), one source file, stdlib + JDK only with a hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-scala",
+      "language": "Scala",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-scala",
+        "description": "Scala 3 (JVM), one source file, stdlib + JDK only with a hand-written JSON parser",
+        "language": "Scala",
+        "repo": "https://github.com/json2dir-guru/json2dir-scala",
+        "source": "projects/json2dir-scala",
+        "build": "JAVA_HOME={runtimes}/jdk-21.0.12.1 {runtimes}/scala3-3.9.0/bin/scalac -d {src}/out {src}/json2dir.scala",
+        "command": "LC_ALL=C.UTF-8 {runtimes}/jdk-21.0.12.1/bin/java -XX:TieredStopAtLevel=1 -XX:+UseSerialGC -cp {src}/out:{runtimes}/scala3-3.9.0/maven2/org/scala-lang/scala-library/3.9.0/scala-library-3.9.0.jar:{runtimes}/scala3-3.9.0/maven2/org/scala-lang/scala3-library_3/3.9.0/scala3-library_3-3.9.0.jar json2dir",
+        "timeout": 20
+      }
+    },
+    {
+      "name": "json2dir-smalltalk",
+      "group": "group6",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Scripting"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "GNU Smalltalk (gst 3.2.5), core classes only, one file",
+      "repo": "https://github.com/json2dir-guru/json2dir-smalltalk",
+      "language": "Smalltalk",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-smalltalk",
+        "description": "GNU Smalltalk (gst 3.2.5), core classes only, one file",
+        "language": "Smalltalk",
+        "repo": "https://github.com/json2dir-guru/json2dir-smalltalk",
+        "source": "projects/json2dir-smalltalk",
+        "command": "{runtimes}/gst-3.2.5/gst -q -f {src}/json2dir.st"
+      }
+    },
+    {
+      "name": "json2dir-sml",
+      "group": "group7",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Functional"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Standard ML (Basis Library + Posix only), hand-written strict JSON parser, MLton native build",
+      "repo": "https://github.com/json2dir-guru/json2dir-sml",
+      "language": "Standard ML",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-sml",
+        "description": "Standard ML (Basis Library + Posix only), hand-written strict JSON parser, MLton native build",
+        "language": "Standard ML",
+        "repo": "https://github.com/json2dir-guru/json2dir-sml",
+        "source": "projects/json2dir-sml",
+        "build": "mkdir -p {src}/out && {runtimes}/mlton-20241230/mlton -output {src}/out/json2dir {src}/json2dir.sml",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-snobol4",
+      "group": "group8",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Historic"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "SNOBOL4 evaluator (CSNOBOL4 2.3.4, recursive patterns) emitting a shell script, plus a POSIX sh launcher",
+      "repo": "https://github.com/json2dir-guru/json2dir-snobol4",
+      "language": "SNOBOL4",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-snobol4",
+        "description": "SNOBOL4 evaluator (CSNOBOL4 2.3.4, recursive patterns) emitting a shell script, plus a POSIX sh launcher",
+        "language": "SNOBOL4",
+        "repo": "https://github.com/json2dir-guru/json2dir-snobol4",
+        "source": "projects/json2dir-snobol4",
+        "command": "JSON2DIR_SNOBOL4={runtimes}/snobol4-2.3.4/bin/snobol4 {src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-subleq",
+      "group": "group0",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Esoteric"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "json2dir in Subleq (launcher approach): raw Subleq generated by a Python compiler from a small C-like language, run by sqrun (Higher Subleq toolkit), emitting a shell script, plus a POSIX sh launcher",
+      "repo": "https://github.com/json2dir-guru/json2dir-subleq",
+      "language": "Subleq",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-subleq",
+        "description": "json2dir in Subleq (launcher approach): raw Subleq generated by a Python compiler from a small C-like language, run by sqrun (Higher Subleq toolkit), emitting a shell script, plus a POSIX sh launcher",
+        "language": "Subleq",
+        "repo": "https://github.com/json2dir-guru/json2dir-subleq",
+        "source": "projects/json2dir-subleq",
+        "command": "JSON2DIR_SQRUN={runtimes}/sqrun-hsq-01e3d43/bin/sqrun {src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-swift",
+      "group": "group1",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Swift, one file, standard library + Glibc only (no Foundation), hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-swift",
+      "language": "Swift",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-swift",
+        "description": "Swift, one file, standard library + Glibc only (no Foundation), hand-written JSON parser",
+        "language": "Swift",
+        "repo": "https://github.com/json2dir-guru/json2dir-swift",
+        "source": "projects/json2dir-swift",
+        "build": "{runtimes}/swift-6.4.0/usr/bin/swiftc -O -static-stdlib {src}/json2dir.swift -o {src}/out/json2dir",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-systemverilog",
+      "group": "group2",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Hardware description"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "SystemVerilog testbench (Icarus Verilog 11, -g2012) emitting a shell script, plus a POSIX sh launcher",
+      "repo": "https://github.com/json2dir-guru/json2dir-systemverilog",
+      "language": "SystemVerilog",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-systemverilog",
+        "description": "SystemVerilog testbench (Icarus Verilog 11, -g2012) emitting a shell script, plus a POSIX sh launcher",
+        "language": "SystemVerilog",
+        "repo": "https://github.com/json2dir-guru/json2dir-systemverilog",
+        "source": "projects/json2dir-systemverilog",
+        "build": "mkdir -p {src}/out && {runtimes}/iverilog-11.0/iverilog -g2012 -o {src}/out/json2dir.vvp {src}/json2dir.sv",
+        "command": "JSON2DIR_VVP={runtimes}/iverilog-11.0/vvp {src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-thue",
+      "group": "group5",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Esoteric"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "Thue program (deterministic semi-Thue system generated from a state-machine description by a Python compiler, run by fixedpoint/thue) emitting a shell script, plus a POSIX sh launcher",
+      "repo": "https://github.com/json2dir-guru/json2dir-thue",
+      "language": "Thue",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-thue",
+        "description": "Thue program (deterministic semi-Thue system generated from a state-machine description by a Python compiler, run by fixedpoint/thue) emitting a shell script, plus a POSIX sh launcher",
+        "language": "Thue",
+        "repo": "https://github.com/json2dir-guru/json2dir-thue",
+        "source": "projects/json2dir-thue",
+        "command": "JSON2DIR_THUE={runtimes}/thue-0.0.1/thue {src}/json2dir",
+        "timeout": 120
+      }
+    },
+    {
+      "name": "json2dir-tla",
+      "group": "group21",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Formal specification"
+      ],
+      "verification": "Model checking (bounded)",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "TLA+ (standard modules only) evaluated by TLC, emitting a shell script via a POSIX sh launcher; name safety, plan well-formedness, UTF-8 and parser invariants model-checked with TLC",
+      "repo": "https://github.com/json2dir-guru/json2dir-tla",
+      "language": "TLA+",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-tla",
+        "description": "TLA+ (standard modules only) evaluated by TLC, emitting a shell script via a POSIX sh launcher; name safety, plan well-formedness, UTF-8 and parser invariants model-checked with TLC",
+        "language": "TLA+",
+        "repo": "https://github.com/json2dir-guru/json2dir-tla",
+        "source": "projects/json2dir-tla",
+        "command": "JSON2DIR_JAVA={runtimes}/jdk-21.0.12.1/bin/java JSON2DIR_TLA2TOOLS={runtimes}/tla2tools-1.8.0/tla2tools.jar {src}/json2dir",
+        "timeout": 60
+      }
+    },
+    {
+      "name": "json2dir-ts",
+      "group": "group6",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Scripting"
+      ],
+      "verification": "Contracts / checked types",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "TypeScript on Node.js, validated into a typed tree first",
+      "repo": "https://github.com/json2dir-guru/json2dir-ts",
+      "language": "TypeScript",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-ts",
+        "description": "TypeScript on Node.js, validated into a typed tree first",
+        "language": "TypeScript",
+        "repo": "https://github.com/json2dir-guru/json2dir-ts",
+        "source": "projects/json2dir-ts",
+        "build": "export PATH={runtimes}/node-v24.21.0/bin:$PATH\nnpm ci --no-fund --no-audit && npm run build",
+        "command": "{runtimes}/node-v24.21.0/bin/node {src}/dist/main.js"
+      }
+    },
+    {
+      "name": "json2dir-unicon",
+      "group": "group7",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Historic"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Unicon (Icon), one file; JSON parser written with string scanning",
+      "repo": "https://github.com/json2dir-guru/json2dir-unicon",
+      "language": "Unicon (Icon)",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-unicon",
+        "description": "Unicon (Icon), one file; JSON parser written with string scanning",
+        "language": "Unicon (Icon)",
+        "repo": "https://github.com/json2dir-guru/json2dir-unicon",
+        "source": "projects/json2dir-unicon",
+        "build": "mkdir -p {src}/out && PATH={runtimes}/unicon-13.2/bin:$PATH unicon -s -o {src}/out/json2dir {src}/json2dir.icn",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-v",
+      "group": "group9",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "V, one source file, os module plus libc via C interop, hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-v",
+      "language": "V",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-v",
+        "description": "V, one source file, os module plus libc via C interop, hand-written JSON parser",
+        "language": "V",
+        "repo": "https://github.com/json2dir-guru/json2dir-v",
+        "source": "projects/json2dir-v",
+        "build": "VMODULES={runtimes}/v-0.5.2/.vmodules VCACHE={runtimes}/v-0.5.2/.vcache {runtimes}/v-0.5.2/v -prod -o {src}/out/json2dir {src}/json2dir.v",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-vala",
+      "group": "group0",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Systems / compiled"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Vala with GLib and posix.vapi only, one file, hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-vala",
+      "language": "Vala",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-vala",
+        "description": "Vala with GLib and posix.vapi only, one file, hand-written JSON parser",
+        "language": "Vala",
+        "repo": "https://github.com/json2dir-guru/json2dir-vala",
+        "source": "projects/json2dir-vala",
+        "build": "mkdir -p {src}/out && {runtimes}/vala-0.56.0/valac --pkg posix -X -w -o {src}/out/json2dir {src}/json2dir.vala",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-vbnet",
+      "group": "group1",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        ".NET"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Visual Basic .NET compiled with .NET 8 Native AOT, hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-vbnet",
+      "language": "VB.NET",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-vbnet",
+        "description": "Visual Basic .NET compiled with .NET 8 Native AOT, hand-written JSON parser",
+        "language": "VB.NET",
+        "repo": "https://github.com/json2dir-guru/json2dir-vbnet",
+        "source": "projects/json2dir-vbnet",
+        "build": "export DOTNET_ROOT={runtimes}/dotnet-8.0.425 NUGET_PACKAGES={runtimes}/dotnet-8.0.425/nuget-packages DOTNET_CLI_HOME={runtimes}/dotnet-8.0.425/home DOTNET_CLI_TELEMETRY_OPTOUT=1 DOTNET_NOLOGO=1 DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1\n# Native AOT links with the system clang and zlib.\n{runtimes}/dotnet-8.0.425/dotnet publish -c Release -r linux-x64 --nologo -v quiet -o {src}/out {src}/json2dir.vbproj",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-velato",
+      "group": "group12",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Esoteric"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "Velato evaluator (a MIDI file generated by a Python compiler, compiled by the reference Velato 2.1 compiler on .NET 8) emitting a shell script, plus a POSIX sh launcher",
+      "repo": "https://github.com/json2dir-guru/json2dir-velato",
+      "language": "Velato",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-velato",
+        "description": "Velato evaluator (a MIDI file generated by a Python compiler, compiled by the reference Velato 2.1 compiler on .NET 8) emitting a shell script, plus a POSIX sh launcher",
+        "language": "Velato",
+        "repo": "https://github.com/json2dir-guru/json2dir-velato",
+        "source": "projects/json2dir-velato",
+        "build": "DOTNET_ROOT={runtimes}/dotnet-8.0.425 VELATO={runtimes}/velato-2.1-8fa208b/bin/Velato.dll sh {src}/build.sh",
+        "command": "DOTNET_ROOT={runtimes}/dotnet-8.0.425 JSON2DIR_DOTNET={runtimes}/dotnet-8.0.425/dotnet {src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-vhdl",
+      "group": "group4",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Hardware description"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "VHDL-2008 testbench (GHDL 1.0, mcode) emitting a shell script, plus a POSIX sh launcher",
+      "repo": "https://github.com/json2dir-guru/json2dir-vhdl",
+      "language": "VHDL",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-vhdl",
+        "description": "VHDL-2008 testbench (GHDL 1.0, mcode) emitting a shell script, plus a POSIX sh launcher",
+        "language": "VHDL",
+        "repo": "https://github.com/json2dir-guru/json2dir-vhdl",
+        "source": "projects/json2dir-vhdl",
+        "build": "mkdir -p {src}/out && {runtimes}/ghdl-1.0.0/ghdl -a --std=08 --workdir={src}/out {src}/json2dir.vhd && {runtimes}/ghdl-1.0.0/ghdl -e --std=08 --workdir={src}/out json2dir",
+        "command": "JSON2DIR_GHDL={runtimes}/ghdl-1.0.0/ghdl {src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-wasm",
+      "group": "group6",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Assembly / IR"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Hand-written WebAssembly text (WASI preview1) run by Bun, with a hand-written JSON parser",
+      "repo": "https://github.com/json2dir-guru/json2dir-wasm",
+      "language": "hand-written WebAssembly (WASI, Bun)",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-wasm",
+        "description": "Hand-written WebAssembly text (WASI preview1) run by Bun, with a hand-written JSON parser",
+        "language": "hand-written WebAssembly (WASI, Bun)",
+        "repo": "https://github.com/json2dir-guru/json2dir-wasm",
+        "source": "projects/json2dir-wasm",
+        "build": "mkdir -p {src}/out && {runtimes}/wabt-1.0.42/bin/wat2wasm -o {src}/out/json2dir.wasm {src}/json2dir.wat",
+        "command": "{runtimes}/bun-1.4.2/bun {src}/run.js"
+      }
+    },
+    {
+      "name": "json2dir-whitespace",
+      "group": "group7",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Esoteric"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Launcher (emits shell)",
+      "description": "json2dir in Whitespace (launcher approach): evaluator generated from a Forth-like source via a Whitespace assembler, run by whitespacers (wsc), emitting a shell script, plus a POSIX sh launcher",
+      "repo": "https://github.com/json2dir-guru/json2dir-whitespace",
+      "language": "Whitespace",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-whitespace",
+        "description": "json2dir in Whitespace (launcher approach): evaluator generated from a Forth-like source via a Whitespace assembler, run by whitespacers (wsc), emitting a shell script, plus a POSIX sh launcher",
+        "language": "Whitespace",
+        "repo": "https://github.com/json2dir-guru/json2dir-whitespace",
+        "source": "projects/json2dir-whitespace",
+        "command": "JSON2DIR_WSC={runtimes}/whitespacers-1.3.0/bin/wsc {src}/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-why3",
+      "group": "group8",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Proof / dependent types"
+      ],
+      "verification": "Machine-checked proofs",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "json2dir in WhyML (Why3, extracted to OCaml)",
+      "repo": "https://github.com/json2dir-guru/json2dir-why3",
+      "language": "WhyML (Why3, extracted to OCaml)",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-why3",
+        "description": "json2dir in WhyML (Why3, extracted to OCaml)",
+        "language": "WhyML (Why3, extracted to OCaml)",
+        "repo": "https://github.com/json2dir-guru/json2dir-why3",
+        "source": "projects/json2dir-why3",
+        "build": "sh {src}/build.sh {runtimes}",
+        "command": "{src}/out/json2dir"
+      }
+    },
+    {
+      "name": "json2dir-zsh",
+      "group": "group1",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Shell"
+      ],
+      "verification": "None",
+      "origin": "json2dir-guru",
+      "approach": "Native",
+      "description": "Pure zsh (builtins plus zsh/system, zsh/files, zsh/stat modules), one file",
+      "repo": "https://github.com/json2dir-guru/json2dir-zsh",
+      "language": "zsh",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "json2dir-zsh",
+        "description": "Pure zsh (builtins plus zsh/system, zsh/files, zsh/stat modules), one file",
+        "language": "zsh",
+        "repo": "https://github.com/json2dir-guru/json2dir-zsh",
+        "source": "projects/json2dir-zsh",
+        "command": "{runtimes}/zsh-5.8.1/zsh {src}/json2dir.zsh"
+      }
+    },
+    {
+      "name": "nuon2dir",
+      "group": "group19",
+      "state": "done",
+      "passed": 367,
+      "failed": 0,
+      "skipped": 0,
+      "total": 367,
+      "kinds": [
+        "Shell"
+      ],
+      "verification": "None",
+      "origin": "Third-party",
+      "approach": "Native",
+      "description": "Nushell module that turns a native record into a directory tree; its strict-JSON stdin wrapper",
+      "repo": "https://github.com/monadix/nuon2dir",
+      "language": "Nushell",
+      "last": "upstream/overwrite/032-rerun-is-idempotent",
+      "failures": [],
+      "manifest": {
+        "name": "nuon2dir",
+        "description": "Nushell module that turns a native record into a directory tree; its strict-JSON stdin wrapper",
+        "language": "Nushell",
+        "repo": "https://github.com/monadix/nuon2dir",
+        "command": "PATH={runtimes}/nushell-0.115.1:$PATH {src}/bin/json2dir"
+      }
+    }
+  ]
+}

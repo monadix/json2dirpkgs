@@ -1,0 +1,37 @@
+--- a/libcfa/src/stdhdr/assert.h
++++ b/libcfa/src/stdhdr/assert.h
+@@ -20,2 +20,10 @@
+ #include_next <assert.h>
++
++// Cforall truth conversions are broader than C23's _Bool argument check.
++// Keep the traditional single-expression assert for Cforall source.
++#if defined(__cforall) && !defined(NDEBUG)
++#undef assert
++#define assert(expr) ((expr) ? (void)0 : \
++    __assert_fail(#expr, __FILE__, __LINE__, __ASSERT_FUNCTION))
++#endif
+ 
+--- a/libcfa/src/stdhdr/stdlib.h
++++ b/libcfa/src/stdhdr/stdlib.h
+@@ -19,2 +19,7 @@
+ 
++// C23 function-like macros interfere with Cforall's overloaded declarations.
++#ifdef __cforall
++#undef bsearch
++#endif
++
+ // Local Variables: //
+--- a/libcfa/src/stdhdr/string.h
++++ b/libcfa/src/stdhdr/string.h
+@@ -19,2 +19,11 @@
+ 
++// Use the libc functions rather than C23's _Generic selection macros.
++#ifdef __cforall
++#undef memchr
++#undef strchr
++#undef strrchr
++#undef strpbrk
++#undef strstr
++#endif
++
+ // Local Variables: //

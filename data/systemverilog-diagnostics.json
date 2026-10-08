@@ -1,0 +1,44 @@
+{
+  "created": "2026-10-08T12:39:47.344978+00:00",
+  "diagnosticOnly": true,
+  "method": "Focused tester cases with a larger diagnostic deadline; subprocess wall time includes tester startup and filesystem verification. Does not replace original full-suite results.",
+  "originalTimeoutSeconds": 10,
+  "diagnosticTimeoutSeconds": 60,
+  "cpuModel": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+  "logicalCpus": 8,
+  "kernel": "6.18.55",
+  "system": "x86_64-linux",
+  "nixpkgs": {
+    "lastModified": 1791260994,
+    "narHash": "sha256-Miqqk/ammqnTUxaoCyvtwoPeLbI1ksFyLxi/CazZpWY=",
+    "owner": "NixOS",
+    "repo": "nixpkgs",
+    "rev": "151fa4e8ddfdd8dd25d945ad94ed54a13de9f6e4",
+    "type": "github"
+  },
+  "packageOutputs": [
+    "/nix/store/5n15958bpb2iyk48gbrn5yfm9bm81v9x-json2dir-systemverilog-unstable"
+  ],
+  "packageSource": {
+    "owner": "json2dir-guru",
+    "repo": "json2dir-systemverilog",
+    "rev": "21f6589687d7bd4660551765c9a42b3a33196c9b",
+    "hash": "sha256-5az0AftfiO8e6IzhC69q7CvEe7+cINLT4evjqTK4a60="
+  },
+  "results": [
+    {
+      "case": "upstream/core/101-wide-object-1501-files",
+      "status": "pass",
+      "reason": "",
+      "wallSeconds": 13.69756145700012,
+      "exitCode": 0
+    },
+    {
+      "case": "upstream/core/178-many-reverse-order-keys",
+      "status": "pass",
+      "reason": "",
+      "wallSeconds": 16.58614742100326,
+      "exitCode": 0
+    }
+  ]
+}
