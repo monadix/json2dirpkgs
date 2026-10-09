@@ -9,6 +9,8 @@
       system = "x86_64-linux";
       pkgs = import nixpkgs {
         inherit system;
+        # Hexagony's selected upstream runtime targets .NET 7.
+        config.permittedInsecurePackages = [ "dotnet-sdk-7.0.410" ];
         # These toolchains are required by selected implementations. Their
         # individual licenses still determine whether outputs may be cached.
         config.allowUnfreePredicate =

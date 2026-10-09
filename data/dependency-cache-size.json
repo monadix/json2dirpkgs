@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "created": "2026-10-08T10:44:48.307882+00:00",
+  "created": "2026-10-09T08:10:31.069332+00:00",
   "system": "x86_64-linux",
   "nixpkgs": {
     "lastModified": 1791260994,
@@ -11,50 +11,89 @@
     "type": "github"
   },
   "packages": [
+    "acmeChef",
     "arnoldc",
     "bcpl-cintcode",
+    "braincopter",
+    "brainfunk",
     "cforall",
+    "cfunge",
     "checkedc",
+    "cowRuntime",
     "dotnet-ilasm",
     "emojicode",
+    "fishr",
+    "fractran",
+    "fstar-2026-09-27",
     "gleam-stdlib",
     "gm2",
     "gnu-libobjc",
     "gobo",
     "headless-jre",
     "headless-jre-desktop",
+    "hexagony",
     "holyc",
     "ironspring-pli",
     "ksh93",
     "latin1-locale",
     "lolcode-future",
+    "malbolgeUnshackled",
     "mojo-runtime-libs",
+    "nginxNjs",
     "ngnk",
+    "ookRuntime",
     "oorexx",
     "opencilk",
+    "pikalang",
     "portableFalse",
     "purescript-package-set",
+    "roc-nightly-2026-10-06",
+    "rockstar",
+    "rpaheui",
+    "splRuntime",
     "sqrun",
+    "taxiRuntime",
     "thue",
     "tlaplus18",
     "tritium",
+    "unlambda",
     "velato",
     "whitespacers",
     "why3-ocaml-driver"
   ],
   "complete": true,
   "method": "Actual NAR streams compressed with XZ preset 6; excludes cache.nixos.org hits. Cachix encoding may differ.",
-  "previousMeasurement": "2026-10-08T10:40:28.042441+00:00",
-  "additionalNarBytes": 1413987576,
-  "additionalXzNarBytes": 256192192,
-  "upstreamPaths": 51,
-  "additionalPaths": 39,
+  "previousMeasurement": "2026-10-09T04:49:08.552458+00:00",
+  "additionalNarBytes": 3342461024,
+  "additionalXzNarBytes": 618697508,
+  "upstreamPaths": 88,
+  "additionalPaths": 63,
   "unknownPaths": 0,
   "paths": {
-    "/nix/store/rmr8yfrp3f3lmlwi4fi3kkn01hcaish8-arnoldc-0.1": {
+    "/nix/store/2gfxiwls9hbgwdwcy43mprchwsq36mg6-coreutils-9.11": {
+      "status": "upstream-cache",
+      "narBytes": 1754128,
+      "upstreamCompressedBytes": 770781
+    },
+    "/nix/store/2iyj7ik9pj2gxnrm6kyfa575k1rxx3wz-perl5.42.3-Acme-Chef-1.03": {
       "status": "additional",
-      "narBytes": 12958696,
-      "xzNarBytes": 12165624
+      "narBytes": 59536,
+      "xzNarBytes": 14476
+    },
+    "/nix/store/8g4dmf7l8q1mf9w4wfmlcl8gvdgmhb8v-perl-5.42.3": {
+      "status": "upstream-cache",
+      "narBytes": 57856672,
+      "upstreamCompressedBytes": 13691996
+    },
+    "/nix/store/9074l1whzhvk68kj5va99ipj412rk5q2-acl-2.4.0": {
+      "status": "upstream-cache",
+      "narBytes": 137568,
+      "upstreamCompressedBytes": 37925
+    },
+    "/nix/store/chwiiz63ngbsgr2qi82c4g40vn756ky2-gmp-with-cxx-6.3.0": {
+      "status": "upstream-cache",
+      "narBytes": 787528,
+      "upstreamCompressedBytes": 352604
     },
     "/nix/store/g60m3aky9f59wgy1gi0y06xwmbw19d6m-xgcc-16.2.0-libgcc": {
       "status": "upstream-cache",
@@ -66,20 +105,65 @@
       "narBytes": 35578272,
       "upstreamCompressedBytes": 10427318
     },
+    "/nix/store/j7qx4s4mr17j1wqgvqdzj33lmrnzb387-gcc-16.2.0-lib": {
+      "status": "upstream-cache",
+      "narBytes": 10813624,
+      "upstreamCompressedBytes": 3318244
+    },
     "/nix/store/jp8ql2fnd61xhvb4vsfp0bqwrzf16qrp-libunistring-1.4.2": {
       "status": "upstream-cache",
       "narBytes": 2083096,
       "upstreamCompressedBytes": 794049
+    },
+    "/nix/store/p6cir20v12fjj5390b8xr9kdynm8bd9h-attr-2.6.0": {
+      "status": "upstream-cache",
+      "narBytes": 90936,
+      "upstreamCompressedBytes": 20650
     },
     "/nix/store/q0lbdx5yv93a3md74kjhm0v2kljjii89-libidn2-2.3.8": {
       "status": "upstream-cache",
       "narBytes": 372320,
       "upstreamCompressedBytes": 144340
     },
+    "/nix/store/q2mkz6ca1alqfqf750dygvakmq8kjrwz-gcc-16.2.0-libgcc": {
+      "status": "upstream-cache",
+      "narBytes": 202344,
+      "upstreamCompressedBytes": 95678
+    },
+    "/nix/store/wgw25d181h0qks7qsfp1bh7c5nd3f0s7-zlib-1.3.2": {
+      "status": "upstream-cache",
+      "narBytes": 136672,
+      "upstreamCompressedBytes": 74336
+    },
+    "/nix/store/wx1y0adli2qggk81pm4marx3km1scqxg-libxcrypt-4.5.2": {
+      "status": "upstream-cache",
+      "narBytes": 152544,
+      "upstreamCompressedBytes": 83894
+    },
+    "/nix/store/rmr8yfrp3f3lmlwi4fi3kkn01hcaish8-arnoldc-0.1": {
+      "status": "additional",
+      "narBytes": 12958696,
+      "xzNarBytes": 12165624
+    },
     "/nix/store/r5702xgffh7dhkmvg67l1aspgavvzwh0-bcpl-cintcode-2015-07-27": {
       "status": "additional",
       "narBytes": 2276536,
       "xzNarBytes": 388516
+    },
+    "/nix/store/602bfhn82cpd4rz7ih2sa90a3r80s0kb-braincopter-1.0": {
+      "status": "additional",
+      "narBytes": 123672,
+      "xzNarBytes": 46672
+    },
+    "/nix/store/35bw8hgrzw7rnx0s8fad1k23h96n83s4-brainfunk-unstable-2026-10-08": {
+      "status": "additional",
+      "narBytes": 215712,
+      "xzNarBytes": 63660
+    },
+    "/nix/store/qc7wwg64ggan8nzgrlal5dy16gyx6c1l-libpng-apng-1.6.58": {
+      "status": "upstream-cache",
+      "narBytes": 288080,
+      "upstreamCompressedBytes": 141724
     },
     "/nix/store/cx138xvrvb37g1r05zpcjcysmh5r9f88-cforall-1.0.0-unstable-e259f63": {
       "status": "additional",
@@ -91,20 +175,10 @@
       "narBytes": 7546056,
       "upstreamCompressedBytes": 1946550
     },
-    "/nix/store/j7qx4s4mr17j1wqgvqdzj33lmrnzb387-gcc-16.2.0-lib": {
-      "status": "upstream-cache",
-      "narBytes": 10813624,
-      "upstreamCompressedBytes": 3318244
-    },
     "/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev": {
       "status": "upstream-cache",
       "narBytes": 2489016,
       "upstreamCompressedBytes": 500091
-    },
-    "/nix/store/q2mkz6ca1alqfqf750dygvakmq8kjrwz-gcc-16.2.0-libgcc": {
-      "status": "upstream-cache",
-      "narBytes": 202344,
-      "upstreamCompressedBytes": 95678
     },
     "/nix/store/srvyqaf88njyqsrs1ajz3hznvdqq8hlw-glibc-2.44-25-bin": {
       "status": "upstream-cache",
@@ -116,25 +190,30 @@
       "narBytes": 1885600,
       "upstreamCompressedBytes": 669022
     },
-    "/nix/store/2gfxiwls9hbgwdwcy43mprchwsq36mg6-coreutils-9.11": {
-      "status": "upstream-cache",
-      "narBytes": 1754128,
-      "upstreamCompressedBytes": 770781
-    },
-    "/nix/store/30axrdkfr53iadyx4445b91x4qnmmc75-binutils-wrapper-2.46": {
-      "status": "upstream-cache",
-      "narBytes": 56672,
-      "upstreamCompressedBytes": 9429
+    "/nix/store/27ln04s074yrlyhb31fc2lk2h2di9kgk-cfunge-1.001-unstable-2026-10-08": {
+      "status": "additional",
+      "narBytes": 218496,
+      "xzNarBytes": 74516
     },
     "/nix/store/3668q0d9zhc5n9l2pnyvpd44kz9bjsjm-gnugrep-3.12": {
       "status": "upstream-cache",
       "narBytes": 954920,
       "upstreamCompressedBytes": 251463
     },
+    "/nix/store/45n6szipdgr92xk6a71d68yxy7nk5smb-libmd-1.2.0": {
+      "status": "upstream-cache",
+      "narBytes": 84840,
+      "upstreamCompressedBytes": 36713
+    },
     "/nix/store/5q6bdxkp7lc70gn9mnf4yiybrx8ry5xq-gcc-16.2.0": {
       "status": "upstream-cache",
       "narBytes": 293826720,
       "upstreamCompressedBytes": 95540572
+    },
+    "/nix/store/63r4x6k85swqqrz3gjvjj5lsc27vdh6v-libbsd-0.12.2": {
+      "status": "upstream-cache",
+      "narBytes": 107368,
+      "upstreamCompressedBytes": 47483
     },
     "/nix/store/7v8b5idfzwfl06hx6n0cvd5ikd5p0sbg-pcre2-10.48": {
       "status": "upstream-cache",
@@ -151,20 +230,50 @@
       "narBytes": 3088552,
       "upstreamCompressedBytes": 890781
     },
-    "/nix/store/9074l1whzhvk68kj5va99ipj412rk5q2-acl-2.4.0": {
-      "status": "upstream-cache",
-      "narBytes": 137568,
-      "upstreamCompressedBytes": 37925
-    },
     "/nix/store/afhh51h1qz7f7jqhs4qs3ggxjipvn0i3-isl-0.20": {
       "status": "upstream-cache",
       "narBytes": 2736608,
       "upstreamCompressedBytes": 1012480
     },
-    "/nix/store/chwiiz63ngbsgr2qi82c4g40vn756ky2-gmp-with-cxx-6.3.0": {
+    "/nix/store/fy8mxgdjvjvmagv2igmj428a9j17hpcf-binutils-wrapper-2.46": {
       "status": "upstream-cache",
-      "narBytes": 787528,
-      "upstreamCompressedBytes": 352604
+      "narBytes": 56672,
+      "upstreamCompressedBytes": 9424
+    },
+    "/nix/store/hzqwc6pv8sb9qrwivc4h42cr811gs1mk-ncurses-6.6": {
+      "status": "upstream-cache",
+      "narBytes": 3882816,
+      "upstreamCompressedBytes": 712731
+    },
+    "/nix/store/j1938gsbvbhkyz4kbmvjk56r479mkw3s-gcc-wrapper-16.2.0": {
+      "status": "upstream-cache",
+      "narBytes": 71680,
+      "upstreamCompressedBytes": 12812
+    },
+    "/nix/store/qa8pjnpxm0nkpci88dbig628hc7xxf67-mpfr-4.2.2": {
+      "status": "upstream-cache",
+      "narBytes": 830992,
+      "upstreamCompressedBytes": 397291
+    },
+    "/nix/store/qppfiapixbahy4nfvqky1dv5b2xgkdx5-expand-response-params": {
+      "status": "upstream-cache",
+      "narBytes": 16856,
+      "upstreamCompressedBytes": 3749
+    },
+    "/nix/store/s4mrmq9aciz9r5kb37jzfc7cvgk3lnxb-libmpc-1.4.1": {
+      "status": "upstream-cache",
+      "narBytes": 308776,
+      "upstreamCompressedBytes": 113687
+    },
+    "/nix/store/y5sgl0vvrpbcwgjwpjs60r1hg0gi7i0n-binutils-2.46": {
+      "status": "upstream-cache",
+      "narBytes": 34834384,
+      "upstreamCompressedBytes": 9348249
+    },
+    "/nix/store/30axrdkfr53iadyx4445b91x4qnmmc75-binutils-wrapper-2.46": {
+      "status": "upstream-cache",
+      "narBytes": 56672,
+      "upstreamCompressedBytes": 9429
     },
     "/nix/store/dg3jwmyiq3k0lskzwqygf9m6wcrk8dpm-checkedc-unwrapped-12.0.2": {
       "status": "additional",
@@ -176,35 +285,15 @@
       "narBytes": 16976,
       "upstreamCompressedBytes": 3834
     },
-    "/nix/store/p6cir20v12fjj5390b8xr9kdynm8bd9h-attr-2.6.0": {
-      "status": "upstream-cache",
-      "narBytes": 90936,
-      "upstreamCompressedBytes": 20650
-    },
-    "/nix/store/qa8pjnpxm0nkpci88dbig628hc7xxf67-mpfr-4.2.2": {
-      "status": "upstream-cache",
-      "narBytes": 830992,
-      "upstreamCompressedBytes": 397291
-    },
-    "/nix/store/s4mrmq9aciz9r5kb37jzfc7cvgk3lnxb-libmpc-1.4.1": {
-      "status": "upstream-cache",
-      "narBytes": 308776,
-      "upstreamCompressedBytes": 113687
-    },
-    "/nix/store/wgw25d181h0qks7qsfp1bh7c5nd3f0s7-zlib-1.3.2": {
-      "status": "upstream-cache",
-      "narBytes": 136672,
-      "upstreamCompressedBytes": 74336
-    },
     "/nix/store/x3fax5mx3qm0l2kk578939l4z600f3v3-checkedc-unwrapped-wrapper-12.0.2": {
       "status": "additional",
       "narBytes": 63120,
       "xzNarBytes": 11712
     },
-    "/nix/store/y5sgl0vvrpbcwgjwpjs60r1hg0gi7i0n-binutils-2.46": {
-      "status": "upstream-cache",
-      "narBytes": 34834384,
-      "upstreamCompressedBytes": 9348249
+    "/nix/store/9gwg5alvll879y5a3vrnjgmfi9nqbjm2-cow-runtime-e9503d0": {
+      "status": "additional",
+      "narBytes": 21656,
+      "xzNarBytes": 5308
     },
     "/nix/store/cxd8d2vg70c3pa31v2473hphaa1v0j44-openssl-3.5.8": {
       "status": "upstream-cache",
@@ -231,20 +320,35 @@
       "narBytes": 3816160,
       "upstreamCompressedBytes": 687217
     },
-    "/nix/store/fy8mxgdjvjvmagv2igmj428a9j17hpcf-binutils-wrapper-2.46": {
-      "status": "upstream-cache",
-      "narBytes": 56672,
-      "upstreamCompressedBytes": 9424
+    "/nix/store/ycp3hp9qxgmqjr623yqj2f10bg4q9avk-fishr-unstable-2026-10-08": {
+      "status": "additional",
+      "narBytes": 1302904,
+      "xzNarBytes": 400196
     },
-    "/nix/store/j1938gsbvbhkyz4kbmvjk56r479mkw3s-gcc-wrapper-16.2.0": {
+    "/nix/store/5i9x1yxqa9nk7jl7yflaavnlxvb09wrq-libuv-1.52.1": {
       "status": "upstream-cache",
-      "narBytes": 71680,
-      "upstreamCompressedBytes": 12812
+      "narBytes": 286744,
+      "upstreamCompressedBytes": 125572
     },
-    "/nix/store/qppfiapixbahy4nfvqky1dv5b2xgkdx5-expand-response-params": {
+    "/nix/store/dj3py5i5209s1hcdxnjxpcwlskzfw7bf-fractran-runtime-unstable-2026-10-08": {
+      "status": "additional",
+      "narBytes": 4071992,
+      "xzNarBytes": 704300
+    },
+    "/nix/store/z7j20jl3wdi418wbajrbximy6j472y2j-gmp-with-cxx-6.3.0": {
       "status": "upstream-cache",
-      "narBytes": 16856,
-      "upstreamCompressedBytes": 3749
+      "narBytes": 787528,
+      "upstreamCompressedBytes": 352605
+    },
+    "/nix/store/mqhyly5vys44dkkghigs8my9xrgdkbrg-fstar-2026.09.27": {
+      "status": "additional",
+      "narBytes": 726030128,
+      "xzNarBytes": 126993916
+    },
+    "/nix/store/ph4ib8mxy5yrw40k7a1l03bfd58hq6wj-zstd-1.5.7": {
+      "status": "upstream-cache",
+      "narBytes": 1209248,
+      "upstreamCompressedBytes": 478808
     },
     "/nix/store/5sl14k9i3hcmlim3nlq31dag67vhj937-gleam-stdlib-1.0.5": {
       "status": "additional",
@@ -341,6 +445,131 @@
       "narBytes": 2057784,
       "upstreamCompressedBytes": 402955
     },
+    "/nix/store/04zqbm1ivs6l9r29h7lhbjzb7f0glhz9-lndir-1.0.6": {
+      "status": "upstream-cache",
+      "narBytes": 24560,
+      "upstreamCompressedBytes": 8288
+    },
+    "/nix/store/3j24hw169x8lba6ixvyz6n8b4lp3341z-nuget-package-hook": {
+      "status": "upstream-cache",
+      "narBytes": 3672,
+      "upstreamCompressedBytes": 1383
+    },
+    "/nix/store/4rmflp8cdk8iv9581a6rz038lgl44wc7-dotnet-sdk-wrapped-7.0.410": {
+      "status": "additional",
+      "narBytes": 13216,
+      "xzNarBytes": 3468
+    },
+    "/nix/store/5ypvkry3qra47dylc9kfk36r1q9vha80-zip-3.0": {
+      "status": "upstream-cache",
+      "narBytes": 609544,
+      "upstreamCompressedBytes": 197665
+    },
+    "/nix/store/7zxg9yn01rbwh1c7qh173rp3pnc3f5cf-xmlstarlet-1.7.0": {
+      "status": "upstream-cache",
+      "narBytes": 113488,
+      "upstreamCompressedBytes": 46767
+    },
+    "/nix/store/80z9njiswl9xm6qk93zsjr5bj8v0z2lm-krb5-1.22.2-lib": {
+      "status": "upstream-cache",
+      "narBytes": 2937440,
+      "upstreamCompressedBytes": 1156678
+    },
+    "/nix/store/admwq91a8y32wmfw5hkilkmlwhnsr8yp-numactl-2.0.18": {
+      "status": "upstream-cache",
+      "narBytes": 276432,
+      "upstreamCompressedBytes": 85962
+    },
+    "/nix/store/ck1aiwyfp2kk9v7ga53df9bq751q4gvn-perl5.42.3-Archive-Cpio-0.10": {
+      "status": "upstream-cache",
+      "narBytes": 22872,
+      "upstreamCompressedBytes": 5944
+    },
+    "/nix/store/g0fbnccaan8q0rxlw43xnbyb90i94vlc-file-5.48": {
+      "status": "upstream-cache",
+      "narBytes": 11048664,
+      "upstreamCompressedBytes": 527319
+    },
+    "/nix/store/gqd8w84mhr0h24fnc2p4m3hkicsnxsfm-keyutils-1.6.3-lib": {
+      "status": "upstream-cache",
+      "narBytes": 43280,
+      "upstreamCompressedBytes": 10568
+    },
+    "/nix/store/h2jrsr48ss7i2lq9bscyqjmj2y8pmk4a-unzip-6.0": {
+      "status": "upstream-cache",
+      "narBytes": 551136,
+      "upstreamCompressedBytes": 158918
+    },
+    "/nix/store/h2zkd99w4xcl88n3g11s5l23ddcqj89j-perl5.42.3-SUPER-1.20190531": {
+      "status": "upstream-cache",
+      "narBytes": 9552,
+      "upstreamCompressedBytes": 3538
+    },
+    "/nix/store/hbvqbsifcjh10bb599ljsgspg8s68339-perl5.42.3-strip-nondeterminism-1.14.1": {
+      "status": "upstream-cache",
+      "narBytes": 92824,
+      "upstreamCompressedBytes": 33398
+    },
+    "/nix/store/ld47a6xxav3z26d9g6yhfwil9r0b3jm3-hexagony-runtime-1.0.0-unstable.20261008": {
+      "status": "additional",
+      "narBytes": 1030496,
+      "xzNarBytes": 282728
+    },
+    "/nix/store/mg2ccz9gn345lmllqb9sk3j03s2n9k3p-perl5.42.3-Sub-Override-0.09": {
+      "status": "upstream-cache",
+      "narBytes": 11416,
+      "upstreamCompressedBytes": 3661
+    },
+    "/nix/store/mpqgjnlmzy3c5hslbgyc3s7zfz3m32lg-bzip2-1.0.8": {
+      "status": "upstream-cache",
+      "narBytes": 88992,
+      "upstreamCompressedBytes": 39064
+    },
+    "/nix/store/mwdvzxrmkic1wi18j0hmfifrkr37j5cw-dotnet-sdk-7.0.410": {
+      "status": "additional",
+      "narBytes": 587131160,
+      "xzNarBytes": 145757860
+    },
+    "/nix/store/pksaqd3mzjiyw7axprdasn1j01k9p053-perl5.42.3-Archive-Zip-1.68": {
+      "status": "upstream-cache",
+      "narBytes": 224632,
+      "upstreamCompressedBytes": 58183
+    },
+    "/nix/store/r6mrygmvszcs1l1a84x5g1g2x23h1l4a-libxslt-1.1.45": {
+      "status": "upstream-cache",
+      "narBytes": 405760,
+      "upstreamCompressedBytes": 177383
+    },
+    "/nix/store/rhpdnx1n0m5yia87vl4bifm98r47ckvd-extra.targets": {
+      "status": "upstream-cache",
+      "narBytes": 384,
+      "upstreamCompressedBytes": 288
+    },
+    "/nix/store/rpfagzbgjbi1cpn4kkq5m48hqg2plgwl-perl5.42.3-Sub-Identify-0.14": {
+      "status": "upstream-cache",
+      "narBytes": 23904,
+      "upstreamCompressedBytes": 6516
+    },
+    "/nix/store/vfj3fn7rp56w7f3xy6vz5s41nziv4jgm-libxml2-2.15.4": {
+      "status": "upstream-cache",
+      "narBytes": 1526744,
+      "upstreamCompressedBytes": 701888
+    },
+    "/nix/store/wrsjd3mp8kp4idbwk9wx9588291k9fcg-liburcu-0.15.7": {
+      "status": "upstream-cache",
+      "narBytes": 377152,
+      "upstreamCompressedBytes": 77107
+    },
+    "/nix/store/wsfj5xl6x6klkjj8z6mc3xklc5lbcx4l-perl5.42.3-Test-MockModule-0.177.0": {
+      "status": "upstream-cache",
+      "narBytes": 18976,
+      "upstreamCompressedBytes": 6242
+    },
+    "/nix/store/yrbbb58yixplil78xq672hwpisb26mv9-lttng-ust-2.12.2": {
+      "status": "upstream-cache",
+      "narBytes": 1260144,
+      "upstreamCompressedBytes": 310628
+    },
     "/nix/store/4wwwsy6yg6pvjjsf86ixh6xza4vd0q91-holyc-0.0.15-unstable-2026-09-06": {
       "status": "additional",
       "narBytes": 1177072,
@@ -361,11 +590,6 @@
       "narBytes": 41728,
       "xzNarBytes": 2700
     },
-    "/nix/store/hzqwc6pv8sb9qrwivc4h42cr811gs1mk-ncurses-6.6": {
-      "status": "upstream-cache",
-      "narBytes": 3882816,
-      "upstreamCompressedBytes": 712731
-    },
     "/nix/store/lqchsp7j7ak02wfmdi8f2j014vmj4bbx-lolcode-future-0.11.2-unstable-2026-09-11": {
       "status": "additional",
       "narBytes": 1685040,
@@ -376,10 +600,35 @@
       "narBytes": 518744,
       "upstreamCompressedBytes": 206645
     },
+    "/nix/store/rcrm24k48q0kqsskq6nsn4b9v4drziig-malbolge-unshackled-20": {
+      "status": "additional",
+      "narBytes": 21408,
+      "xzNarBytes": 6624
+    },
     "/nix/store/c0fvjkz5465x25cvhg2whxwwsrci8v7a-mojo-runtime-libs-1.0.0": {
       "status": "additional",
       "narBytes": 3311216,
       "xzNarBytes": 693756
+    },
+    "/nix/store/0hbwphk0sv6jj25s978qyg7k2jkxc36v-nginx-njs-root-1.31.6": {
+      "status": "additional",
+      "narBytes": 1480,
+      "xzNarBytes": 292
+    },
+    "/nix/store/2jwdacg8g77lpk9lm41x43hgyv0zbra6-nginx-1.31.6": {
+      "status": "additional",
+      "narBytes": 4625192,
+      "xzNarBytes": 1041356
+    },
+    "/nix/store/8gjx3y4pyfqypqlq136v4gknmr2w51qj-zlib-ng-2.3.3": {
+      "status": "upstream-cache",
+      "narBytes": 201240,
+      "upstreamCompressedBytes": 102450
+    },
+    "/nix/store/8rfsypg1qj64n6yagj71cbrwxjcig28h-openssl-4.0.3": {
+      "status": "upstream-cache",
+      "narBytes": 9354128,
+      "upstreamCompressedBytes": 3462822
     },
     "/nix/store/3v5mm9ks6lwm1wyy1bwf8yz5cqlfzgfl-musl-1.2.6": {
       "status": "upstream-cache",
@@ -390,6 +639,11 @@
       "status": "additional",
       "narBytes": 293808,
       "xzNarBytes": 114516
+    },
+    "/nix/store/a2hv0dsl11ilcazgr5yfxsfclwpmychj-ook-runtime-525d346": {
+      "status": "additional",
+      "narBytes": 66352,
+      "xzNarBytes": 21616
     },
     "/nix/store/zg0y2nrklixfaxcml2pr5h1fn0khshzg-oorexx-5.3.0": {
       "status": "additional",
@@ -406,6 +660,11 @@
       "narBytes": 63056,
       "xzNarBytes": 11704
     },
+    "/nix/store/0jhm9nmvak014kwwh6adrkv6h5yvndim-pikalang-unstable-2026-10-08": {
+      "status": "additional",
+      "narBytes": 21848,
+      "xzNarBytes": 5496
+    },
     "/nix/store/31xhk5z0pz4p8s3qjq9ga4nxh8m2kfqb-portable-false-1.2b": {
       "status": "additional",
       "narBytes": 23352,
@@ -416,10 +675,55 @@
       "narBytes": 990576,
       "xzNarBytes": 136184
     },
+    "/nix/store/37gm8zixkxpdmk96n4pll38sblarnga7-roc-nightly-2026-10-06-c34079d": {
+      "status": "additional",
+      "narBytes": 302717544,
+      "xzNarBytes": 56012588
+    },
+    "/nix/store/abbkzygy9aix7b6m9vqlm1xw766mlrf1-dotnet-sdk-9.0.318": {
+      "status": "upstream-cache",
+      "narBytes": 593412376,
+      "upstreamCompressedBytes": 196949315
+    },
+    "/nix/store/dpy1vv0mg7ci49fqiwwm1i43mcix5pjc-rockstar-runtime-1.0.0-unstable.20261008": {
+      "status": "additional",
+      "narBytes": 794792,
+      "xzNarBytes": 391968
+    },
+    "/nix/store/g6lfw3lizv0ayzy7yhq5g0rk9swxysii-dotnet-sdk-wrapped-9.0.318": {
+      "status": "upstream-cache",
+      "narBytes": 13216,
+      "upstreamCompressedBytes": 3896
+    },
+    "/nix/store/9m8ha6bjqxdyn6rlhdz5kyrnxi926m2l-rpaheui-1.2.5-pypy-7.3.19": {
+      "status": "additional",
+      "narBytes": 7400784,
+      "xzNarBytes": 1528804
+    },
+    "/nix/store/7f7ymii5zcx1jv670cdlvbxj8h3wx0ay-gnum4-1.4.21": {
+      "status": "upstream-cache",
+      "narBytes": 1114520,
+      "upstreamCompressedBytes": 341748
+    },
+    "/nix/store/mlx1krf7f39qgbnvyl4yqpasf5bd4dni-flex-2.6.4": {
+      "status": "upstream-cache",
+      "narBytes": 1305248,
+      "upstreamCompressedBytes": 359037
+    },
+    "/nix/store/rg033q5h8r6vgcn0yrfc2rz9p3psm5yc-spl-runtime-1.2.1": {
+      "status": "additional",
+      "narBytes": 124816,
+      "xzNarBytes": 35516
+    },
     "/nix/store/67wv9s2dqw1ld2x641fn57mnfsj0prxb-sqrun-hsq-unstable-45a539e7": {
       "status": "additional",
       "narBytes": 517008,
       "xzNarBytes": 164008
+    },
+    "/nix/store/0kf7aqfnwdvc7jraz2ah091h7wcnia8m-taxi-runtime-1.7": {
+      "status": "additional",
+      "narBytes": 123944,
+      "xzNarBytes": 40320
     },
     "/nix/store/ibjag1j0x8v5dwxjwdr6b2zyag8v4b1n-thue-0.0.1": {
       "status": "additional",
@@ -451,25 +755,15 @@
       "narBytes": 333400,
       "upstreamCompressedBytes": 110934
     },
-    "/nix/store/80z9njiswl9xm6qk93zsjr5bj8v0z2lm-krb5-1.22.2-lib": {
-      "status": "upstream-cache",
-      "narBytes": 2937440,
-      "upstreamCompressedBytes": 1156678
-    },
-    "/nix/store/admwq91a8y32wmfw5hkilkmlwhnsr8yp-numactl-2.0.18": {
-      "status": "upstream-cache",
-      "narBytes": 276432,
-      "upstreamCompressedBytes": 85962
+    "/nix/store/83ss90byhyvb02hdyd2p9mccjkh1wk5f-unlambda-2.0.0": {
+      "status": "additional",
+      "narBytes": 547480,
+      "xzNarBytes": 171448
     },
     "/nix/store/da3cripymcahrkl44mlkb2bljq5c1zlj-dotnet-runtime-8.0.31": {
       "status": "upstream-cache",
       "narBytes": 74161984,
       "upstreamCompressedBytes": 31076886
-    },
-    "/nix/store/gqd8w84mhr0h24fnc2p4m3hkicsnxsfm-keyutils-1.6.3-lib": {
-      "status": "upstream-cache",
-      "narBytes": 43280,
-      "upstreamCompressedBytes": 10568
     },
     "/nix/store/h9ry0sv81lihmqfzmd74ixb0r0q2mq0h-velato-2.1": {
       "status": "additional",
@@ -481,16 +775,6 @@
       "narBytes": 4320,
       "upstreamCompressedBytes": 1240
     },
-    "/nix/store/wrsjd3mp8kp4idbwk9wx9588291k9fcg-liburcu-0.15.7": {
-      "status": "upstream-cache",
-      "narBytes": 377152,
-      "upstreamCompressedBytes": 77107
-    },
-    "/nix/store/yrbbb58yixplil78xq672hwpisb26mv9-lttng-ust-2.12.2": {
-      "status": "upstream-cache",
-      "narBytes": 1260144,
-      "upstreamCompressedBytes": 310628
-    },
     "/nix/store/ga8ja7gka2vymlilq8hvid09fyvyy238-whitespacers-1.3.0": {
       "status": "additional",
       "narBytes": 916800,
@@ -500,6 +784,46 @@
       "status": "additional",
       "narBytes": 80128,
       "xzNarBytes": 15512
+    },
+    "/nix/store/6arcms5c1cwmkbg3szb035qx3rxbacb3-wine64-6.0.3": {
+      "status": "additional",
+      "narBytes": 929512,
+      "xzNarBytes": 29656
+    },
+    "/nix/store/7fjvn38n3dnv092jbmb4m87ik5qvmj7g-brotli-1.2.0-lib": {
+      "status": "upstream-cache",
+      "narBytes": 997256,
+      "upstreamCompressedBytes": 430229
+    },
+    "/nix/store/81xfxjiw58spk795jgcc7z1diwmy3xmi-freetype-2.14.3": {
+      "status": "upstream-cache",
+      "narBytes": 2312120,
+      "upstreamCompressedBytes": 659130
+    },
+    "/nix/store/g958qvvzz9lcp6bljx42pl96gng9abb7-libcap-2.78-lib": {
+      "status": "upstream-cache",
+      "narBytes": 79312,
+      "upstreamCompressedBytes": 29936
+    },
+    "/nix/store/igzrdkid07pdyh30cswrjb7a9yln9mpp-zlib-1.3.2-static": {
+      "status": "upstream-cache",
+      "narBytes": 154776,
+      "upstreamCompressedBytes": 71106
+    },
+    "/nix/store/vjcgy5ngbn7gm7cihm560b2n9pq0rzzd-wine64-6.0.3": {
+      "status": "additional",
+      "narBytes": 290879328,
+      "xzNarBytes": 28872532
+    },
+    "/nix/store/vkwq2iap75p0srizppc3jl2j5b1lxpln-xz-5.8.4": {
+      "status": "upstream-cache",
+      "narBytes": 881400,
+      "upstreamCompressedBytes": 256697
+    },
+    "/nix/store/zvkvnvlhdx44g3n36izmf819vfxlnklc-libunwind-1.8.3": {
+      "status": "upstream-cache",
+      "narBytes": 274000,
+      "upstreamCompressedBytes": 76677
     }
   }
 }

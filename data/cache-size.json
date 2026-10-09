@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "created": "2026-10-08T12:37:27.097077+00:00",
+  "created": "2026-10-09T08:10:31.069332+00:00",
   "system": "x86_64-linux",
   "nixpkgs": {
     "lastModified": 1791260994,
@@ -11,30 +11,44 @@
     "type": "github"
   },
   "packages": [
+    "json2dir",
+    "json2dir-F-",
     "json2dir-ada",
+    "json2dir-agda",
+    "json2dir-aheui",
     "json2dir-algol60",
     "json2dir-algol68",
+    "json2dir-ansible",
     "json2dir-aot",
     "json2dir-apl",
     "json2dir-arnoldc",
     "json2dir-asm",
+    "json2dir-ats",
     "json2dir-awk",
+    "json2dir-bash",
     "json2dir-basic",
     "json2dir-bcpl",
+    "json2dir-befunge",
+    "json2dir-bimbo",
     "json2dir-bqn",
+    "json2dir-braincopter",
     "json2dir-brainfuck",
+    "json2dir-brainloller",
     "json2dir-c17",
     "json2dir-c23",
     "json2dir-c89",
     "json2dir-cforall",
     "json2dir-checkedc",
+    "json2dir-chef",
     "json2dir-chez",
     "json2dir-cil",
     "json2dir-cilk",
     "json2dir-clojure",
+    "json2dir-cmake",
     "json2dir-cobol",
     "json2dir-commonlisp",
     "json2dir-compcert",
+    "json2dir-cow",
     "json2dir-cpp",
     "json2dir-crystal",
     "json2dir-cs",
@@ -42,13 +56,16 @@
     "json2dir-dafny",
     "json2dir-dart",
     "json2dir-eiffel",
+    "json2dir-elisp",
     "json2dir-elixir",
     "json2dir-emojicode",
     "json2dir-erlang",
     "json2dir-false",
     "json2dir-fennel",
+    "json2dir-fish",
     "json2dir-forth",
     "json2dir-fortran",
+    "json2dir-fractran",
     "json2dir-freepascal",
     "json2dir-fsharp",
     "json2dir-gleam",
@@ -57,7 +74,9 @@
     "json2dir-groovy",
     "json2dir-hare",
     "json2dir-haskell",
+    "json2dir-hexagony",
     "json2dir-holyc",
+    "json2dir-hs",
     "json2dir-idris2",
     "json2dir-intercal",
     "json2dir-j",
@@ -65,26 +84,42 @@
     "json2dir-java",
     "json2dir-jq",
     "json2dir-js",
+    "json2dir-jscript",
     "json2dir-jsonnet",
+    "json2dir-jsonscript",
+    "json2dir-julia",
     "json2dir-k",
     "json2dir-koka",
     "json2dir-kotlin",
     "json2dir-kr",
     "json2dir-ksh",
     "json2dir-lean",
+    "json2dir-llvm-IR",
+    "json2dir-logo",
     "json2dir-lolcode",
     "json2dir-lua",
     "json2dir-luajit",
+    "json2dir-luatex",
+    "json2dir-ludka",
+    "json2dir-malbolge",
     "json2dir-mercury",
     "json2dir-modula2",
     "json2dir-mojo",
+    "json2dir-msbuild",
     "json2dir-neovim",
     "json2dir-nim",
+    "json2dir-nix",
+    "json2dir-njs",
     "json2dir-objc",
     "json2dir-ocaml",
+    "json2dir-octave",
+    "json2dir-octave-pure",
     "json2dir-odin",
+    "json2dir-ook",
     "json2dir-perl",
     "json2dir-php",
+    "json2dir-piet",
+    "json2dir-pikachu",
     "json2dir-pli",
     "json2dir-pony",
     "json2dir-prolog",
@@ -92,47 +127,60 @@
     "json2dir-purescript",
     "json2dir-pwsh",
     "json2dir-python",
+    "json2dir-r",
     "json2dir-racket",
     "json2dir-raku",
     "json2dir-rexx",
+    "json2dir-roc",
+    "json2dir-rockstar",
     "json2dir-rocq",
     "json2dir-ruby",
     "json2dir-scala",
+    "json2dir-scheme",
+    "json2dir-sed",
+    "json2dir-shakespeare",
     "json2dir-smalltalk",
     "json2dir-sml",
     "json2dir-snobol4",
+    "json2dir-sqlite",
     "json2dir-subleq",
     "json2dir-swift",
+    "json2dir-syscall",
     "json2dir-systemverilog",
+    "json2dir-taxi",
+    "json2dir-tcl",
+    "json2dir-thesis",
     "json2dir-thue",
     "json2dir-tla",
     "json2dir-ts",
+    "json2dir-uiua",
     "json2dir-unicon",
+    "json2dir-unlambda",
     "json2dir-v",
     "json2dir-vala",
     "json2dir-vbnet",
+    "json2dir-vbs",
     "json2dir-velato",
     "json2dir-vhdl",
+    "json2dir-vim",
     "json2dir-wasm",
     "json2dir-whitespace",
     "json2dir-why3",
+    "json2dir-xslt",
+    "json2dir-zig",
     "json2dir-zsh",
+    "json2llm",
     "nuon2dir"
   ],
   "complete": true,
   "method": "Actual NAR streams compressed with XZ preset 6; excludes cache.nixos.org hits. Cachix encoding may differ.",
-  "previousMeasurement": "2026-10-08T11:08:00.963180+00:00",
-  "additionalNarBytes": 606233136,
-  "additionalXzNarBytes": 144754552,
-  "upstreamPaths": 614,
-  "additionalPaths": 127,
+  "previousMeasurement": "2026-10-09T04:49:08.552458+00:00",
+  "additionalNarBytes": 1834725920,
+  "additionalXzNarBytes": 370687832,
+  "upstreamPaths": 1082,
+  "additionalPaths": 210,
   "unknownPaths": 0,
   "paths": {
-    "/nix/store/dfyd1nxk3dpp74cv3sqm0gsk01hras6a-json2dir-ada-unstable-bdb8c11": {
-      "status": "additional",
-      "narBytes": 696560,
-      "xzNarBytes": 229348
-    },
     "/nix/store/g60m3aky9f59wgy1gi0y06xwmbw19d6m-xgcc-16.2.0-libgcc": {
       "status": "upstream-cache",
       "narBytes": 202272,
@@ -143,85 +191,50 @@
       "narBytes": 35578272,
       "upstreamCompressedBytes": 10427318
     },
+    "/nix/store/j7qx4s4mr17j1wqgvqdzj33lmrnzb387-gcc-16.2.0-lib": {
+      "status": "upstream-cache",
+      "narBytes": 10813624,
+      "upstreamCompressedBytes": 3318244
+    },
     "/nix/store/jp8ql2fnd61xhvb4vsfp0bqwrzf16qrp-libunistring-1.4.2": {
       "status": "upstream-cache",
       "narBytes": 2083096,
       "upstreamCompressedBytes": 794049
+    },
+    "/nix/store/kfklc0gbk3axrrfviqbakzh7gc6x6f6l-json2dir-unstable-b2072fb": {
+      "status": "additional",
+      "narBytes": 614432,
+      "xzNarBytes": 203368
     },
     "/nix/store/q0lbdx5yv93a3md74kjhm0v2kljjii89-libidn2-2.3.8": {
       "status": "upstream-cache",
       "narBytes": 372320,
       "upstreamCompressedBytes": 144340
     },
-    "/nix/store/10dxp0qxqxxsyiljrh2kp0xqhz6arhcx-bash-5.3p15": {
-      "status": "upstream-cache",
-      "narBytes": 1885600,
-      "upstreamCompressedBytes": 669022
-    },
-    "/nix/store/1mv3qz005gkbalxfghk4y3s8ayv4d2dl-bash-interactive-5.3p15": {
-      "status": "upstream-cache",
-      "narBytes": 7444560,
-      "upstreamCompressedBytes": 1657606
-    },
-    "/nix/store/2gfxiwls9hbgwdwcy43mprchwsq36mg6-coreutils-9.11": {
-      "status": "upstream-cache",
-      "narBytes": 1754128,
-      "upstreamCompressedBytes": 770781
-    },
-    "/nix/store/38iwpv2v08hd261p4ki4j6iqx9xgkl5j-json2dir-algol60-unstable": {
-      "status": "additional",
-      "narBytes": 50944,
-      "xzNarBytes": 15772
-    },
-    "/nix/store/9074l1whzhvk68kj5va99ipj412rk5q2-acl-2.4.0": {
-      "status": "upstream-cache",
-      "narBytes": 137568,
-      "upstreamCompressedBytes": 37925
-    },
-    "/nix/store/chwiiz63ngbsgr2qi82c4g40vn756ky2-gmp-with-cxx-6.3.0": {
-      "status": "upstream-cache",
-      "narBytes": 787528,
-      "upstreamCompressedBytes": 352604
-    },
-    "/nix/store/hzqwc6pv8sb9qrwivc4h42cr811gs1mk-ncurses-6.6": {
-      "status": "upstream-cache",
-      "narBytes": 3882816,
-      "upstreamCompressedBytes": 712731
-    },
-    "/nix/store/j7qx4s4mr17j1wqgvqdzj33lmrnzb387-gcc-16.2.0-lib": {
-      "status": "upstream-cache",
-      "narBytes": 10813624,
-      "upstreamCompressedBytes": 3318244
-    },
-    "/nix/store/n0hw0c94fwjc5h3079ikvrn9j2q7srn4-marst-2.8": {
-      "status": "upstream-cache",
-      "narBytes": 417560,
-      "upstreamCompressedBytes": 262219
-    },
-    "/nix/store/p6cir20v12fjj5390b8xr9kdynm8bd9h-attr-2.6.0": {
-      "status": "upstream-cache",
-      "narBytes": 90936,
-      "upstreamCompressedBytes": 20650
-    },
     "/nix/store/q2mkz6ca1alqfqf750dygvakmq8kjrwz-gcc-16.2.0-libgcc": {
       "status": "upstream-cache",
       "narBytes": 202344,
       "upstreamCompressedBytes": 95678
     },
-    "/nix/store/xnam05aa3vc7aqbbdixpwcdb8dpv71xn-readline-8.3p3": {
+    "/nix/store/bklsbl11c1v89anhmn4m21d0kj9idpr6-json2dir-F--unstable-1a2afa1": {
+      "status": "additional",
+      "narBytes": 5021280,
+      "xzNarBytes": 1048744
+    },
+    "/nix/store/z7j20jl3wdi418wbajrbximy6j472y2j-gmp-with-cxx-6.3.0": {
       "status": "upstream-cache",
-      "narBytes": 518744,
-      "upstreamCompressedBytes": 206645
+      "narBytes": 787528,
+      "upstreamCompressedBytes": 352605
+    },
+    "/nix/store/dfyd1nxk3dpp74cv3sqm0gsk01hras6a-json2dir-ada-unstable-bdb8c11": {
+      "status": "additional",
+      "narBytes": 696560,
+      "xzNarBytes": 229348
     },
     "/nix/store/36alc2mwna4nzf6djdj2hvh4w4r3cai5-curl-8.22.0": {
       "status": "upstream-cache",
       "narBytes": 1323264,
       "upstreamCompressedBytes": 625147
-    },
-    "/nix/store/39d9j8ajjv51ilcwds38qym4m1ah6mxy-algol68g-3.12.3": {
-      "status": "upstream-cache",
-      "narBytes": 2027496,
-      "upstreamCompressedBytes": 752914
     },
     "/nix/store/6vqggv3cdqkh098nm8brbs2mwhn6bciy-libssh2-1.11.1": {
       "status": "upstream-cache",
@@ -243,25 +256,20 @@
       "narBytes": 548448,
       "upstreamCompressedBytes": 229928
     },
-    "/nix/store/bhdbci3haq42l77qh385bxdzkc7al56h-json2dir-algol68-2026-10-07": {
+    "/nix/store/9z5k0m900hmc4s0yary2b7070jd889jr-json2dir-agda-unstable-8d57b92": {
       "status": "additional",
-      "narBytes": 15656,
-      "xzNarBytes": 4880
+      "narBytes": 3006904,
+      "xzNarBytes": 431072
     },
-    "/nix/store/chkrwwlgil4abf7dvyv70df3kvb0d7d3-mpfr-4.2.2": {
+    "/nix/store/admwq91a8y32wmfw5hkilkmlwhnsr8yp-numactl-2.0.18": {
       "status": "upstream-cache",
-      "narBytes": 830992,
-      "upstreamCompressedBytes": 397303
+      "narBytes": 276432,
+      "upstreamCompressedBytes": 85962
     },
     "/nix/store/cxd8d2vg70c3pa31v2473hphaa1v0j44-openssl-3.5.8": {
       "status": "upstream-cache",
       "narBytes": 9439480,
       "upstreamCompressedBytes": 3475629
-    },
-    "/nix/store/fhn8fdcxx3z6k384prsygipppln0wqva-libpq-18.6": {
-      "status": "upstream-cache",
-      "narBytes": 534240,
-      "upstreamCompressedBytes": 209963
     },
     "/nix/store/gqd8w84mhr0h24fnc2p4m3hkicsnxsfm-keyutils-1.6.3-lib": {
       "status": "upstream-cache",
@@ -273,25 +281,35 @@
       "narBytes": 117616,
       "upstreamCompressedBytes": 70180
     },
-    "/nix/store/mhh5vq180fhl5f87410hi793jck354z3-gsl-2.8": {
+    "/nix/store/mpqgjnlmzy3c5hslbgyc3s7zfz3m32lg-bzip2-1.0.8": {
       "status": "upstream-cache",
-      "narBytes": 6474400,
-      "upstreamCompressedBytes": 2009356
+      "narBytes": 88992,
+      "upstreamCompressedBytes": 39064
+    },
+    "/nix/store/n1i9ph766v9kbjs961j2aiw4qaagc1wj-json-c-0.18": {
+      "status": "upstream-cache",
+      "narBytes": 256312,
+      "upstreamCompressedBytes": 63138
     },
     "/nix/store/ph4ib8mxy5yrw40k7a1l03bfd58hq6wj-zstd-1.5.7": {
       "status": "upstream-cache",
       "narBytes": 1209248,
       "upstreamCompressedBytes": 478808
     },
-    "/nix/store/qc7wwg64ggan8nzgrlal5dy16gyx6c1l-libpng-apng-1.6.58": {
+    "/nix/store/pi2b23y3gv6zgcziwbgnihf8gam1cmlp-libffi-3.8.0": {
       "status": "upstream-cache",
-      "narBytes": 288080,
-      "upstreamCompressedBytes": 141724
+      "narBytes": 99896,
+      "upstreamCompressedBytes": 39648
     },
     "/nix/store/r9n1wja9zhj3w4r71pggxal3c6xqak2a-nghttp3-1.17.0": {
       "status": "upstream-cache",
       "narBytes": 238008,
       "upstreamCompressedBytes": 105430
+    },
+    "/nix/store/s7306mp3pdbw8xx2gicsqvyganjhsywp-elfutils-0.195": {
+      "status": "upstream-cache",
+      "narBytes": 4324160,
+      "upstreamCompressedBytes": 859956
     },
     "/nix/store/sky8mslz50n51np0z4vhdq61jba12fh2-nghttp2-1.70.0-lib": {
       "status": "upstream-cache",
@@ -303,20 +321,605 @@
       "narBytes": 338304,
       "upstreamCompressedBytes": 94496
     },
+    "/nix/store/vkwq2iap75p0srizppc3jl2j5b1lxpln-xz-5.8.4": {
+      "status": "upstream-cache",
+      "narBytes": 881400,
+      "upstreamCompressedBytes": 256697
+    },
     "/nix/store/wgw25d181h0qks7qsfp1bh7c5nd3f0s7-zlib-1.3.2": {
       "status": "upstream-cache",
       "narBytes": 136672,
       "upstreamCompressedBytes": 74336
+    },
+    "/nix/store/10dxp0qxqxxsyiljrh2kp0xqhz6arhcx-bash-5.3p15": {
+      "status": "upstream-cache",
+      "narBytes": 1885600,
+      "upstreamCompressedBytes": 669022
+    },
+    "/nix/store/1ggxndc1gd5061j5hqprhnhx9p30yilv-gnused-4.10": {
+      "status": "upstream-cache",
+      "narBytes": 739168,
+      "upstreamCompressedBytes": 196400
+    },
+    "/nix/store/1mv3qz005gkbalxfghk4y3s8ayv4d2dl-bash-interactive-5.3p15": {
+      "status": "upstream-cache",
+      "narBytes": 7444560,
+      "upstreamCompressedBytes": 1657606
+    },
+    "/nix/store/2gfxiwls9hbgwdwcy43mprchwsq36mg6-coreutils-9.11": {
+      "status": "upstream-cache",
+      "narBytes": 1754128,
+      "upstreamCompressedBytes": 770781
+    },
+    "/nix/store/3668q0d9zhc5n9l2pnyvpd44kz9bjsjm-gnugrep-3.12": {
+      "status": "upstream-cache",
+      "narBytes": 954920,
+      "upstreamCompressedBytes": 251463
+    },
+    "/nix/store/63g104xwbzfpcq0h7c99w19m6j9ly3p1-gawk-5.4.1": {
+      "status": "upstream-cache",
+      "narBytes": 3592656,
+      "upstreamCompressedBytes": 926963
+    },
+    "/nix/store/7v8b5idfzwfl06hx6n0cvd5ikd5p0sbg-pcre2-10.48": {
+      "status": "upstream-cache",
+      "narBytes": 2117896,
+      "upstreamCompressedBytes": 698194
+    },
+    "/nix/store/9074l1whzhvk68kj5va99ipj412rk5q2-acl-2.4.0": {
+      "status": "upstream-cache",
+      "narBytes": 137568,
+      "upstreamCompressedBytes": 37925
+    },
+    "/nix/store/9m8ha6bjqxdyn6rlhdz5kyrnxi926m2l-rpaheui-1.2.5-pypy-7.3.19": {
+      "status": "additional",
+      "narBytes": 7400784,
+      "xzNarBytes": 1528804
+    },
+    "/nix/store/chwiiz63ngbsgr2qi82c4g40vn756ky2-gmp-with-cxx-6.3.0": {
+      "status": "upstream-cache",
+      "narBytes": 787528,
+      "upstreamCompressedBytes": 352604
+    },
+    "/nix/store/gyg863fl3nyq9lmwkkfh9sndpl3qibkk-json2dir-aheui-unstable": {
+      "status": "additional",
+      "narBytes": 177064,
+      "xzNarBytes": 7980
+    },
+    "/nix/store/hzqwc6pv8sb9qrwivc4h42cr811gs1mk-ncurses-6.6": {
+      "status": "upstream-cache",
+      "narBytes": 3882816,
+      "upstreamCompressedBytes": 712731
+    },
+    "/nix/store/p6cir20v12fjj5390b8xr9kdynm8bd9h-attr-2.6.0": {
+      "status": "upstream-cache",
+      "narBytes": 90936,
+      "upstreamCompressedBytes": 20650
+    },
+    "/nix/store/xnam05aa3vc7aqbbdixpwcdb8dpv71xn-readline-8.3p3": {
+      "status": "upstream-cache",
+      "narBytes": 518744,
+      "upstreamCompressedBytes": 206645
+    },
+    "/nix/store/ycrbcy9sg4knpnik6a01dk70l0m673x7-findutils-4.11.0": {
+      "status": "upstream-cache",
+      "narBytes": 1930064,
+      "upstreamCompressedBytes": 472977
+    },
+    "/nix/store/38iwpv2v08hd261p4ki4j6iqx9xgkl5j-json2dir-algol60-unstable": {
+      "status": "additional",
+      "narBytes": 50944,
+      "xzNarBytes": 15772
+    },
+    "/nix/store/n0hw0c94fwjc5h3079ikvrn9j2q7srn4-marst-2.8": {
+      "status": "upstream-cache",
+      "narBytes": 417560,
+      "upstreamCompressedBytes": 262219
+    },
+    "/nix/store/39d9j8ajjv51ilcwds38qym4m1ah6mxy-algol68g-3.12.3": {
+      "status": "upstream-cache",
+      "narBytes": 2027496,
+      "upstreamCompressedBytes": 752914
+    },
+    "/nix/store/bhdbci3haq42l77qh385bxdzkc7al56h-json2dir-algol68-2026-10-07": {
+      "status": "additional",
+      "narBytes": 15656,
+      "xzNarBytes": 4880
+    },
+    "/nix/store/chkrwwlgil4abf7dvyv70df3kvb0d7d3-mpfr-4.2.2": {
+      "status": "upstream-cache",
+      "narBytes": 830992,
+      "upstreamCompressedBytes": 397303
+    },
+    "/nix/store/fhn8fdcxx3z6k384prsygipppln0wqva-libpq-18.6": {
+      "status": "upstream-cache",
+      "narBytes": 534240,
+      "upstreamCompressedBytes": 209963
+    },
+    "/nix/store/mhh5vq180fhl5f87410hi793jck354z3-gsl-2.8": {
+      "status": "upstream-cache",
+      "narBytes": 6474400,
+      "upstreamCompressedBytes": 2009356
+    },
+    "/nix/store/qc7wwg64ggan8nzgrlal5dy16gyx6c1l-libpng-apng-1.6.58": {
+      "status": "upstream-cache",
+      "narBytes": 288080,
+      "upstreamCompressedBytes": 141724
     },
     "/nix/store/wi0fp7n94g84izzgn7b1a7a6zbryl3cb-plotutils-2.6": {
       "status": "upstream-cache",
       "narBytes": 4922640,
       "upstreamCompressedBytes": 1362960
     },
-    "/nix/store/z7j20jl3wdi418wbajrbximy6j472y2j-gmp-with-cxx-6.3.0": {
+    "/nix/store/05p8h04hwc544fhaml4xbwihcda55hhl-python3.14-bcrypt-5.0.0": {
       "status": "upstream-cache",
-      "narBytes": 787528,
-      "upstreamCompressedBytes": 352605
+      "narBytes": 696960,
+      "upstreamCompressedBytes": 282557
+    },
+    "/nix/store/15x4d7i4p60sjqvls7riw7sd42551s19-nss-cacert-3.126": {
+      "status": "upstream-cache",
+      "narBytes": 665336,
+      "upstreamCompressedBytes": 154830
+    },
+    "/nix/store/23479zdfxq6kffq82kmm0mi8ngd87pac-python3.14-pycares-5.0.1": {
+      "status": "upstream-cache",
+      "narBytes": 643312,
+      "upstreamCompressedBytes": 209062
+    },
+    "/nix/store/2g9ja5lqdkh27zvpl11d0dhi1bqr4gm0-python3.14-mdurl-0.1.2": {
+      "status": "upstream-cache",
+      "narBytes": 69592,
+      "upstreamCompressedBytes": 17554
+    },
+    "/nix/store/328fx8r0jb6l2ai4cli7fhp8g26fbfnh-util-linux-minimal-2.42.3-lib": {
+      "status": "upstream-cache",
+      "narBytes": 2174584,
+      "upstreamCompressedBytes": 740389
+    },
+    "/nix/store/3nakpcsifnmdxpbq8116f3hh74pcca27-python3.14-elementpath-5.1.1": {
+      "status": "upstream-cache",
+      "narBytes": 4642664,
+      "upstreamCompressedBytes": 818655
+    },
+    "/nix/store/3vkdg5ldh9g14sd03y0hy3g54cgn6dmq-python3.14-psutil-7.2.2": {
+      "status": "upstream-cache",
+      "narBytes": 1214152,
+      "upstreamCompressedBytes": 253813
+    },
+    "/nix/store/3wfkjzcjdnxjy4nic8k6g8nr35brmpy4-python3.14-idna-3.18": {
+      "status": "upstream-cache",
+      "narBytes": 682848,
+      "upstreamCompressedBytes": 134025
+    },
+    "/nix/store/3xnv85h8bl4jb0s1awyafzh40bf19z34-python3.14-jxmlease-1.0.3": {
+      "status": "upstream-cache",
+      "narBytes": 385480,
+      "upstreamCompressedBytes": 70378
+    },
+    "/nix/store/45f9dagxs2gp8cm6j5irdqzzf2lfpwbq-python3.14-paramiko-5.0.0": {
+      "status": "upstream-cache",
+      "narBytes": 2238216,
+      "upstreamCompressedBytes": 427313
+    },
+    "/nix/store/4b69i9vz79w2n33q349smzgsy08i3yfy-python3.14-ruamel-yaml-0.19.1": {
+      "status": "upstream-cache",
+      "narBytes": 2130880,
+      "upstreamCompressedBytes": 353015
+    },
+    "/nix/store/4cai222g5jqddphq4602dxynwhgxlyxq-python3.14-pynacl-1.6.2": {
+      "status": "upstream-cache",
+      "narBytes": 1140208,
+      "upstreamCompressedBytes": 158578
+    },
+    "/nix/store/4cr8k5yydn0jshlxswvvql9qcmnmp1lf-libyaml-0.2.5": {
+      "status": "upstream-cache",
+      "narBytes": 155600,
+      "upstreamCompressedBytes": 64016
+    },
+    "/nix/store/4p7ra96aacv9jhpbbw63slhg0w5v6l92-libssh-0.12.2": {
+      "status": "upstream-cache",
+      "narBytes": 731856,
+      "upstreamCompressedBytes": 323981
+    },
+    "/nix/store/5gjs5jl5bahpmk3x1wfmzs29m5ki9q8i-python3.14-geoip2-5.2.0": {
+      "status": "upstream-cache",
+      "narBytes": 295064,
+      "upstreamCompressedBytes": 55568
+    },
+    "/nix/store/5sy15nk1s1ip12s7f71s7ymff77vk25s-python3.14-charset-normalizer-3.4.9": {
+      "status": "upstream-cache",
+      "narBytes": 1142048,
+      "upstreamCompressedBytes": 301006
+    },
+    "/nix/store/5wnfvqg8rhb2rhxii2jg0d7c9gi3grr5-python3.14-referencing-0.37.0": {
+      "status": "upstream-cache",
+      "narBytes": 440288,
+      "upstreamCompressedBytes": 81303
+    },
+    "/nix/store/67v4318ajiy9ia2wz14hqj7idy5181is-gdbm-1.26-lib": {
+      "status": "upstream-cache",
+      "narBytes": 463432,
+      "upstreamCompressedBytes": 130466
+    },
+    "/nix/store/778v6jpsc0gmrvp2l0slk31aj6q300d4-python3.14-netaddr-1.3.0": {
+      "status": "upstream-cache",
+      "narBytes": 10398928,
+      "upstreamCompressedBytes": 2176328
+    },
+    "/nix/store/7gp5a1mw8xkiiq48b21a3spqnh0dbmrw-json2dir-ansible-2026-10-08": {
+      "status": "additional",
+      "narBytes": 17816,
+      "xzNarBytes": 4968
+    },
+    "/nix/store/7lpf1s86kds1fd6svrlkgfrhg1xgn3z9-python3.14-xmltodict-1.0.4": {
+      "status": "upstream-cache",
+      "narBytes": 98152,
+      "upstreamCompressedBytes": 25489
+    },
+    "/nix/store/89k2yhv23djm6j17h1zah2l1jzykmlyn-python3.14-maxminddb-3.0.0": {
+      "status": "upstream-cache",
+      "narBytes": 192776,
+      "upstreamCompressedBytes": 55734
+    },
+    "/nix/store/89swybvv6vdc69xqlszpgfsqkg4fq2q6-python3.14-markupsafe-3.0.3": {
+      "status": "upstream-cache",
+      "narBytes": 102120,
+      "upstreamCompressedBytes": 21427
+    },
+    "/nix/store/8d3dd23rb0hg0x2lafvs2wqax9plf2bs-python3.14-textfsm-2.1.0": {
+      "status": "upstream-cache",
+      "narBytes": 390720,
+      "upstreamCompressedBytes": 82996
+    },
+    "/nix/store/8phnmsh16rs7f6wz8x403ph6s2rrjj5d-python3.14-libpass-1.9.3": {
+      "status": "upstream-cache",
+      "narBytes": 2971896,
+      "upstreamCompressedBytes": 580756
+    },
+    "/nix/store/8sjnc2as3x3xh5w4i3jjk9xy04j0idcz-python3.14-typing-extensions-4.16.0": {
+      "status": "upstream-cache",
+      "narBytes": 543992,
+      "upstreamCompressedBytes": 113067
+    },
+    "/nix/store/9h1flvcagd31jiyrppi7qk5r1zql8570-python3.14-ruamel-base-1.0.0": {
+      "status": "upstream-cache",
+      "narBytes": 10728,
+      "upstreamCompressedBytes": 3626
+    },
+    "/nix/store/9j086va2zn7ifgdc3h3jlqbi2c23j1x5-mailcap-2.1.54": {
+      "status": "upstream-cache",
+      "narBytes": 119360,
+      "upstreamCompressedBytes": 32571
+    },
+    "/nix/store/9qz7dnr5pha2nz1x9hxp28fd0895pdbx-python3.14-cffi-2.1.0": {
+      "status": "upstream-cache",
+      "narBytes": 1548912,
+      "upstreamCompressedBytes": 373130
+    },
+    "/nix/store/9x0m6s73sg89fv5awb95vsac2mbns8n0-sqlite-3.53.3": {
+      "status": "upstream-cache",
+      "narBytes": 6188296,
+      "upstreamCompressedBytes": 2374845
+    },
+    "/nix/store/arpa7ss4rscy6df35cc72mk9h256gjj3-python3.14-yangson-1.7.8": {
+      "status": "upstream-cache",
+      "narBytes": 1627416,
+      "upstreamCompressedBytes": 270240
+    },
+    "/nix/store/as2wy9xkiizjy7g0cw7w414d3n6xwzdb-python3.14-frozenlist-1.8.0": {
+      "status": "upstream-cache",
+      "narBytes": 183560,
+      "upstreamCompressedBytes": 64121
+    },
+    "/nix/store/bm909nrrr361mpw04wqfkrb958c1d6hk-python3.14-rich-15.0.0": {
+      "status": "upstream-cache",
+      "narBytes": 4778984,
+      "upstreamCompressedBytes": 762229
+    },
+    "/nix/store/c9i7ml2lwj1g6c4f496j9m9w2lakbb84-python3.14-aiohappyeyeballs-2.7.1": {
+      "status": "upstream-cache",
+      "narBytes": 97936,
+      "upstreamCompressedBytes": 25910
+    },
+    "/nix/store/cl9rpzlpwybvmlcysjqi4fhadma0mxsk-python3.14-ansible-pylibssh-1.4.0": {
+      "status": "upstream-cache",
+      "narBytes": 5358216,
+      "upstreamCompressedBytes": 657861
+    },
+    "/nix/store/cq487x1r6rip3x0i74hh3v43di91fp37-python3.14-ansible-core-2.21.4": {
+      "status": "upstream-cache",
+      "narBytes": 26045104,
+      "upstreamCompressedBytes": 4893468
+    },
+    "/nix/store/cq65g1vyyiklplv6n2fgrjwxa6b4xfs9-mpdecimal-4.0.1": {
+      "status": "upstream-cache",
+      "narBytes": 230336,
+      "upstreamCompressedBytes": 102984
+    },
+    "/nix/store/csp98izn0hk6c6f5fzzm99rwgdmml0a2-python3.14-openpyxl-3.1.5": {
+      "status": "upstream-cache",
+      "narBytes": 3251320,
+      "upstreamCompressedBytes": 569742
+    },
+    "/nix/store/d6bbf6mw7wgm7a6c75xzhjyhd72807zs-python3.14-attrs-26.1.0": {
+      "status": "upstream-cache",
+      "narBytes": 681088,
+      "upstreamCompressedBytes": 137137
+    },
+    "/nix/store/dfhrl2c3jf9nsnlbam2fqaz6j5ck091c-python3.14-pyserial-3.5": {
+      "status": "upstream-cache",
+      "narBytes": 1146216,
+      "upstreamCompressedBytes": 203572
+    },
+    "/nix/store/dilpkgiqriwpkl8119k8ds0iycxg63cz-python3.14-markdown-it-py-4.2.0": {
+      "status": "upstream-cache",
+      "narBytes": 902600,
+      "upstreamCompressedBytes": 174484
+    },
+    "/nix/store/dqfxi9vmrhkm46m7xnllr2khzhbm5f2r-python3.14-lxml-6.1.1": {
+      "status": "upstream-cache",
+      "narBytes": 6897016,
+      "upstreamCompressedBytes": 2257140
+    },
+    "/nix/store/dsamg7ahj9fxvxa2rpmlszpkavzf308r-llhttp-9.4.3": {
+      "status": "upstream-cache",
+      "narBytes": 95816,
+      "upstreamCompressedBytes": 27725
+    },
+    "/nix/store/f7bpjfpqhaaya02029i444lvrp70353z-python3.14-brotli-1.2.0": {
+      "status": "upstream-cache",
+      "narBytes": 50096,
+      "upstreamCompressedBytes": 16736
+    },
+    "/nix/store/f9pg2siyxrjggn886zgrmwsgymrv133j-python3.14-tabulate-0.10.0": {
+      "status": "upstream-cache",
+      "narBytes": 363072,
+      "upstreamCompressedBytes": 78690
+    },
+    "/nix/store/fp3a45iajir6yxc91q4hb0l02a2whsr7-python3.14-resolvelib-1.2.1": {
+      "status": "upstream-cache",
+      "narBytes": 208752,
+      "upstreamCompressedBytes": 41407
+    },
+    "/nix/store/frjpgbyhlsnzr8hnvzwl55nvia7nl7b4-python3.14-jinja2-3.1.6": {
+      "status": "upstream-cache",
+      "narBytes": 2161824,
+      "upstreamCompressedBytes": 406412
+    },
+    "/nix/store/g48lckn54ml0a59g2vix18qzzw9im08b-python3.14-passlib-1.9.3": {
+      "status": "upstream-cache",
+      "narBytes": 2456,
+      "upstreamCompressedBytes": 717
+    },
+    "/nix/store/ggdk2ma2n9crx83s5v13kgcg8n4sz8rl-python3.14-netmiko-4.6.0": {
+      "status": "upstream-cache",
+      "narBytes": 3198440,
+      "upstreamCompressedBytes": 492199
+    },
+    "/nix/store/gm0x3d8ww4dsfhayw03ini5an72bzkaa-python3.14-invoke-2.2.1": {
+      "status": "upstream-cache",
+      "narBytes": 1951640,
+      "upstreamCompressedBytes": 369037
+    },
+    "/nix/store/hf33gzxfazapgka03dmbyl524hsd9sq3-python3.14-jsonschema-specifications-2025.9.1": {
+      "status": "upstream-cache",
+      "narBytes": 66816,
+      "upstreamCompressedBytes": 11454
+    },
+    "/nix/store/ib0l30h2sjwvspwdycg6p28kh0jydacs-python3.14-cryptography-50.0.0": {
+      "status": "upstream-cache",
+      "narBytes": 6824248,
+      "upstreamCompressedBytes": 1844302
+    },
+    "/nix/store/ipiv3fn2arfi8zgf4qhwrl0ghdm8wyih-python3.14-multidict-6.7.1": {
+      "status": "upstream-cache",
+      "narBytes": 387832,
+      "upstreamCompressedBytes": 95522
+    },
+    "/nix/store/jn3b4qd96ni82spqlsdvrxfw201p8d7a-libsodium-1.0.22-unstable-2026-08-13": {
+      "status": "upstream-cache",
+      "narBytes": 689536,
+      "upstreamCompressedBytes": 312866
+    },
+    "/nix/store/jpx1f0ilwsl2jjzkmqy40lfij433x1s4-python3.14-packaging-26.2": {
+      "status": "upstream-cache",
+      "narBytes": 1310448,
+      "upstreamCompressedBytes": 246189
+    },
+    "/nix/store/k2bghw14yj34mjbqx3s837314fw75bp9-python3.14-requests-2.34.2": {
+      "status": "upstream-cache",
+      "narBytes": 813736,
+      "upstreamCompressedBytes": 170956
+    },
+    "/nix/store/kcmwxd7jwln54q8cmyl3fsms0mwa4ipn-python3.14-aiodns-4.0.4": {
+      "status": "upstream-cache",
+      "narBytes": 130632,
+      "upstreamCompressedBytes": 28075
+    },
+    "/nix/store/kf3h2x8c8zam6df3gjkic06wjl9diaf3-python3.14-ptyprocess-0.7.0": {
+      "status": "upstream-cache",
+      "narBytes": 129016,
+      "upstreamCompressedBytes": 30416
+    },
+    "/nix/store/knh3zrrv3wnjhsbxsg84s3myiiw70fkv-python3.14-ncclient-0.7.1": {
+      "status": "upstream-cache",
+      "narBytes": 899464,
+      "upstreamCompressedBytes": 163723
+    },
+    "/nix/store/lb41b0anx1f98y9y5s9mdv97gjgsq740-python3-3.14.7": {
+      "status": "upstream-cache",
+      "narBytes": 143188008,
+      "upstreamCompressedBytes": 61440279
+    },
+    "/nix/store/lyj2hffm8hc3pv009mrmjkfdv5jsspxg-python3.14-pygments-2.20.0": {
+      "status": "upstream-cache",
+      "narBytes": 13450712,
+      "upstreamCompressedBytes": 2781960
+    },
+    "/nix/store/m05q3jm2yyz5mmzsw1pc0l4564ksvh3k-libssh-0.12.2-dev": {
+      "status": "upstream-cache",
+      "narBytes": 203912,
+      "upstreamCompressedBytes": 42603
+    },
+    "/nix/store/mkz6nfg48iz7k8x27yq91yc075djl5vl-python3.14-jmespath-1.1.0": {
+      "status": "upstream-cache",
+      "narBytes": 240896,
+      "upstreamCompressedBytes": 49941
+    },
+    "/nix/store/n8fqcpnr5ni28l3i9svqa70wz46798v9-tzdata-2026d": {
+      "status": "upstream-cache",
+      "narBytes": 2131536,
+      "upstreamCompressedBytes": 203814
+    },
+    "/nix/store/nd6kjsvl0n0br8dxaifb6biyls76p5ch-python3.14-pyyaml-6.0.3": {
+      "status": "upstream-cache",
+      "narBytes": 1049688,
+      "upstreamCompressedBytes": 241837
+    },
+    "/nix/store/nfvwg5i7whjz0c54y9x709ayg6yns9y4-python3.14-propcache-0.5.2": {
+      "status": "upstream-cache",
+      "narBytes": 163240,
+      "upstreamCompressedBytes": 54781
+    },
+    "/nix/store/nw26905cbl66zggk9gf8cmq9snp555nj-python3.14-cerberus-1.3.8": {
+      "status": "upstream-cache",
+      "narBytes": 421992,
+      "upstreamCompressedBytes": 83093
+    },
+    "/nix/store/p6vf82l56myrsdc6mpqb66akrlc6996y-python3.14-certifi-2026.06.17": {
+      "status": "upstream-cache",
+      "narBytes": 494528,
+      "upstreamCompressedBytes": 159780
+    },
+    "/nix/store/q47ddfyw0nb08ag1fyy323l61ij30hjh-python3.14-ntc-templates-9.2.0": {
+      "status": "upstream-cache",
+      "narBytes": 1550952,
+      "upstreamCompressedBytes": 336821
+    },
+    "/nix/store/q7fr6z459r3lbn1vqsairr0bdh0jvybi-python3.14-deepdiff-8.6.2": {
+      "status": "upstream-cache",
+      "narBytes": 1249464,
+      "upstreamCompressedBytes": 254892
+    },
+    "/nix/store/qbjksw36db3nh817yr6q5mkdiigj0zj5-python3.14-urllib3-2.7.0": {
+      "status": "upstream-cache",
+      "narBytes": 1534424,
+      "upstreamCompressedBytes": 299929
+    },
+    "/nix/store/r0iz3wli05a3bavd10j8qdkh1hpkbak1-python3.14-rpds-py-2026.6.3": {
+      "status": "upstream-cache",
+      "narBytes": 757424,
+      "upstreamCompressedBytes": 312444
+    },
+    "/nix/store/r6mrygmvszcs1l1a84x5g1g2x23h1l4a-libxslt-1.1.45": {
+      "status": "upstream-cache",
+      "narBytes": 405760,
+      "upstreamCompressedBytes": 177383
+    },
+    "/nix/store/rj460wvgpz7d0dpd3klyfp6qz2r8q9zn-python3.14-aiohttp-3.14.3": {
+      "status": "upstream-cache",
+      "narBytes": 4815456,
+      "upstreamCompressedBytes": 1017411
+    },
+    "/nix/store/ryg0sjdnp2vhi51m876d5blj7si80mgf-python3.14-six-1.17.0": {
+      "status": "upstream-cache",
+      "narBytes": 127272,
+      "upstreamCompressedBytes": 29798
+    },
+    "/nix/store/s1rnwf35i1vi8cyvp5x5dhk6mrrlb5yl-python3.14-pycrypto-3.23.0": {
+      "status": "upstream-cache",
+      "narBytes": 2576,
+      "upstreamCompressedBytes": 717
+    },
+    "/nix/store/s6yq178fcwflfz5f1244gp0nvfvn7z5z-python3.14-pycryptodome-3.23.0": {
+      "status": "upstream-cache",
+      "narBytes": 10018360,
+      "upstreamCompressedBytes": 1993891
+    },
+    "/nix/store/swkly32vy0gfc2494h2c3clyyqyb14wg-python3.14-et-xmlfile-2.0.0": {
+      "status": "upstream-cache",
+      "narBytes": 128632,
+      "upstreamCompressedBytes": 31360
+    },
+    "/nix/store/vfj3fn7rp56w7f3xy6vz5s41nziv4jgm-libxml2-2.15.4": {
+      "status": "upstream-cache",
+      "narBytes": 1526744,
+      "upstreamCompressedBytes": 701888
+    },
+    "/nix/store/vmdbqpy0ma6lpfi76jvpixwyad6x2ryf-python3.14-configparser-7.2.0": {
+      "status": "upstream-cache",
+      "narBytes": 214080,
+      "upstreamCompressedBytes": 43253
+    },
+    "/nix/store/wi04x5cvfpc8dvbvir3q6m51kg35jdh7-python3.14-ansible-14.4.0": {
+      "status": "upstream-cache",
+      "narBytes": 545271472,
+      "upstreamCompressedBytes": 58175133
+    },
+    "/nix/store/x5ahfpnsszk2g6f0n3b722snihfgq6s1-python3.14-ttp-0.10.1": {
+      "status": "upstream-cache",
+      "narBytes": 928544,
+      "upstreamCompressedBytes": 182755
+    },
+    "/nix/store/x63s1hy5l8g524klcrqwmxirnnkn3p8h-python3.14-jsonschema-4.26.0": {
+      "status": "upstream-cache",
+      "narBytes": 1496528,
+      "upstreamCompressedBytes": 234762
+    },
+    "/nix/store/xyfa8hds6q3as0k49x6pib52ksjhjm4n-python3.14-scp-0.15.0": {
+      "status": "upstream-cache",
+      "narBytes": 90216,
+      "upstreamCompressedBytes": 21411
+    },
+    "/nix/store/xz1dcliibj0w67ns6is5349km0j923dj-python3.14-aiosignal-1.4.0": {
+      "status": "upstream-cache",
+      "narBytes": 27856,
+      "upstreamCompressedBytes": 9220
+    },
+    "/nix/store/y2v26nckwf5yy7ljp6wm6jhm0d33mm5w-python3.14-pexpect-4.9.0": {
+      "status": "upstream-cache",
+      "narBytes": 652288,
+      "upstreamCompressedBytes": 120040
+    },
+    "/nix/store/y9ljkw860rhyai1higq7apccljyy6k84-python3.14-ply-3.11": {
+      "status": "upstream-cache",
+      "narBytes": 612272,
+      "upstreamCompressedBytes": 121508
+    },
+    "/nix/store/ynn53wlsgskk1zli1jw163apxmiyj7ny-python3.14-pycparser-3.00": {
+      "status": "upstream-cache",
+      "narBytes": 753968,
+      "upstreamCompressedBytes": 131006
+    },
+    "/nix/store/ypvl5nrjsc2p225vsswjfrqcgawiz9g9-python3.14-ruamel-yaml-clib-0.2.15": {
+      "status": "upstream-cache",
+      "narBytes": 413072,
+      "upstreamCompressedBytes": 168346
+    },
+    "/nix/store/z55cmwhysxj2rw62smqqni10irn9jwd2-python3.14-junit-xml-1.9": {
+      "status": "upstream-cache",
+      "narBytes": 64608,
+      "upstreamCompressedBytes": 15294
+    },
+    "/nix/store/z73vcizwqr4qm49bplw3ndx6qa1kj63g-python3.14-jsonpath-ng-1.8.0": {
+      "status": "upstream-cache",
+      "narBytes": 801912,
+      "upstreamCompressedBytes": 155290
+    },
+    "/nix/store/zc16iwaiicqhzspgqbidw1vw8wqxagv6-python3.14-yarl-1.24.5": {
+      "status": "upstream-cache",
+      "narBytes": 587712,
+      "upstreamCompressedBytes": 156506
+    },
+    "/nix/store/zrkqwk0989k5wa1gn3cjb76jfga3d8i3-expat-2.8.5": {
+      "status": "upstream-cache",
+      "narBytes": 347256,
+      "upstreamCompressedBytes": 129918
+    },
+    "/nix/store/zxn56vz1anqx127d7dzl5vvi40falmzh-python3.14-orderly-set-5.5.0": {
+      "status": "upstream-cache",
+      "narBytes": 201176,
+      "upstreamCompressedBytes": 33550
     },
     "/nix/store/d0672yr9s84mx3d0pgsx2n0cal6jvf43-json2dir-aot-1.0.0": {
       "status": "additional",
@@ -363,11 +966,6 @@
       "narBytes": 760472,
       "upstreamCompressedBytes": 383156
     },
-    "/nix/store/328fx8r0jb6l2ai4cli7fhp8g26fbfnh-util-linux-minimal-2.42.3-lib": {
-      "status": "upstream-cache",
-      "narBytes": 2174584,
-      "upstreamCompressedBytes": 740389
-    },
     "/nix/store/3dkchpfn8r3ipsccl1001xhcl5smfjdx-glib-2.88.3": {
       "status": "upstream-cache",
       "narBytes": 16255496,
@@ -393,11 +991,6 @@
       "narBytes": 1234864,
       "upstreamCompressedBytes": 416655
     },
-    "/nix/store/63g104xwbzfpcq0h7c99w19m6j9ly3p1-gawk-5.4.1": {
-      "status": "upstream-cache",
-      "narBytes": 3592656,
-      "upstreamCompressedBytes": 926963
-    },
     "/nix/store/6k9mf97fcy9icj84s8pwy041yqw25wql-libxft-2.3.9": {
       "status": "upstream-cache",
       "narBytes": 162880,
@@ -408,11 +1001,6 @@
       "narBytes": 5156456,
       "upstreamCompressedBytes": 1763003
     },
-    "/nix/store/7v8b5idfzwfl06hx6n0cvd5ikd5p0sbg-pcre2-10.48": {
-      "status": "upstream-cache",
-      "narBytes": 2117896,
-      "upstreamCompressedBytes": 698194
-    },
     "/nix/store/81xfxjiw58spk795jgcc7z1diwmy3xmi-freetype-2.14.3": {
       "status": "upstream-cache",
       "narBytes": 2312120,
@@ -422,11 +1010,6 @@
       "status": "upstream-cache",
       "narBytes": 178256,
       "upstreamCompressedBytes": 50779
-    },
-    "/nix/store/9x0m6s73sg89fv5awb95vsac2mbns8n0-sqlite-3.53.3": {
-      "status": "upstream-cache",
-      "narBytes": 6188296,
-      "upstreamCompressedBytes": 2374845
     },
     "/nix/store/a3rbzlj5wzxwjpncc0q9p6l64sc52m3y-libxcomposite-0.4.7": {
       "status": "upstream-cache",
@@ -593,11 +1176,6 @@
       "narBytes": 2628720,
       "upstreamCompressedBytes": 484894
     },
-    "/nix/store/mpqgjnlmzy3c5hslbgyc3s7zfz3m32lg-bzip2-1.0.8": {
-      "status": "upstream-cache",
-      "narBytes": 88992,
-      "upstreamCompressedBytes": 39064
-    },
     "/nix/store/n3knnafzffdqzyjdlabwm7p8pjdrwfd3-openjdk-minimal-jre-21.0.12.1+1": {
       "status": "upstream-cache",
       "narBytes": 55657416,
@@ -622,11 +1200,6 @@
       "status": "upstream-cache",
       "narBytes": 23679136,
       "upstreamCompressedBytes": 6387437
-    },
-    "/nix/store/pi2b23y3gv6zgcziwbgnihf8gam1cmlp-libffi-3.8.0": {
-      "status": "upstream-cache",
-      "narBytes": 99896,
-      "upstreamCompressedBytes": 39648
     },
     "/nix/store/qg23qszvwv9wg125x96k1vlgby75bn2s-systemd-minimal-261.3": {
       "status": "upstream-cache",
@@ -688,16 +1261,6 @@
       "narBytes": 213064,
       "upstreamCompressedBytes": 96941
     },
-    "/nix/store/vfj3fn7rp56w7f3xy6vz5s41nziv4jgm-libxml2-2.15.4": {
-      "status": "upstream-cache",
-      "narBytes": 1526744,
-      "upstreamCompressedBytes": 701888
-    },
-    "/nix/store/vkwq2iap75p0srizppc3jl2j5b1lxpln-xz-5.8.4": {
-      "status": "upstream-cache",
-      "narBytes": 881400,
-      "upstreamCompressedBytes": 256697
-    },
     "/nix/store/w8szff2i3dyf21v08j9yvpznfr7518wi-libxrandr-1.5.5": {
       "status": "upstream-cache",
       "narBytes": 64112,
@@ -748,20 +1311,30 @@
       "narBytes": 1218200,
       "upstreamCompressedBytes": 461692
     },
-    "/nix/store/zrkqwk0989k5wa1gn3cjb76jfga3d8i3-expat-2.8.5": {
-      "status": "upstream-cache",
-      "narBytes": 347256,
-      "upstreamCompressedBytes": 129918
-    },
     "/nix/store/bwn50xwl5i8293g3h02gn038ik473lhw-json2dir-asm-unstable": {
       "status": "additional",
       "narBytes": 3768,
       "xzNarBytes": 2008
     },
+    "/nix/store/4nif3abws7z9yd69skkn5l0rbxrfcvyn-ats2-0.4.2": {
+      "status": "upstream-cache",
+      "narBytes": 9702464,
+      "upstreamCompressedBytes": 1798405
+    },
+    "/nix/store/j0w7v7dzac6a7xx42ni321njbwykkzy1-json2dir-ats-unstable-ef3ee2f": {
+      "status": "additional",
+      "narBytes": 37224,
+      "xzNarBytes": 10952
+    },
     "/nix/store/4pdkmdy5yam6j5k4ks0xn5wcfsqk925g-json2dir-awk-2026-10-07": {
       "status": "additional",
       "narBytes": 13088,
       "xzNarBytes": 4040
+    },
+    "/nix/store/x56b41m78ijgxhx3288bs9xwf63z1b5z-json2dir-bash-2026-10-08": {
+      "status": "additional",
+      "narBytes": 14296,
+      "xzNarBytes": 4656
     },
     "/nix/store/582w1l9izs822l1zfi6yj05w1jb5y0jv-json2dir-basic-unstable": {
       "status": "additional",
@@ -778,6 +1351,96 @@
       "narBytes": 2276536,
       "xzNarBytes": 388516
     },
+    "/nix/store/27ln04s074yrlyhb31fc2lk2h2di9kgk-cfunge-1.001-unstable-2026-10-08": {
+      "status": "additional",
+      "narBytes": 218496,
+      "xzNarBytes": 74516
+    },
+    "/nix/store/45n6szipdgr92xk6a71d68yxy7nk5smb-libmd-1.2.0": {
+      "status": "upstream-cache",
+      "narBytes": 84840,
+      "upstreamCompressedBytes": 36713
+    },
+    "/nix/store/5q6bdxkp7lc70gn9mnf4yiybrx8ry5xq-gcc-16.2.0": {
+      "status": "upstream-cache",
+      "narBytes": 293826720,
+      "upstreamCompressedBytes": 95540572
+    },
+    "/nix/store/63r4x6k85swqqrz3gjvjj5lsc27vdh6v-libbsd-0.12.2": {
+      "status": "upstream-cache",
+      "narBytes": 107368,
+      "upstreamCompressedBytes": 47483
+    },
+    "/nix/store/85lj8x78s9z5v8z8b5ik5phdcwri22ac-gmp-6.3.0": {
+      "status": "upstream-cache",
+      "narBytes": 743968,
+      "upstreamCompressedBytes": 342340
+    },
+    "/nix/store/8wb7zk48s2iq3kix06vflp4dl5rpfsfs-binutils-2.46-lib": {
+      "status": "upstream-cache",
+      "narBytes": 3088552,
+      "upstreamCompressedBytes": 890781
+    },
+    "/nix/store/afhh51h1qz7f7jqhs4qs3ggxjipvn0i3-isl-0.20": {
+      "status": "upstream-cache",
+      "narBytes": 2736608,
+      "upstreamCompressedBytes": 1012480
+    },
+    "/nix/store/fy8mxgdjvjvmagv2igmj428a9j17hpcf-binutils-wrapper-2.46": {
+      "status": "upstream-cache",
+      "narBytes": 56672,
+      "upstreamCompressedBytes": 9424
+    },
+    "/nix/store/ggggdaqvaxkimbzx5p6knxr2nlqlqqnl-linux-headers-7.2": {
+      "status": "upstream-cache",
+      "narBytes": 7546056,
+      "upstreamCompressedBytes": 1946550
+    },
+    "/nix/store/j1938gsbvbhkyz4kbmvjk56r479mkw3s-gcc-wrapper-16.2.0": {
+      "status": "upstream-cache",
+      "narBytes": 71680,
+      "upstreamCompressedBytes": 12812
+    },
+    "/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev": {
+      "status": "upstream-cache",
+      "narBytes": 2489016,
+      "upstreamCompressedBytes": 500091
+    },
+    "/nix/store/md0s5263sz54nb4jxnlqq400w1wj622p-json2dir-befunge-unstable": {
+      "status": "additional",
+      "narBytes": 24568,
+      "xzNarBytes": 5164
+    },
+    "/nix/store/qa8pjnpxm0nkpci88dbig628hc7xxf67-mpfr-4.2.2": {
+      "status": "upstream-cache",
+      "narBytes": 830992,
+      "upstreamCompressedBytes": 397291
+    },
+    "/nix/store/qppfiapixbahy4nfvqky1dv5b2xgkdx5-expand-response-params": {
+      "status": "upstream-cache",
+      "narBytes": 16856,
+      "upstreamCompressedBytes": 3749
+    },
+    "/nix/store/s4mrmq9aciz9r5kb37jzfc7cvgk3lnxb-libmpc-1.4.1": {
+      "status": "upstream-cache",
+      "narBytes": 308776,
+      "upstreamCompressedBytes": 113687
+    },
+    "/nix/store/srvyqaf88njyqsrs1ajz3hznvdqq8hlw-glibc-2.44-25-bin": {
+      "status": "upstream-cache",
+      "narBytes": 3073648,
+      "upstreamCompressedBytes": 1076321
+    },
+    "/nix/store/y5sgl0vvrpbcwgjwpjs60r1hg0gi7i0n-binutils-2.46": {
+      "status": "upstream-cache",
+      "narBytes": 34834384,
+      "upstreamCompressedBytes": 9348249
+    },
+    "/nix/store/ryfbv167582gwncddldwljq95n7l0kcw-json2dir-bimbo-unstable-f62a869": {
+      "status": "additional",
+      "narBytes": 40632,
+      "xzNarBytes": 11676
+    },
     "/nix/store/cb7mj6ps4xg47vh874p94wis1h7qjwbn-cbqn-0.12.0": {
       "status": "upstream-cache",
       "narBytes": 1638592,
@@ -787,6 +1450,16 @@
       "status": "additional",
       "narBytes": 11224,
       "xzNarBytes": 4768
+    },
+    "/nix/store/602bfhn82cpd4rz7ih2sa90a3r80s0kb-braincopter-1.0": {
+      "status": "additional",
+      "narBytes": 123672,
+      "xzNarBytes": 46672
+    },
+    "/nix/store/n9c62nd68b1kxcd323ggkv82cmfqkfjj-json2dir-braincopter-unstable": {
+      "status": "additional",
+      "narBytes": 50320,
+      "xzNarBytes": 47052
     },
     "/nix/store/214r4v2hkcswgldgvfj840839c08gpi6-json2dir-brainfuck-unstable": {
       "status": "additional",
@@ -803,30 +1476,25 @@
       "narBytes": 2694256,
       "upstreamCompressedBytes": 608577
     },
-    "/nix/store/ggggdaqvaxkimbzx5p6knxr2nlqlqqnl-linux-headers-7.2": {
-      "status": "upstream-cache",
-      "narBytes": 7546056,
-      "upstreamCompressedBytes": 1946550
-    },
     "/nix/store/ifqk5gmhj5wnwpqy5mlsq77wjiadbgpn-binutils-2.46-lib": {
       "status": "upstream-cache",
       "narBytes": 30595096,
       "upstreamCompressedBytes": 5412469
-    },
-    "/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev": {
-      "status": "upstream-cache",
-      "narBytes": 2489016,
-      "upstreamCompressedBytes": 500091
     },
     "/nix/store/spc7p2wkhf26hbfkw597iqmqc4zrqivb-lightning-2.2.3": {
       "status": "upstream-cache",
       "narBytes": 333400,
       "upstreamCompressedBytes": 110934
     },
-    "/nix/store/srvyqaf88njyqsrs1ajz3hznvdqq8hlw-glibc-2.44-25-bin": {
-      "status": "upstream-cache",
-      "narBytes": 3073648,
-      "upstreamCompressedBytes": 1076321
+    "/nix/store/35bw8hgrzw7rnx0s8fad1k23h96n83s4-brainfunk-unstable-2026-10-08": {
+      "status": "additional",
+      "narBytes": 215712,
+      "xzNarBytes": 63660
+    },
+    "/nix/store/cvb5blxiqzs2h0rspc5j25v4fhmd4h83-json2dir-brainloller-unstable": {
+      "status": "additional",
+      "narBytes": 15832,
+      "xzNarBytes": 12504
     },
     "/nix/store/iiafdrq7abviw0wypx1wfq20snnq687i-json2dir-c17-unstable-ae747f5": {
       "status": "additional",
@@ -858,6 +1526,21 @@
       "narBytes": 25416,
       "xzNarBytes": 7336
     },
+    "/nix/store/2iyj7ik9pj2gxnrm6kyfa575k1rxx3wz-perl5.42.3-Acme-Chef-1.03": {
+      "status": "additional",
+      "narBytes": 59536,
+      "xzNarBytes": 14476
+    },
+    "/nix/store/8g4dmf7l8q1mf9w4wfmlcl8gvdgmhb8v-perl-5.42.3": {
+      "status": "upstream-cache",
+      "narBytes": 57856672,
+      "upstreamCompressedBytes": 13691996
+    },
+    "/nix/store/9fifk9f41pjknavj5bq97916pss3rhj4-json2dir-chef-unstable": {
+      "status": "additional",
+      "narBytes": 1721856,
+      "xzNarBytes": 55296
+    },
     "/nix/store/50bmpfpy3iirnp2jqn1g75dfavx30n5a-chez-scheme-10.4.1": {
       "status": "upstream-cache",
       "narBytes": 8511704,
@@ -872,11 +1555,6 @@
       "status": "additional",
       "narBytes": 44192,
       "xzNarBytes": 28824
-    },
-    "/nix/store/admwq91a8y32wmfw5hkilkmlwhnsr8yp-numactl-2.0.18": {
-      "status": "upstream-cache",
-      "narBytes": 276432,
-      "upstreamCompressedBytes": 85962
     },
     "/nix/store/ask8vvdbydlfshschznfwfvqb8is7gid-json2dir-cil-unstable-6326b5e": {
       "status": "additional",
@@ -918,6 +1596,36 @@
       "narBytes": 55657416,
       "xzNarBytes": 13185212
     },
+    "/nix/store/5i9x1yxqa9nk7jl7yflaavnlxvb09wrq-libuv-1.52.1": {
+      "status": "upstream-cache",
+      "narBytes": 286744,
+      "upstreamCompressedBytes": 125572
+    },
+    "/nix/store/64di19mmmfhkqnyr2vnlbn5gglyyszzg-curl-8.22.0": {
+      "status": "upstream-cache",
+      "narBytes": 1250360,
+      "upstreamCompressedBytes": 591876
+    },
+    "/nix/store/grmymzxx22cif3akd47w3iarhjxc4d5i-rhash-1.4.6": {
+      "status": "upstream-cache",
+      "narBytes": 407088,
+      "upstreamCompressedBytes": 217126
+    },
+    "/nix/store/jcvvpih1046akxcwh9hdiak5q24jqcf0-cmake-4.4.3": {
+      "status": "upstream-cache",
+      "narBytes": 73853280,
+      "upstreamCompressedBytes": 23650175
+    },
+    "/nix/store/xjn862icpw4y48i3mnyl2bgxx30fsjbp-libarchive-3.8.9-lib": {
+      "status": "upstream-cache",
+      "narBytes": 1009688,
+      "upstreamCompressedBytes": 477087
+    },
+    "/nix/store/y2gvjacljv8hx1162jr93sd9641bjdrd-json2dir-cmake-2026-10-08": {
+      "status": "additional",
+      "narBytes": 21968,
+      "xzNarBytes": 6168
+    },
     "/nix/store/3iqf04nzhrnlah9cyk9vj7fmkl8gn6d9-gnucobol-3.2-lib": {
       "status": "upstream-cache",
       "narBytes": 640048,
@@ -958,6 +1666,16 @@
       "narBytes": 23224,
       "xzNarBytes": 6736
     },
+    "/nix/store/9gwg5alvll879y5a3vrnjgmfi9nqbjm2-cow-runtime-e9503d0": {
+      "status": "additional",
+      "narBytes": 21656,
+      "xzNarBytes": 5308
+    },
+    "/nix/store/ckxv21s086z10y9wdx439dychirv3507-json2dir-cow-unstable": {
+      "status": "additional",
+      "narBytes": 1950864,
+      "xzNarBytes": 32148
+    },
     "/nix/store/640rrvfxp1kdq4bnb9jvpfgsnmfr2gjc-json2dir-cpp-unstable-7b28de5": {
       "status": "additional",
       "narBytes": 93624,
@@ -972,11 +1690,6 @@
       "status": "upstream-cache",
       "narBytes": 328576,
       "upstreamCompressedBytes": 133980
-    },
-    "/nix/store/n8fqcpnr5ni28l3i9svqa70wz46798v9-tzdata-2026d": {
-      "status": "upstream-cache",
-      "narBytes": 2131536,
-      "upstreamCompressedBytes": 203814
     },
     "/nix/store/zmqh6ayzsh23bc6cqly0h7a0gbmgfin1-json2dir-crystal-unstable-534bc4e": {
       "status": "additional",
@@ -1018,6 +1731,211 @@
       "narBytes": 347136,
       "xzNarBytes": 76896
     },
+    "/nix/store/1h05qaf3qn0rc6bcr2f5qfi7dnk78p0x-system-sendmail-1.0": {
+      "status": "upstream-cache",
+      "narBytes": 984,
+      "upstreamCompressedBytes": 411
+    },
+    "/nix/store/1m8aidmqx3q6dx38a6m1fym4ksnn5ncd-libxt-1.3.1": {
+      "status": "upstream-cache",
+      "narBytes": 503576,
+      "upstreamCompressedBytes": 221988
+    },
+    "/nix/store/2mcjx364ls9id3ngdjxd707j2az2aid2-libx11-1.8.13-dev": {
+      "status": "upstream-cache",
+      "narBytes": 256488,
+      "upstreamCompressedBytes": 51666
+    },
+    "/nix/store/4vja32nxw5k6vz17yn5iki94m2xvvh31-gpm-1.20.7-unstable-2020-06-17": {
+      "status": "upstream-cache",
+      "narBytes": 458088,
+      "upstreamCompressedBytes": 131538
+    },
+    "/nix/store/4x3rv1mk93k0avfrhyml91kf1h0ycwz2-tree-sitter-0.26.11": {
+      "status": "upstream-cache",
+      "narBytes": 12170896,
+      "upstreamCompressedBytes": 4255518
+    },
+    "/nix/store/4z81kq37j735zzi8scawd52xv3k9k49x-m17n-lib-1.8.6": {
+      "status": "upstream-cache",
+      "narBytes": 949928,
+      "upstreamCompressedBytes": 334590
+    },
+    "/nix/store/5c6r7n2alqd3rn44pxm4gqnr4v5q6x14-libsm-1.2.6-dev": {
+      "status": "upstream-cache",
+      "narBytes": 21576,
+      "upstreamCompressedBytes": 4341
+    },
+    "/nix/store/71vfc80n1f8hdf7jc09zcgz2c8j505xf-gss-1.0.4": {
+      "status": "upstream-cache",
+      "narBytes": 335976,
+      "upstreamCompressedBytes": 142799
+    },
+    "/nix/store/7i3kny16wi406wkh3kyxrb70dkj6gfk2-m17n-db-1.8.10": {
+      "status": "upstream-cache",
+      "narBytes": 7830560,
+      "upstreamCompressedBytes": 2189645
+    },
+    "/nix/store/7rzsba53w7cayy02ww6rq4m3rzp1q5i7-libotf-0.9.16": {
+      "status": "upstream-cache",
+      "narBytes": 239832,
+      "upstreamCompressedBytes": 97062
+    },
+    "/nix/store/810gbfr7abr6yiajnl0zz88jvmr6ph56-mariadb-connector-c-3.3.5": {
+      "status": "upstream-cache",
+      "narBytes": 1351952,
+      "upstreamCompressedBytes": 384187
+    },
+    "/nix/store/8qnjkcmkaj4cjky6a04z08bvcrxl884s-libwebp-1.6.0": {
+      "status": "upstream-cache",
+      "narBytes": 1798856,
+      "upstreamCompressedBytes": 589735
+    },
+    "/nix/store/9cy9z12zd0pghar424iqx816b4nq587w-libidn-1.44": {
+      "status": "upstream-cache",
+      "narBytes": 439800,
+      "upstreamCompressedBytes": 123950
+    },
+    "/nix/store/9ymz748lxp33ix2vixryczq7c5zrp8vp-libgpg-error-1.61": {
+      "status": "upstream-cache",
+      "narBytes": 907968,
+      "upstreamCompressedBytes": 256760
+    },
+    "/nix/store/avkj2rs1ybkgxi3j1nppjgp54jn2k43x-shishi-1.0.3": {
+      "status": "upstream-cache",
+      "narBytes": 2658800,
+      "upstreamCompressedBytes": 1012920
+    },
+    "/nix/store/c7a6kn398lml23ghr2k89fsj930a9k0q-libxpm-3.5.19": {
+      "status": "upstream-cache",
+      "narBytes": 90016,
+      "upstreamCompressedBytes": 42824
+    },
+    "/nix/store/d99sv05pi20zzyind2gw72r7j02g8zaq-linux-pam-1.7.2": {
+      "status": "upstream-cache",
+      "narBytes": 1958552,
+      "upstreamCompressedBytes": 410411
+    },
+    "/nix/store/dcx3zm7gyn246hd5s0kilpi29ylriqid-gsasl-2.2.3": {
+      "status": "upstream-cache",
+      "narBytes": 925792,
+      "upstreamCompressedBytes": 284562
+    },
+    "/nix/store/f294xy3n5bn3r9qv6a2ab7fkkmv7g5cp-audit-4.2.1-lib": {
+      "status": "upstream-cache",
+      "narBytes": 438576,
+      "upstreamCompressedBytes": 161020
+    },
+    "/nix/store/g3d3xr7glj75qlhndls3b38vd0f5aijc-dav1d-1.5.3": {
+      "status": "upstream-cache",
+      "narBytes": 2650104,
+      "upstreamCompressedBytes": 866302
+    },
+    "/nix/store/g8vsfx3fiq7g8m77kddlx7cfpljh151n-libxt-1.3.1-dev": {
+      "status": "upstream-cache",
+      "narBytes": 274568,
+      "upstreamCompressedBytes": 43258
+    },
+    "/nix/store/ga9yiz9h4qyna2jj7dsix5cr4n0yrrig-libtool-2.6.2-lib": {
+      "status": "upstream-cache",
+      "narBytes": 58360,
+      "upstreamCompressedBytes": 22835
+    },
+    "/nix/store/gfkkr23q11kvyz6xxyxz3qbsp1msxdcv-gettext-1.0": {
+      "status": "upstream-cache",
+      "narBytes": 24845480,
+      "upstreamCompressedBytes": 4953449
+    },
+    "/nix/store/h2icp6r0rf8kcknfggcxka6rj9rfhnll-libxmu-1.3.1": {
+      "status": "upstream-cache",
+      "narBytes": 167960,
+      "upstreamCompressedBytes": 65037
+    },
+    "/nix/store/h3p4hk53l98v7q2iqgrhy7g8p0dy5s8d-libsm-1.2.6": {
+      "status": "upstream-cache",
+      "narBytes": 49752,
+      "upstreamCompressedBytes": 18491
+    },
+    "/nix/store/h53iyxmgp59cgr7vh0yr3pkzhb1z2fqg-libgcrypt-1.12.4-lib": {
+      "status": "upstream-cache",
+      "narBytes": 1944872,
+      "upstreamCompressedBytes": 785141
+    },
+    "/nix/store/h72sldfkiq85f4i7ay549jk9caazlfl3-libxaw3d-1.6.6": {
+      "status": "upstream-cache",
+      "narBytes": 817576,
+      "upstreamCompressedBytes": 240171
+    },
+    "/nix/store/ii7wr6b6b8c5fq1ci26rw7amkb4apwm8-librsvg-2.62.3": {
+      "status": "upstream-cache",
+      "narBytes": 16408344,
+      "upstreamCompressedBytes": 5678443
+    },
+    "/nix/store/jy9fp83kqfw7kn208xm5i38sa8srfbkq-db-4.8.30": {
+      "status": "upstream-cache",
+      "narBytes": 3780264,
+      "upstreamCompressedBytes": 1101817
+    },
+    "/nix/store/kcjgqd0y98phnrqh0q64c4zg6say1lz1-libxmu-1.3.1-dev": {
+      "status": "upstream-cache",
+      "narBytes": 74832,
+      "upstreamCompressedBytes": 13304
+    },
+    "/nix/store/l2rdhqg1nf51jriibpyb7mcad1jyb9pb-libxaw-1.0.16": {
+      "status": "upstream-cache",
+      "narBytes": 1636712,
+      "upstreamCompressedBytes": 429038
+    },
+    "/nix/store/l4x33as4k9h76r16wv4wi5bx9v6yxgd1-json2dir-elisp-2026-10-08": {
+      "status": "additional",
+      "narBytes": 12976,
+      "xzNarBytes": 3988
+    },
+    "/nix/store/nanaxyywhwdn4k5i37z69y4jr9pmwqd0-libice-1.1.2": {
+      "status": "upstream-cache",
+      "narBytes": 128992,
+      "upstreamCompressedBytes": 55971
+    },
+    "/nix/store/pi83s3zgnn4ixsm81xl1h491spqgw902-ncompress-5.0": {
+      "status": "upstream-cache",
+      "narBytes": 76536,
+      "upstreamCompressedBytes": 16449
+    },
+    "/nix/store/pspv9gr4r2jj1lyagycqbb8i9l81wsq9-emacs-31.1": {
+      "status": "upstream-cache",
+      "narBytes": 337494512,
+      "upstreamCompressedBytes": 105157317
+    },
+    "/nix/store/v1i2drpnmfmdhswcs8zdziyz0xxdh75j-libice-1.1.2-dev": {
+      "status": "upstream-cache",
+      "narBytes": 39336,
+      "upstreamCompressedBytes": 8077
+    },
+    "/nix/store/w0xkd23405sbslbfnbhzcwwclvrsnwcf-libcap-ng-0.9.6": {
+      "status": "upstream-cache",
+      "narBytes": 181640,
+      "upstreamCompressedBytes": 58331
+    },
+    "/nix/store/yr6ar7lsk3yfas4d464z1ysaxwcq2gc5-gzip-1.14": {
+      "status": "upstream-cache",
+      "narBytes": 163528,
+      "upstreamCompressedBytes": 74479
+    },
+    "/nix/store/zf8kir8j2mczxzabl5l2dqp4s12890ln-libgccjit-16.2.0": {
+      "status": "upstream-cache",
+      "narBytes": 154533048,
+      "upstreamCompressedBytes": 50752923
+    },
+    "/nix/store/zhqvgsbq8ridrhr67qbxnq8rrbx6hvfj-xorgproto-2025.1": {
+      "status": "upstream-cache",
+      "narBytes": 1715192,
+      "upstreamCompressedBytes": 324476
+    },
+    "/nix/store/zv9il8nqbzgni75736vpmf7c8x66p6h6-mailutils-3.21": {
+      "status": "upstream-cache",
+      "narBytes": 12438304,
+      "upstreamCompressedBytes": 2859697
+    },
     "/nix/store/0bxbw62y5cy740408migjh1ssa3dyqif-lcms2-2.19.1": {
       "status": "upstream-cache",
       "narBytes": 517056,
@@ -1052,11 +1970,6 @@
       "status": "upstream-cache",
       "narBytes": 4066720,
       "upstreamCompressedBytes": 867974
-    },
-    "/nix/store/1ggxndc1gd5061j5hqprhnhx9p30yilv-gnused-4.10": {
-      "status": "upstream-cache",
-      "narBytes": 739168,
-      "upstreamCompressedBytes": 196400
     },
     "/nix/store/2a4dzjm774pgqs3d9v4637b26167zj94-libpciaccess-0.19": {
       "status": "upstream-cache",
@@ -1098,11 +2011,6 @@
       "narBytes": 186936,
       "upstreamCompressedBytes": 67477
     },
-    "/nix/store/67v4318ajiy9ia2wz14hqj7idy5181is-gdbm-1.26-lib": {
-      "status": "upstream-cache",
-      "narBytes": 463432,
-      "upstreamCompressedBytes": 130466
-    },
     "/nix/store/68zxfjq4ikzim1lmvang0r289zv3clwm-flite-2.2-lib": {
       "status": "upstream-cache",
       "narBytes": 63390232,
@@ -1133,16 +2041,6 @@
       "narBytes": 389336,
       "upstreamCompressedBytes": 192754
     },
-    "/nix/store/8g4dmf7l8q1mf9w4wfmlcl8gvdgmhb8v-perl-5.42.3": {
-      "status": "upstream-cache",
-      "narBytes": 57856672,
-      "upstreamCompressedBytes": 13691996
-    },
-    "/nix/store/8qnjkcmkaj4cjky6a04z08bvcrxl884s-libwebp-1.6.0": {
-      "status": "upstream-cache",
-      "narBytes": 1798856,
-      "upstreamCompressedBytes": 589735
-    },
     "/nix/store/90a5m7w1mjg6sh7g82dx34dnypn1476q-gst-plugins-base-1.28.7": {
       "status": "upstream-cache",
       "narBytes": 9448352,
@@ -1158,20 +2056,10 @@
       "narBytes": 4186640,
       "upstreamCompressedBytes": 920094
     },
-    "/nix/store/9j086va2zn7ifgdc3h3jlqbi2c23j1x5-mailcap-2.1.54": {
-      "status": "upstream-cache",
-      "narBytes": 119360,
-      "upstreamCompressedBytes": 32571
-    },
     "/nix/store/9w0bsaii24j9vshw79sjx1qvbffgs9wy-hwdata-0.411": {
       "status": "upstream-cache",
       "narBytes": 10558816,
       "upstreamCompressedBytes": 2348330
-    },
-    "/nix/store/9ymz748lxp33ix2vixryczq7c5zrp8vp-libgpg-error-1.61": {
-      "status": "upstream-cache",
-      "narBytes": 907968,
-      "upstreamCompressedBytes": 256760
     },
     "/nix/store/9yrxszw0fbyx68dbr4nbcnb408vqxgya-libnotify-0.8.8": {
       "status": "upstream-cache",
@@ -1198,30 +2086,10 @@
       "narBytes": 1127360,
       "upstreamCompressedBytes": 287504
     },
-    "/nix/store/cq65g1vyyiklplv6n2fgrjwxa6b4xfs9-mpdecimal-4.0.1": {
-      "status": "upstream-cache",
-      "narBytes": 230336,
-      "upstreamCompressedBytes": 102984
-    },
-    "/nix/store/d99sv05pi20zzyind2gw72r7j02g8zaq-linux-pam-1.7.2": {
-      "status": "upstream-cache",
-      "narBytes": 1958552,
-      "upstreamCompressedBytes": 410411
-    },
-    "/nix/store/f294xy3n5bn3r9qv6a2ab7fkkmv7g5cp-audit-4.2.1-lib": {
-      "status": "upstream-cache",
-      "narBytes": 438576,
-      "upstreamCompressedBytes": 161020
-    },
     "/nix/store/fqyhs67pyq64y5n12mcsavxda8829jqf-json2dir-elixir-2026-10-07": {
       "status": "additional",
       "narBytes": 12024,
       "xzNarBytes": 3712
-    },
-    "/nix/store/g3d3xr7glj75qlhndls3b38vd0f5aijc-dav1d-1.5.3": {
-      "status": "upstream-cache",
-      "narBytes": 2650104,
-      "upstreamCompressedBytes": 866302
     },
     "/nix/store/g51k0xv42kp6cwgwz1k7ap68ynj2y4bj-enchant-2.6.9": {
       "status": "upstream-cache",
@@ -1232,11 +2100,6 @@
       "status": "upstream-cache",
       "narBytes": 79312,
       "upstreamCompressedBytes": 29936
-    },
-    "/nix/store/ga9yiz9h4qyna2jj7dsix5cr4n0yrrig-libtool-2.6.2-lib": {
-      "status": "upstream-cache",
-      "narBytes": 58360,
-      "upstreamCompressedBytes": 22835
     },
     "/nix/store/gckp2y92mdfny4cydahvgghxxm968l1n-qrencode-4.1.1": {
       "status": "upstream-cache",
@@ -1252,16 +2115,6 @@
       "status": "upstream-cache",
       "narBytes": 2281528,
       "upstreamCompressedBytes": 625485
-    },
-    "/nix/store/h3p4hk53l98v7q2iqgrhy7g8p0dy5s8d-libsm-1.2.6": {
-      "status": "upstream-cache",
-      "narBytes": 49752,
-      "upstreamCompressedBytes": 18491
-    },
-    "/nix/store/h53iyxmgp59cgr7vh0yr3pkzhb1z2fqg-libgcrypt-1.12.4-lib": {
-      "status": "upstream-cache",
-      "narBytes": 1944872,
-      "upstreamCompressedBytes": 785141
     },
     "/nix/store/hlvgghwvdw4nffkig9ykwnlpgfn6vi13-hidapi-0.15.0": {
       "status": "upstream-cache",
@@ -1283,11 +2136,6 @@
       "narBytes": 838008,
       "upstreamCompressedBytes": 199004
     },
-    "/nix/store/ii7wr6b6b8c5fq1ci26rw7amkb4apwm8-librsvg-2.62.3": {
-      "status": "upstream-cache",
-      "narBytes": 16408344,
-      "upstreamCompressedBytes": 5678443
-    },
     "/nix/store/ijmh255rwz2ir2v05l0s24h3n841kdgc-gstreamer-1.28.7": {
       "status": "upstream-cache",
       "narBytes": 6509936,
@@ -1297,11 +2145,6 @@
       "status": "upstream-cache",
       "narBytes": 48216,
       "upstreamCompressedBytes": 22988
-    },
-    "/nix/store/jy9fp83kqfw7kn208xm5i38sa8srfbkq-db-4.8.30": {
-      "status": "upstream-cache",
-      "narBytes": 3780264,
-      "upstreamCompressedBytes": 1101817
     },
     "/nix/store/k81akx4837d7ghz4mfkr7kwzinw4qhp6-libseccomp-2.6.1-lib": {
       "status": "upstream-cache",
@@ -1333,25 +2176,10 @@
       "narBytes": 66082208,
       "upstreamCompressedBytes": 20966728
     },
-    "/nix/store/lb41b0anx1f98y9y5s9mdv97gjgsq740-python3-3.14.7": {
-      "status": "upstream-cache",
-      "narBytes": 143188008,
-      "upstreamCompressedBytes": 61440279
-    },
-    "/nix/store/n1i9ph766v9kbjs961j2aiw4qaagc1wj-json-c-0.18": {
-      "status": "upstream-cache",
-      "narBytes": 256312,
-      "upstreamCompressedBytes": 63138
-    },
     "/nix/store/n4d0qpsdlmvi09njrvdx8x32k5bj0rp3-nuspell-5.1.8-lib": {
       "status": "upstream-cache",
       "narBytes": 577344,
       "upstreamCompressedBytes": 223647
-    },
-    "/nix/store/nanaxyywhwdn4k5i37z69y4jr9pmwqd0-libice-1.1.2": {
-      "status": "upstream-cache",
-      "narBytes": 128992,
-      "upstreamCompressedBytes": 55971
     },
     "/nix/store/nnnms37r3b118p6a9jhvx977wxdaypjz-libxv-1.0.13": {
       "status": "upstream-cache",
@@ -1413,11 +2241,6 @@
       "narBytes": 725928,
       "upstreamCompressedBytes": 161420
     },
-    "/nix/store/r6mrygmvszcs1l1a84x5g1g2x23h1l4a-libxslt-1.1.45": {
-      "status": "upstream-cache",
-      "narBytes": 405760,
-      "upstreamCompressedBytes": 177383
-    },
     "/nix/store/rnklhs8wf0r4q9b97d25d3bnhygmjz7y-libsecret-0.21.7": {
       "status": "upstream-cache",
       "narBytes": 700520,
@@ -1437,11 +2260,6 @@
       "status": "upstream-cache",
       "narBytes": 1589136,
       "upstreamCompressedBytes": 381207
-    },
-    "/nix/store/s7306mp3pdbw8xx2gicsqvyganjhsywp-elfutils-0.195": {
-      "status": "upstream-cache",
-      "narBytes": 4324160,
-      "upstreamCompressedBytes": 859956
     },
     "/nix/store/skrvkixdaislvwpxzi2sfvq1ijsqk1w7-libhwy-1.4.0": {
       "status": "upstream-cache",
@@ -1463,11 +2281,6 @@
       "narBytes": 125456,
       "upstreamCompressedBytes": 60873
     },
-    "/nix/store/w0xkd23405sbslbfnbhzcwwclvrsnwcf-libcap-ng-0.9.6": {
-      "status": "upstream-cache",
-      "narBytes": 181640,
-      "upstreamCompressedBytes": 58331
-    },
     "/nix/store/w58917dqbdfl7g7fdwgmlw9wbqyc5ldq-alsa-ucm-conf-1.2.16.1": {
       "status": "upstream-cache",
       "narBytes": 936792,
@@ -1487,11 +2300,6 @@
       "status": "upstream-cache",
       "narBytes": 470864,
       "upstreamCompressedBytes": 214559
-    },
-    "/nix/store/xjn862icpw4y48i3mnyl2bgxx30fsjbp-libarchive-3.8.9-lib": {
-      "status": "upstream-cache",
-      "narBytes": 1009688,
-      "upstreamCompressedBytes": 477087
     },
     "/nix/store/xlqm12gx3s3f7dc1a5pnfk4p2niw2lri-alsa-lib-1.2.16.1": {
       "status": "upstream-cache",
@@ -1568,6 +2376,16 @@
       "narBytes": 16232,
       "xzNarBytes": 4604
     },
+    "/nix/store/42k49njybhw6lfzq77z4jlmb6nwwa0z3-json2dir-fish-unstable": {
+      "status": "additional",
+      "narBytes": 23616,
+      "xzNarBytes": 5256
+    },
+    "/nix/store/ycp3hp9qxgmqjr623yqj2f10bg4q9avk-fishr-unstable-2026-10-08": {
+      "status": "additional",
+      "narBytes": 1302904,
+      "xzNarBytes": 400196
+    },
     "/nix/store/7mfvqi5n0bld78kkx6aw92i0z70h8swi-gforth-0.7.9_20260729": {
       "status": "upstream-cache",
       "narBytes": 13514328,
@@ -1582,6 +2400,16 @@
       "status": "additional",
       "narBytes": 351480,
       "xzNarBytes": 141680
+    },
+    "/nix/store/dj3py5i5209s1hcdxnjxpcwlskzfw7bf-fractran-runtime-unstable-2026-10-08": {
+      "status": "additional",
+      "narBytes": 4071992,
+      "xzNarBytes": 704300
+    },
+    "/nix/store/wbi2m49w73h7njczjh2dkqr96wy0a06k-json2dir-fractran-unstable": {
+      "status": "additional",
+      "narBytes": 63344,
+      "xzNarBytes": 14744
     },
     "/nix/store/zyhp6dhz6b0lcp5f6124a5ss5jafkmv9-json2dir-freepascal-unstable-c74732f": {
       "status": "additional",
@@ -1628,10 +2456,100 @@
       "narBytes": 1463264,
       "xzNarBytes": 351080
     },
+    "/nix/store/04zqbm1ivs6l9r29h7lhbjzb7f0glhz9-lndir-1.0.6": {
+      "status": "upstream-cache",
+      "narBytes": 24560,
+      "upstreamCompressedBytes": 8288
+    },
+    "/nix/store/0d0rg2yycql3lmrmj34a7d1l8ghvs7xi-json2dir-hexagony-unstable": {
+      "status": "additional",
+      "narBytes": 2012080,
+      "xzNarBytes": 15380
+    },
+    "/nix/store/3j24hw169x8lba6ixvyz6n8b4lp3341z-nuget-package-hook": {
+      "status": "upstream-cache",
+      "narBytes": 3672,
+      "upstreamCompressedBytes": 1383
+    },
+    "/nix/store/4rmflp8cdk8iv9581a6rz038lgl44wc7-dotnet-sdk-wrapped-7.0.410": {
+      "status": "additional",
+      "narBytes": 13216,
+      "xzNarBytes": 3468
+    },
+    "/nix/store/5ypvkry3qra47dylc9kfk36r1q9vha80-zip-3.0": {
+      "status": "upstream-cache",
+      "narBytes": 609544,
+      "upstreamCompressedBytes": 197665
+    },
+    "/nix/store/7zxg9yn01rbwh1c7qh173rp3pnc3f5cf-xmlstarlet-1.7.0": {
+      "status": "upstream-cache",
+      "narBytes": 113488,
+      "upstreamCompressedBytes": 46767
+    },
+    "/nix/store/ck1aiwyfp2kk9v7ga53df9bq751q4gvn-perl5.42.3-Archive-Cpio-0.10": {
+      "status": "upstream-cache",
+      "narBytes": 22872,
+      "upstreamCompressedBytes": 5944
+    },
+    "/nix/store/h2jrsr48ss7i2lq9bscyqjmj2y8pmk4a-unzip-6.0": {
+      "status": "upstream-cache",
+      "narBytes": 551136,
+      "upstreamCompressedBytes": 158918
+    },
+    "/nix/store/h2zkd99w4xcl88n3g11s5l23ddcqj89j-perl5.42.3-SUPER-1.20190531": {
+      "status": "upstream-cache",
+      "narBytes": 9552,
+      "upstreamCompressedBytes": 3538
+    },
+    "/nix/store/hbvqbsifcjh10bb599ljsgspg8s68339-perl5.42.3-strip-nondeterminism-1.14.1": {
+      "status": "upstream-cache",
+      "narBytes": 92824,
+      "upstreamCompressedBytes": 33398
+    },
+    "/nix/store/ld47a6xxav3z26d9g6yhfwil9r0b3jm3-hexagony-runtime-1.0.0-unstable.20261008": {
+      "status": "additional",
+      "narBytes": 1030496,
+      "xzNarBytes": 282728
+    },
+    "/nix/store/mg2ccz9gn345lmllqb9sk3j03s2n9k3p-perl5.42.3-Sub-Override-0.09": {
+      "status": "upstream-cache",
+      "narBytes": 11416,
+      "upstreamCompressedBytes": 3661
+    },
+    "/nix/store/mwdvzxrmkic1wi18j0hmfifrkr37j5cw-dotnet-sdk-7.0.410": {
+      "status": "additional",
+      "narBytes": 587131160,
+      "xzNarBytes": 145757860
+    },
+    "/nix/store/pksaqd3mzjiyw7axprdasn1j01k9p053-perl5.42.3-Archive-Zip-1.68": {
+      "status": "upstream-cache",
+      "narBytes": 224632,
+      "upstreamCompressedBytes": 58183
+    },
+    "/nix/store/rhpdnx1n0m5yia87vl4bifm98r47ckvd-extra.targets": {
+      "status": "upstream-cache",
+      "narBytes": 384,
+      "upstreamCompressedBytes": 288
+    },
+    "/nix/store/rpfagzbgjbi1cpn4kkq5m48hqg2plgwl-perl5.42.3-Sub-Identify-0.14": {
+      "status": "upstream-cache",
+      "narBytes": 23904,
+      "upstreamCompressedBytes": 6516
+    },
+    "/nix/store/wsfj5xl6x6klkjj8z6mc3xklc5lbcx4l-perl5.42.3-Test-MockModule-0.177.0": {
+      "status": "upstream-cache",
+      "narBytes": 18976,
+      "upstreamCompressedBytes": 6242
+    },
     "/nix/store/ph32qwsy1h1hcx39zmv1zqipz3kri64w-json2dir-holyc-unstable": {
       "status": "additional",
       "narBytes": 125944,
       "xzNarBytes": 32352
+    },
+    "/nix/store/8xfxk9hqv0z2bwmnp85mw6fm385qlirh-json2dir-hs-unstable-14e3661": {
+      "status": "additional",
+      "narBytes": 1814904,
+      "xzNarBytes": 415196
     },
     "/nix/store/y0jv995x6s7k3zn0kqg6cjfnrgz4d6y6-json2dir-idris2-unstable-f0d004d": {
       "status": "additional",
@@ -1698,20 +2616,10 @@
       "narBytes": 129200,
       "upstreamCompressedBytes": 25561
     },
-    "/nix/store/3668q0d9zhc5n9l2pnyvpd44kz9bjsjm-gnugrep-3.12": {
-      "status": "upstream-cache",
-      "narBytes": 954920,
-      "upstreamCompressedBytes": 251463
-    },
     "/nix/store/4xkrh8kds5cakycv5f182dx2h8bd7prl-ada-4.0.0": {
       "status": "upstream-cache",
       "narBytes": 754536,
       "upstreamCompressedBytes": 346173
-    },
-    "/nix/store/5i9x1yxqa9nk7jl7yflaavnlxvb09wrq-libuv-1.52.1": {
-      "status": "upstream-cache",
-      "narBytes": 286744,
-      "upstreamCompressedBytes": 125572
     },
     "/nix/store/60w6v8qyrhd5lx3zy8c9jv3h4dvv5g4d-uvwasi-0.0.23": {
       "status": "upstream-cache",
@@ -1762,11 +2670,6 @@
       "status": "upstream-cache",
       "narBytes": 449784,
       "upstreamCompressedBytes": 84993
-    },
-    "/nix/store/dsamg7ahj9fxvxa2rpmlszpkavzf308r-llhttp-9.4.3": {
-      "status": "upstream-cache",
-      "narBytes": 95816,
-      "upstreamCompressedBytes": 27725
     },
     "/nix/store/gxq2cd70i077rah1d4hkzc1lpq8q4pv8-nodejs-24.21.0": {
       "status": "upstream-cache",
@@ -1898,6 +2801,21 @@
       "narBytes": 7742408,
       "upstreamCompressedBytes": 429405
     },
+    "/nix/store/2q7k9bqzmhbyhfrcrg08j2sm6hsazc81-json2dir-jscript-unstable": {
+      "status": "additional",
+      "narBytes": 16456,
+      "xzNarBytes": 5288
+    },
+    "/nix/store/6arcms5c1cwmkbg3szb035qx3rxbacb3-wine64-6.0.3": {
+      "status": "additional",
+      "narBytes": 929512,
+      "xzNarBytes": 29656
+    },
+    "/nix/store/vjcgy5ngbn7gm7cihm560b2n9pq0rzzd-wine64-6.0.3": {
+      "status": "additional",
+      "narBytes": 290879328,
+      "xzNarBytes": 28872532
+    },
     "/nix/store/4g0xgz79ig9lcr65v1w20v0cajhmbvi0-json2dir-jsonnet-2026-10-07": {
       "status": "additional",
       "narBytes": 9824,
@@ -1907,6 +2825,46 @@
       "status": "upstream-cache",
       "narBytes": 18929904,
       "upstreamCompressedBytes": 6960442
+    },
+    "/nix/store/bwnn2vz32k364rkaf7p1gmqnch8mkj0w-json2dir-jsonscript-2026-10-08": {
+      "status": "additional",
+      "narBytes": 2943848,
+      "xzNarBytes": 488368
+    },
+    "/nix/store/3087wyg9ai1mhrv2af95k1lk3znsz4l1-gfortran-14.4.0-libgcc": {
+      "status": "upstream-cache",
+      "narBytes": 201848,
+      "upstreamCompressedBytes": 94013
+    },
+    "/nix/store/47ljk77hcxh8ij4cchnw2249kb9nnpjx-gfortran-14.4.0-lib": {
+      "status": "upstream-cache",
+      "narBytes": 13443376,
+      "upstreamCompressedBytes": 4354807
+    },
+    "/nix/store/7nmnmanynvbsawhpw8mrx4xdfyi3jsyh-isl-0.20": {
+      "status": "upstream-cache",
+      "narBytes": 2736608,
+      "upstreamCompressedBytes": 1012475
+    },
+    "/nix/store/9b7xq5hvj9fbz9clyd2xx18ghpva80qz-libmpc-1.4.1": {
+      "status": "upstream-cache",
+      "narBytes": 308776,
+      "upstreamCompressedBytes": 113691
+    },
+    "/nix/store/a2bpphzl20l866cp62i8ja35mbsprs66-julia-1.13.1": {
+      "status": "upstream-cache",
+      "narBytes": 1029526360,
+      "upstreamCompressedBytes": 253800989
+    },
+    "/nix/store/i3nlb9d4qy3nmzji8hpzz6ri3c1gwwxl-gfortran-14.4.0": {
+      "status": "upstream-cache",
+      "narBytes": 308206720,
+      "upstreamCompressedBytes": 100358181
+    },
+    "/nix/store/ydca4gzv8dn1xk6p92pcsk5hqnvcvian-json2dir-julia-2026-10-08": {
+      "status": "additional",
+      "narBytes": 12408,
+      "xzNarBytes": 3808
     },
     "/nix/store/3v5mm9ks6lwm1wyy1bwf8yz5cqlfzgfl-musl-1.2.6": {
       "status": "upstream-cache",
@@ -1953,6 +2911,21 @@
       "narBytes": 142659744,
       "xzNarBytes": 28121668
     },
+    "/nix/store/f0pb37fkh5cn10hc364g3sf29iqddm60-json2dir-llvm-IR-unstable-64616eb": {
+      "status": "additional",
+      "narBytes": 25768,
+      "xzNarBytes": 7840
+    },
+    "/nix/store/2h8d8nm2z06av7crz5mrf4m6lyg3wpjx-ucblogo-code-6.2.5": {
+      "status": "additional",
+      "narBytes": 2766944,
+      "xzNarBytes": 755536
+    },
+    "/nix/store/dvniw594mq9n91i93lz03pafhfhzhmp3-json2dir-logo-2026-10-08": {
+      "status": "additional",
+      "narBytes": 16096,
+      "xzNarBytes": 4972
+    },
     "/nix/store/lqchsp7j7ak02wfmdi8f2j014vmj4bbx-lolcode-future-0.11.2-unstable-2026-09-11": {
       "status": "additional",
       "narBytes": 1685040,
@@ -1978,10 +2951,925 @@
       "narBytes": 14008,
       "xzNarBytes": 4472
     },
-    "/nix/store/5q6bdxkp7lc70gn9mnf4yiybrx8ry5xq-gcc-16.2.0": {
+    "/nix/store/0bjdzicl3w533x7hhybfy40h4i40xds3-perl-5.42.3-env": {
       "status": "upstream-cache",
-      "narBytes": 293826720,
-      "upstreamCompressedBytes": 95540572
+      "narBytes": 726936,
+      "upstreamCompressedBytes": 12146
+    },
+    "/nix/store/0f5rarmxbcdfrhg78iadnfhqn92375yh-graphics-cfg-41448-tex": {
+      "status": "upstream-cache",
+      "narBytes": 3432,
+      "upstreamCompressedBytes": 738
+    },
+    "/nix/store/0jpj161yz4a50d99vbv1zxdxlfw13kz8-dvipdfmx-76377-tex": {
+      "status": "upstream-cache",
+      "narBytes": 146320,
+      "upstreamCompressedBytes": 47482
+    },
+    "/nix/store/1w872viaa8lv1r0pz3v5gg9zyl37wn5z-kvdefinekeys-1.6-tex": {
+      "status": "upstream-cache",
+      "narBytes": 6216,
+      "upstreamCompressedBytes": 1971
+    },
+    "/nix/store/1xka894lq2hnjh6zhbnj5x4sd2ajym5j-babel-english-3.3r-tex": {
+      "status": "upstream-cache",
+      "narBytes": 28560,
+      "upstreamCompressedBytes": 2861
+    },
+    "/nix/store/1y8rp3nmscll77s1kdpkdi2lzk2xk0k6-texlive-scripts-78221-tex": {
+      "status": "upstream-cache",
+      "narBytes": 323200,
+      "upstreamCompressedBytes": 71827
+    },
+    "/nix/store/1zspnim1a1k9p0sb0b27p3jnslfrc311-hopatch-1.5-tex": {
+      "status": "upstream-cache",
+      "narBytes": 7784,
+      "upstreamCompressedBytes": 2055
+    },
+    "/nix/store/205vch4hhx1rxmqj0f7v4q56z1syzk1a-texlive.infra-76780-tlpdb-78234-tlpkg": {
+      "status": "upstream-cache",
+      "narBytes": 873112,
+      "upstreamCompressedBytes": 354060
+    },
+    "/nix/store/2blpqxjkzb48fr7kjharrymzj0g6a64b-latex-bin-77033-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 117792,
+      "upstreamCompressedBytes": 57197
+    },
+    "/nix/store/2nmaays3936xi3fs6i5pry37mi0xws5z-epstopdf-pkg-2.11-tex": {
+      "status": "upstream-cache",
+      "narBytes": 19288,
+      "upstreamCompressedBytes": 4322
+    },
+    "/nix/store/2xmz7szywkppj8v5nm9a8dikc61gdkk1-perl-5.42.3-man": {
+      "status": "upstream-cache",
+      "narBytes": 3811584,
+      "upstreamCompressedBytes": 3776551
+    },
+    "/nix/store/2y4g76zm7vq9ah2j5zzil7rrkgl9541i-texlive-bin-big-2025-luatex": {
+      "status": "upstream-cache",
+      "narBytes": 7644560,
+      "upstreamCompressedBytes": 2579759
+    },
+    "/nix/store/2zxrvnha9ijza59bc077w6pfsmhwir08-rerunfilecheck-1.11-tex": {
+      "status": "upstream-cache",
+      "narBytes": 10496,
+      "upstreamCompressedBytes": 3130
+    },
+    "/nix/store/338gwr2718cdha9m9zavkpc9rvkrqd4q-tcl-8.6.16": {
+      "status": "upstream-cache",
+      "narBytes": 7906384,
+      "upstreamCompressedBytes": 2802146
+    },
+    "/nix/store/3af27pflpq8m9ikffvx79ynqijc8hnl2-hyphen-base-74125-tex": {
+      "status": "upstream-cache",
+      "narBytes": 79192,
+      "upstreamCompressedBytes": 27141
+    },
+    "/nix/store/3aplbcwgmb3m6hsga2y5ackcrvb2spj8-psnfss-9.3-tex": {
+      "status": "upstream-cache",
+      "narBytes": 116152,
+      "upstreamCompressedBytes": 12820
+    },
+    "/nix/store/3hp5jmf0kp2iwjdfjwpnficcl5dqjdfb-auxhook-1.6-tex": {
+      "status": "upstream-cache",
+      "narBytes": 4728,
+      "upstreamCompressedBytes": 1503
+    },
+    "/nix/store/3i34ym2d3bvcj552bb0yp439mk9d1vi3-texlive-bin-2025-makeindex": {
+      "status": "upstream-cache",
+      "narBytes": 96288,
+      "upstreamCompressedBytes": 29827
+    },
+    "/nix/store/3lfpwqdnccgqbipm94k9f582bb52xhyq-graphics-75374-tex": {
+      "status": "upstream-cache",
+      "narBytes": 113520,
+      "upstreamCompressedBytes": 18740
+    },
+    "/nix/store/46jp23rnm909iqjh54yc832za355zj3x-grffile-2.1-tex": {
+      "status": "upstream-cache",
+      "narBytes": 16288,
+      "upstreamCompressedBytes": 4087
+    },
+    "/nix/store/47xzcl7zcwf7nkfyz0pspcyg10jkm0gp-texlive-bin-2025-texlive_scripts_extra": {
+      "status": "upstream-cache",
+      "narBytes": 1072,
+      "upstreamCompressedBytes": 389
+    },
+    "/nix/store/4cqskb40z2jcxkx50zxq60gix53byc9f-lualibs-2.76-tex": {
+      "status": "upstream-cache",
+      "narBytes": 788264,
+      "upstreamCompressedBytes": 175728
+    },
+    "/nix/store/4f9p2894dlj1m5yzl75j90p9xy1xzlbc-babel-26.3-tex": {
+      "status": "upstream-cache",
+      "narBytes": 2929272,
+      "upstreamCompressedBytes": 353772
+    },
+    "/nix/store/4fjg8b497y5b9fbbjf4q1rfmbw2vfw2q-texlive-bin-2025-tex": {
+      "status": "upstream-cache",
+      "narBytes": 438280,
+      "upstreamCompressedBytes": 225302
+    },
+    "/nix/store/5045wz1j6p9x1zflrpvv670b5sh9kgff-json2dir-luatex-2026-10-08": {
+      "status": "additional",
+      "narBytes": 15776,
+      "xzNarBytes": 5212
+    },
+    "/nix/store/50znmdmmzqq8bwk1iykh4sn8hh3baj9q-epstopdf-2.36-tex": {
+      "status": "upstream-cache",
+      "narBytes": 42752,
+      "upstreamCompressedBytes": 16248
+    },
+    "/nix/store/563rqrk7s4wp3l7h13s95f0189sganh6-pdftex-74113-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 6570016,
+      "upstreamCompressedBytes": 3595576
+    },
+    "/nix/store/5843ka0km450l2wlbr0a7nh7lm2qlc08-makeindex-75712": {
+      "status": "upstream-cache",
+      "narBytes": 2016,
+      "upstreamCompressedBytes": 930
+    },
+    "/nix/store/5ljxf5idlvyf7wlsk2gqx873rq7h5gqk-etex-pkg-2.7-tex": {
+      "status": "upstream-cache",
+      "narBytes": 19800,
+      "upstreamCompressedBytes": 6252
+    },
+    "/nix/store/5qik3gh540lb5zx99k0l09is2ixxq9rz-kvoptions-3.15-tex": {
+      "status": "upstream-cache",
+      "narBytes": 38392,
+      "upstreamCompressedBytes": 8298
+    },
+    "/nix/store/6gwnkpw7pdb37q58hivqklnmz2gqyml0-epstopdf-2.36": {
+      "status": "upstream-cache",
+      "narBytes": 43080,
+      "upstreamCompressedBytes": 16512
+    },
+    "/nix/store/6r3ffy9rj3r258l4rjcjbil0r3mz59g0-texlive-msg-translations-77642-tlpkg": {
+      "status": "upstream-cache",
+      "narBytes": 1501992,
+      "upstreamCompressedBytes": 210799
+    },
+    "/nix/store/6vvm53iwpv28www5wl17i18vw0lsln9s-mptopdf-78011-tex": {
+      "status": "upstream-cache",
+      "narBytes": 156648,
+      "upstreamCompressedBytes": 43736
+    },
+    "/nix/store/6zv7rh3y9gkinx64q8fpsqaf63r7mdpj-texlive-bin-big-2025-luahbtex": {
+      "status": "upstream-cache",
+      "narBytes": 7704200,
+      "upstreamCompressedBytes": 2599666
+    },
+    "/nix/store/73hh87da1l0pwdqgnphqdp2znwdhkh26-luahbtex-73848-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 37744,
+      "upstreamCompressedBytes": 32288
+    },
+    "/nix/store/748lfibkd8qs6s71aa2v5rrclsrp3xvr-kpathsea-75425-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 2350112,
+      "upstreamCompressedBytes": 1100281
+    },
+    "/nix/store/75jjvglhsv5bmb9ajnvajaxpnwsrmsww-hycolor-1.10-tex": {
+      "status": "upstream-cache",
+      "narBytes": 23768,
+      "upstreamCompressedBytes": 4596
+    },
+    "/nix/store/7n5r7idvwjl19nx2lg1j70iqip0xhlzl-pdftex-74113-tex": {
+      "status": "upstream-cache",
+      "narBytes": 260368,
+      "upstreamCompressedBytes": 51149
+    },
+    "/nix/store/7rrdd3a1s9spq0m5c4af108jkmpr34fy-dvipdfmx-76377-tlpkg": {
+      "status": "upstream-cache",
+      "narBytes": 2744,
+      "upstreamCompressedBytes": 1356
+    },
+    "/nix/store/7rwlvp4csh0g21xahch2aqmjm1bhghl6-hyphenex-57387-tex": {
+      "status": "upstream-cache",
+      "narBytes": 27088,
+      "upstreamCompressedBytes": 9535
+    },
+    "/nix/store/7vkcybj59lgpr9cx5hiin6jy18hk29ii-dvipdfmx-76377-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 3973928,
+      "upstreamCompressedBytes": 3186217
+    },
+    "/nix/store/858wcixqfjjhz6q54kjzvzl2xv5rkwav-pslatex-1.3-tex": {
+      "status": "upstream-cache",
+      "narBytes": 22096,
+      "upstreamCompressedBytes": 6864
+    },
+    "/nix/store/864acsz9hwmqq10hly6cv8x7dyrlg5m9-stringenc-1.12-tex": {
+      "status": "upstream-cache",
+      "narBytes": 362840,
+      "upstreamCompressedBytes": 32238
+    },
+    "/nix/store/8gm9aq3sspqmvvh7c0x7djcivj2x7yvn-gnupg-2.4.9": {
+      "status": "upstream-cache",
+      "narBytes": 13588080,
+      "upstreamCompressedBytes": 4003608
+    },
+    "/nix/store/8j2i66k8p5i7d00iz4jnzv5rrdjjrmzz-texlive-bin-2025": {
+      "status": "upstream-cache",
+      "narBytes": 350688,
+      "upstreamCompressedBytes": 150519
+    },
+    "/nix/store/8slmds4xria43hn7ij3if4a190npinn8-latex-lab-2025-11-01a-tex": {
+      "status": "upstream-cache",
+      "narBytes": 396312,
+      "upstreamCompressedBytes": 70006
+    },
+    "/nix/store/8y6a9bk3nff6qy4h2y15m771ga694dn9-fix2col-0.04-tex": {
+      "status": "upstream-cache",
+      "narBytes": 8792,
+      "upstreamCompressedBytes": 2425
+    },
+    "/nix/store/952w4m8wg4n80122f7zff7x0vc3bdnhx-mflogo-2.0-tex": {
+      "status": "upstream-cache",
+      "narBytes": 5784,
+      "upstreamCompressedBytes": 1407
+    },
+    "/nix/store/96wmz3f46kxqpnmn06jqk5442ff478jk-makeindex-75712-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 521920,
+      "upstreamCompressedBytes": 469611
+    },
+    "/nix/store/975f2dxcgqjfjd46i6n33q4b2vn6bnm1-pdftex-74113": {
+      "status": "upstream-cache",
+      "narBytes": 23216,
+      "upstreamCompressedBytes": 8889
+    },
+    "/nix/store/9jlxmd38qzhzxb0p28hl0w3zgairm3c6-bookmark-1.31-tex": {
+      "status": "upstream-cache",
+      "narBytes": 51456,
+      "upstreamCompressedBytes": 9375
+    },
+    "/nix/store/9kr1fya1yf5dnn65h321zisy8prwipn6-luaotfload-3.29-tex": {
+      "status": "upstream-cache",
+      "narBytes": 7690560,
+      "upstreamCompressedBytes": 1058605
+    },
+    "/nix/store/9lkaq9z8fjlnyg53jr7j8kb26njd2wn0-fonts.conf": {
+      "status": "additional",
+      "narBytes": 3184,
+      "xzNarBytes": 1300
+    },
+    "/nix/store/9sdm0kg6y37caihr8gpahb7dg535spfk-ghostscript-10.08.0-fonts": {
+      "status": "upstream-cache",
+      "narBytes": 6393288,
+      "upstreamCompressedBytes": 4398515
+    },
+    "/nix/store/a0gzz4lx2jc6pv5syl6hqdv6ddmfdrvm-letltxmacro-1.6-tex": {
+      "status": "upstream-cache",
+      "narBytes": 6568,
+      "upstreamCompressedBytes": 1952
+    },
+    "/nix/store/a0q7l92151ylpfkrk1wdw6l7bjkrs7df-npth-1.8": {
+      "status": "upstream-cache",
+      "narBytes": 57296,
+      "upstreamCompressedBytes": 17146
+    },
+    "/nix/store/a2cqqj2b7g51zl9isg58i6hkwbslk7ca-epstopdf-2.36-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 70048,
+      "upstreamCompressedBytes": 30850
+    },
+    "/nix/store/a4xhlqsb5awh2wla6199bd4h0fgwlf7w-symbol-77161-tex": {
+      "status": "upstream-cache",
+      "narBytes": 73720,
+      "upstreamCompressedBytes": 38057
+    },
+    "/nix/store/a854k146lx7mmf618yjavivggmijxhwn-luaotfload-3.29": {
+      "status": "upstream-cache",
+      "narBytes": 54512,
+      "upstreamCompressedBytes": 15407
+    },
+    "/nix/store/ab4b3dmffkw1k7ywfmz7lqzdysb9nl7a-tex-ini-files-73863-tex": {
+      "status": "upstream-cache",
+      "narBytes": 14416,
+      "upstreamCompressedBytes": 4193
+    },
+    "/nix/store/ad4649nq8y38vqv62i3r7sa4jwdyl30i-extractbb-1.1.0-tex": {
+      "status": "upstream-cache",
+      "narBytes": 19224,
+      "upstreamCompressedBytes": 6127
+    },
+    "/nix/store/avhvclrzx3ychcdcplbmfz6gipxyid2f-etex-73850-tex": {
+      "status": "upstream-cache",
+      "narBytes": 39328,
+      "upstreamCompressedBytes": 12713
+    },
+    "/nix/store/b1nifd7cr5kf6yz813rvski9z932mam8-bigintcalc-1.5-tex": {
+      "status": "upstream-cache",
+      "narBytes": 41440,
+      "upstreamCompressedBytes": 8219
+    },
+    "/nix/store/b4pp69r20xga3jrizlwx82hq7pdcp69f-luaotfload-3.29-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 1091192,
+      "upstreamCompressedBytes": 657219
+    },
+    "/nix/store/b61p5kjx4psg0cah9y2xjzs73pf8vmpz-tlshell-75412-tlpkg": {
+      "status": "upstream-cache",
+      "narBytes": 27696,
+      "upstreamCompressedBytes": 10348
+    },
+    "/nix/store/b7an5s95sbzrpn1a0kcp4ccl41w5rbij-texlive-combined-basic-2025-final-texmfdist": {
+      "status": "additional",
+      "narBytes": 239296,
+      "xzNarBytes": 29400
+    },
+    "/nix/store/b9wz2xl2b7nk615k1f5q4c7qd2lrhnjq-lua-uni-algos-0.5-tex": {
+      "status": "upstream-cache",
+      "narBytes": 59976,
+      "upstreamCompressedBytes": 13756
+    },
+    "/nix/store/bb22zf3crh21ikk6xj16vnjn39aczbn0-intcalc-1.3-tex": {
+      "status": "upstream-cache",
+      "narBytes": 32568,
+      "upstreamCompressedBytes": 6684
+    },
+    "/nix/store/bcxfyy6z5yakai4dbh437fmcakv98pyx-unicode-data-1.19-tex": {
+      "status": "upstream-cache",
+      "narBytes": 3542848,
+      "upstreamCompressedBytes": 536277
+    },
+    "/nix/store/bfvbd11krv563b8fpvhq1hp2w94cxyg4-latex-fonts-28888-tex": {
+      "status": "upstream-cache",
+      "narBytes": 118984,
+      "upstreamCompressedBytes": 21801
+    },
+    "/nix/store/c4znzllgv1ikq3sn8fzri2dbc43fp5hr-texlive-scripts-78221-tlpkg": {
+      "status": "upstream-cache",
+      "narBytes": 114112,
+      "upstreamCompressedBytes": 30331
+    },
+    "/nix/store/c8mk9gr8ajmh0sa4x9ad3yxpk63n1s1j-pdfescape-1.15-tex": {
+      "status": "upstream-cache",
+      "narBytes": 19808,
+      "upstreamCompressedBytes": 4789
+    },
+    "/nix/store/cdznphv9dwxcp6343iyff60s93jcaa3a-cm-57963-tex": {
+      "status": "upstream-cache",
+      "narBytes": 1060280,
+      "upstreamCompressedBytes": 290293
+    },
+    "/nix/store/czb6l39r9mmiwj7yc74qsqafsjic4h9r-oberdiek-71916-tex": {
+      "status": "upstream-cache",
+      "narBytes": 275336,
+      "upstreamCompressedBytes": 43401
+    },
+    "/nix/store/dbbri1gyxk7hfv41cpj1c0km1jlarrw9-knuth-lib-57963-tex": {
+      "status": "upstream-cache",
+      "narBytes": 109376,
+      "upstreamCompressedBytes": 34894
+    },
+    "/nix/store/dr81gjha92zx8xhhszz6zx7mx31ba783-texlive-bin-2025-dvipdfmx": {
+      "status": "upstream-cache",
+      "narBytes": 995704,
+      "upstreamCompressedBytes": 462129
+    },
+    "/nix/store/drn8qnk8d267lnz5j7sgqi97p8wp90ph-luatex-76924-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 3115880,
+      "upstreamCompressedBytes": 2066647
+    },
+    "/nix/store/drxcl63kmkpwgiy12wk02jvmz6asd1b1-tex-3.141592653-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 106992,
+      "upstreamCompressedBytes": 47474
+    },
+    "/nix/store/dwv36ddrxcfrinbp887i1fx82rqryjsi-libksba-1.8.0": {
+      "status": "upstream-cache",
+      "narBytes": 345400,
+      "upstreamCompressedBytes": 150169
+    },
+    "/nix/store/dyakkzb3a925jpjy93y9z1vqvhcbrbnl-iftex-1.0g-tex": {
+      "status": "upstream-cache",
+      "narBytes": 12800,
+      "upstreamCompressedBytes": 3037
+    },
+    "/nix/store/f2lvqrdx8qphzqivvgc0f7x7lf6bswpx-dvips-73850-tex": {
+      "status": "upstream-cache",
+      "narBytes": 377456,
+      "upstreamCompressedBytes": 76177
+    },
+    "/nix/store/g1j81fv5b46s2l6f5ga82ybkrhkksphs-enctex-34957-tex": {
+      "status": "upstream-cache",
+      "narBytes": 179960,
+      "upstreamCompressedBytes": 29824
+    },
+    "/nix/store/g7f2d20j4a7hf6v4q4sd2i9kj94pf0l8-etex-73850-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 497448,
+      "upstreamCompressedBytes": 343031
+    },
+    "/nix/store/gjnvrvkcnrpal13mxagr1c55rwgcb3pn-hyperref-7.01p-tex": {
+      "status": "upstream-cache",
+      "narBytes": 770304,
+      "upstreamCompressedBytes": 119567
+    },
+    "/nix/store/gylz83zwplfq73wlrr3687j78l8j0lpc-bibtex-0.99e-tex": {
+      "status": "upstream-cache",
+      "narBytes": 187864,
+      "upstreamCompressedBytes": 18678
+    },
+    "/nix/store/h304mzns3advj5jvn3lj2x1cp1hmia3s-ifplatform-0.4a-tex": {
+      "status": "upstream-cache",
+      "narBytes": 4712,
+      "upstreamCompressedBytes": 1576
+    },
+    "/nix/store/h4zi33yid56203f39wxm9qv55dqkxxvq-texlive-bin-big-2025": {
+      "status": "upstream-cache",
+      "narBytes": 1464112,
+      "upstreamCompressedBytes": 745233
+    },
+    "/nix/store/hfpr0sfcqpdds92mlp13rz6f2h3dqc85-glyphlist-54074-tex": {
+      "status": "upstream-cache",
+      "narBytes": 93688,
+      "upstreamCompressedBytes": 30860
+    },
+    "/nix/store/hgn92zw7gzilj385hss0m2jvbdfw7mi2-etexcmds-1.7-tex": {
+      "status": "upstream-cache",
+      "narBytes": 8528,
+      "upstreamCompressedBytes": 2349
+    },
+    "/nix/store/hhb5v3i1daq8x8sjfra71czri7x7dkar-etoolbox-2.5m-tex": {
+      "status": "upstream-cache",
+      "narBytes": 50256,
+      "upstreamCompressedBytes": 10103
+    },
+    "/nix/store/i13899vcgbb63wqgfdn51x86q1j990f9-firstaid-2025-11-01a-tex": {
+      "status": "upstream-cache",
+      "narBytes": 20536,
+      "upstreamCompressedBytes": 5239
+    },
+    "/nix/store/i1bhwp2xpg80rzrzm5h41xxxg8hybxn1-modes-4.4-tex": {
+      "status": "upstream-cache",
+      "narBytes": 99008,
+      "upstreamCompressedBytes": 31202
+    },
+    "/nix/store/i6q6vlg9y5515yi5brw6shc7ng5d59vp-hyphen-english-73410-tex": {
+      "status": "upstream-cache",
+      "narBytes": 183296,
+      "upstreamCompressedBytes": 50305
+    },
+    "/nix/store/ixjcn8fbciq57zlrrlas3bxych7dd4fm-ec-1.0-tex": {
+      "status": "upstream-cache",
+      "narBytes": 2815480,
+      "upstreamCompressedBytes": 400948
+    },
+    "/nix/store/j0dyz7qhhqyagl9sasgjkn6p25mrcgid-uniquecounter-1.4-tex": {
+      "status": "upstream-cache",
+      "narBytes": 7816,
+      "upstreamCompressedBytes": 2209
+    },
+    "/nix/store/j11l5qlfmnllzg98b8fmgpm2vk6dd9wj-libpaper-2.2.8": {
+      "status": "upstream-cache",
+      "narBytes": 112984,
+      "upstreamCompressedBytes": 41734
+    },
+    "/nix/store/j3w026ly2k64akjzig8dncby4cbvq9nk-mfnfss-77677-tex": {
+      "status": "upstream-cache",
+      "narBytes": 16448,
+      "upstreamCompressedBytes": 1868
+    },
+    "/nix/store/j53wg9jgxvwmxjmfk3nvw5argj0am16s-latexconfig-68923-tex": {
+      "status": "upstream-cache",
+      "narBytes": 5272,
+      "upstreamCompressedBytes": 2160
+    },
+    "/nix/store/ji6zf421n7xhsw1vfqdqw89npl9wwyhh-l3kernel-77438-tex": {
+      "status": "upstream-cache",
+      "narBytes": 1538816,
+      "upstreamCompressedBytes": 275037
+    },
+    "/nix/store/jj1j7qpp4pqb1dq7hrdrrbc7dni6lpwp-graphics-def-76719-tex": {
+      "status": "upstream-cache",
+      "narBytes": 84296,
+      "upstreamCompressedBytes": 12766
+    },
+    "/nix/store/jmhbywm79b6saz4vw55spmlj3m5rzhm0-ghostscript-10.08.0": {
+      "status": "upstream-cache",
+      "narBytes": 41556656,
+      "upstreamCompressedBytes": 21131859
+    },
+    "/nix/store/jqxmcx2qfbp6mqcjyns067sldjyyv7n9-geometry-5.9-tex": {
+      "status": "upstream-cache",
+      "narBytes": 42400,
+      "upstreamCompressedBytes": 9626
+    },
+    "/nix/store/jx5pri88gm2igjm0madxy088y4fqpclc-jbig2dec-0.20": {
+      "status": "upstream-cache",
+      "narBytes": 394288,
+      "upstreamCompressedBytes": 102404
+    },
+    "/nix/store/k1i4592k61f87x5ckr2f88rrzznlrmpp-luatex-76924": {
+      "status": "upstream-cache",
+      "narBytes": 1080,
+      "upstreamCompressedBytes": 235
+    },
+    "/nix/store/k8g1aki8nsay21445a4kl9llqjndkhzj-plain-3.1415926535-tex": {
+      "status": "upstream-cache",
+      "narBytes": 116216,
+      "upstreamCompressedBytes": 33464
+    },
+    "/nix/store/ks9dm37qhk12qwydjakv72rsc77whw8f-texlive-bin-2025-bibtex": {
+      "status": "upstream-cache",
+      "narBytes": 146728,
+      "upstreamCompressedBytes": 70997
+    },
+    "/nix/store/l1xkj71mcjx21x5a777lby55r9l8pacl-hyph-utf8-74823-tex": {
+      "status": "upstream-cache",
+      "narBytes": 79016,
+      "upstreamCompressedBytes": 19693
+    },
+    "/nix/store/l8qz3a6ansvvhm5blhn1q6qp3gy8jqxc-texlive-bin-2025-pdftex": {
+      "status": "upstream-cache",
+      "narBytes": 2708536,
+      "upstreamCompressedBytes": 1109452
+    },
+    "/nix/store/l9gsin4kv7ynn9mgx1zr3w7y3w2qlw2m-texlive-bin-2025-mfware": {
+      "status": "upstream-cache",
+      "narBytes": 263336,
+      "upstreamCompressedBytes": 89597
+    },
+    "/nix/store/lgf61icdh6qnvnzqqb2n8q66036bdsas-atbegshi-1.19-tex": {
+      "status": "upstream-cache",
+      "narBytes": 25504,
+      "upstreamCompressedBytes": 5248
+    },
+    "/nix/store/lgf7cqa9dwpciadp12mxnvi4cd83xp2l-dvipdfmx-76377": {
+      "status": "upstream-cache",
+      "narBytes": 1632,
+      "upstreamCompressedBytes": 276
+    },
+    "/nix/store/lxan7dj0fc8rdh6xj2kjjs28rckg5gvz-hypcap-1.13-tex": {
+      "status": "upstream-cache",
+      "narBytes": 4616,
+      "upstreamCompressedBytes": 1702
+    },
+    "/nix/store/lxdhnw74wwrk6jkflrdwyjjkdf2i6zaf-amscls-2.20.6-tex": {
+      "status": "upstream-cache",
+      "narBytes": 300312,
+      "upstreamCompressedBytes": 38070
+    },
+    "/nix/store/m419ayyrwpqfkgazp2iyv0x7jfj973bn-cyrus-sasl-2.1.28": {
+      "status": "upstream-cache",
+      "narBytes": 654944,
+      "upstreamCompressedBytes": 192288
+    },
+    "/nix/store/mbfxr45cmd30m65k0qdbdbkh3kvjhp6s-url-3.4-tex": {
+      "status": "upstream-cache",
+      "narBytes": 13584,
+      "upstreamCompressedBytes": 5556
+    },
+    "/nix/store/mpnmzncbr1f7yp5wdh6r73drjhvgbjw1-mptopdf-78011": {
+      "status": "upstream-cache",
+      "narBytes": 5088,
+      "upstreamCompressedBytes": 2174
+    },
+    "/nix/store/n0lhcfzjwgz1pb5zp6l7qv2i46fzasgx-zapfding-77161-tex": {
+      "status": "upstream-cache",
+      "narBytes": 74224,
+      "upstreamCompressedBytes": 49350
+    },
+    "/nix/store/n7w87r9n2njph3xg3kanhfwqprfkr8p2-mfware-77677-tex": {
+      "status": "upstream-cache",
+      "narBytes": 10768,
+      "upstreamCompressedBytes": 3091
+    },
+    "/nix/store/n821mzdqkpnly3jj4jgkp9d5wz280ih1-texlive-scripts-extra-76585-tex": {
+      "status": "upstream-cache",
+      "narBytes": 95824,
+      "upstreamCompressedBytes": 25315
+    },
+    "/nix/store/nai8yk1whls6is4jlymdxrnbxllsb3dw-amsfonts-3.04-tex": {
+      "status": "upstream-cache",
+      "narBytes": 6337272,
+      "upstreamCompressedBytes": 3784683
+    },
+    "/nix/store/nzygr62pckm8ay5c88ad0w0ddrij05if-pspicture-15878-tex": {
+      "status": "upstream-cache",
+      "narBytes": 6232,
+      "upstreamCompressedBytes": 1659
+    },
+    "/nix/store/p0ha5kkv1ldp881h9sdv9mmai2kjvq6x-texlive.infra-76780-tlpdb-78234-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 456040,
+      "upstreamCompressedBytes": 222714
+    },
+    "/nix/store/p22hra1w14xfak5rzx7iib8pjw8xpcn5-tex-3.141592653": {
+      "status": "upstream-cache",
+      "narBytes": 776,
+      "upstreamCompressedBytes": 222
+    },
+    "/nix/store/p4367jahjsddxzxm65kds43w0zwpzpmv-ijs-10.08.0": {
+      "status": "upstream-cache",
+      "narBytes": 88344,
+      "upstreamCompressedBytes": 25228
+    },
+    "/nix/store/p7r77cpw3firav9ww7i3wimqglm7xwl4-dvips-73850-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 1240000,
+      "upstreamCompressedBytes": 569747
+    },
+    "/nix/store/p7s30wsydjifqs05kvj9zbiagqgvx4w3-refcount-3.6-tex": {
+      "status": "upstream-cache",
+      "narBytes": 10672,
+      "upstreamCompressedBytes": 2962
+    },
+    "/nix/store/pcafm98rqm4vnh9bk41kbmj9v1n9q1fl-grfext-1.3-tex": {
+      "status": "upstream-cache",
+      "narBytes": 7928,
+      "upstreamCompressedBytes": 2272
+    },
+    "/nix/store/pn8lgc7mrbsb41jdvmi3jbfpjazlrp35-mptopdf-78011-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 27832,
+      "upstreamCompressedBytes": 17602
+    },
+    "/nix/store/q1a4nk94kjsmcnf0336bh2svxzfiqx23-texlive-combined-basic-2025-final-doc": {
+      "status": "additional",
+      "narBytes": 2088,
+      "xzNarBytes": 344
+    },
+    "/nix/store/q5l36nlwbnglyk12y8vih0zh1ayh747f-texlive-scripts-extra-76585-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 360832,
+      "upstreamCompressedBytes": 200459
+    },
+    "/nix/store/q96m9bsc84s5ckrfq8zahwmmjkmfxsyv-perl5.42.3-Tk-804.036": {
+      "status": "upstream-cache",
+      "narBytes": 7192872,
+      "upstreamCompressedBytes": 2157554
+    },
+    "/nix/store/qb6vxq6qss0q84yfy53jqy45zwljyqfk-texlive-scripts-78221": {
+      "status": "upstream-cache",
+      "narBytes": 175960,
+      "upstreamCompressedBytes": 48422
+    },
+    "/nix/store/qbwf85wwmckg8h3qq6xm3h6ihbhvkk5c-openldap-2.6.13": {
+      "status": "upstream-cache",
+      "narBytes": 4727624,
+      "upstreamCompressedBytes": 1651340
+    },
+    "/nix/store/qdbqz1rg8d9fy8lz4q5ywwaxhpkz6cwl-pdftexcmds-0.33-tex": {
+      "status": "upstream-cache",
+      "narBytes": 30536,
+      "upstreamCompressedBytes": 7018
+    },
+    "/nix/store/qdfbbihl6ihxd7dc9ppqc2f05w46rnj8-zziplib-0.13.80": {
+      "status": "upstream-cache",
+      "narBytes": 442016,
+      "upstreamCompressedBytes": 109935
+    },
+    "/nix/store/qdh9qmwpnnzmig9vs3vqdkg5a9blpvsg-infwarerr-1.5-tex": {
+      "status": "upstream-cache",
+      "narBytes": 9160,
+      "upstreamCompressedBytes": 2569
+    },
+    "/nix/store/qf2z2k5hfd8kx76gxmf5b45m4b804lhl-pagesel-1.10-tex": {
+      "status": "upstream-cache",
+      "narBytes": 12128,
+      "upstreamCompressedBytes": 2476
+    },
+    "/nix/store/qp0km3jx1l9jz5fyxsy14d4yd76qmcvw-kpathsea-75425-tex": {
+      "status": "upstream-cache",
+      "narBytes": 151848,
+      "upstreamCompressedBytes": 40245
+    },
+    "/nix/store/qrp1ym1612jdrhv1pfbxrrnnpqi9kvlq-libassuan-3.0.2": {
+      "status": "upstream-cache",
+      "narBytes": 108528,
+      "upstreamCompressedBytes": 47431
+    },
+    "/nix/store/qrxidad9j1jpz5nhl58rn2lgh3fyg7q2-texlive-scripts-extra-76585": {
+      "status": "upstream-cache",
+      "narBytes": 83008,
+      "upstreamCompressedBytes": 21896
+    },
+    "/nix/store/qwg6lmyl1fdqx96la6s412v04qrrfhp5-l3packages-76637-tex": {
+      "status": "upstream-cache",
+      "narBytes": 242680,
+      "upstreamCompressedBytes": 27412
+    },
+    "/nix/store/r4cw5yjr0vzq3z750b93nsq72qs0h33a-extractbb-1.1.0": {
+      "status": "upstream-cache",
+      "narBytes": 19232,
+      "upstreamCompressedBytes": 6248
+    },
+    "/nix/store/r6jdki9f70zxg4h3jyxvxndiw3cx2bnm-ae-1.4-tex": {
+      "status": "upstream-cache",
+      "narBytes": 477336,
+      "upstreamCompressedBytes": 92316
+    },
+    "/nix/store/rcpfbmp94k7z3z1xipqia2wrbm6sj35l-tools-76708-tex": {
+      "status": "upstream-cache",
+      "narBytes": 465440,
+      "upstreamCompressedBytes": 58195
+    },
+    "/nix/store/rgmg306r8frnh5vfm9h5ymilrv452i95-luatex-76924-tex": {
+      "status": "upstream-cache",
+      "narBytes": 134400,
+      "upstreamCompressedBytes": 24255
+    },
+    "/nix/store/rz2cpgxkc2hz0yfpwrwayl0ljvp5djiy-texlive-combined-basic-2025-final-tlpkg": {
+      "status": "additional",
+      "narBytes": 3712,
+      "xzNarBytes": 628
+    },
+    "/nix/store/sbxbixvigsf0qpmb7gqlc2lww23f7qjh-extractbb-1.1.0-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 46424,
+      "upstreamCompressedBytes": 26136
+    },
+    "/nix/store/sc9jd4sbf0acmffspl1a7ljbk6j41zby-carlisle-59577-tex": {
+      "status": "upstream-cache",
+      "narBytes": 24640,
+      "upstreamCompressedBytes": 8911
+    },
+    "/nix/store/slah9yaxpvkabnwwqvklyqp7h8rb5354-bibtex-0.99e-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 532760,
+      "upstreamCompressedBytes": 409074
+    },
+    "/nix/store/swxn2kgfg47a8r0igh45r51c7x3mk92s-lm-2.005-tex": {
+      "status": "upstream-cache",
+      "narBytes": 41464568,
+      "upstreamCompressedBytes": 14083608
+    },
+    "/nix/store/v0lfzwb0g55858vam60yw28lh5vnsv4p-fancyhdr-5.2-tex": {
+      "status": "upstream-cache",
+      "narBytes": 42776,
+      "upstreamCompressedBytes": 9375
+    },
+    "/nix/store/vnvcjhgan85r432jybvxsp34908g7388-texlive.infra-76780-tlpdb-78234": {
+      "status": "upstream-cache",
+      "narBytes": 371376,
+      "upstreamCompressedBytes": 106216
+    },
+    "/nix/store/vpv1c242vmd0n4szadzn3abapil7rm2y-bitset-1.3-tex": {
+      "status": "upstream-cache",
+      "narBytes": 34760,
+      "upstreamCompressedBytes": 6928
+    },
+    "/nix/store/vrz9n07jd818l804034n5ahk1w8qzybz-texlive-scripts-78221-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 547408,
+      "upstreamCompressedBytes": 244553
+    },
+    "/nix/store/vvq9j66vn6m2ffri7716jgc9dapb21an-texlive-bin-2025-dvips": {
+      "status": "upstream-cache",
+      "narBytes": 349280,
+      "upstreamCompressedBytes": 171513
+    },
+    "/nix/store/w3yf0lcxi4yi01hzgmwvja23anssb2p1-colorprofiles-20181105-tex": {
+      "status": "upstream-cache",
+      "narBytes": 130200,
+      "upstreamCompressedBytes": 101745
+    },
+    "/nix/store/w8r9nm27sdsjqkkvm5z9vq5bx2zppals-tlshell-75412-tex": {
+      "status": "upstream-cache",
+      "narBytes": 101736,
+      "upstreamCompressedBytes": 29654
+    },
+    "/nix/store/wbachnvi5bs11wm252d3lh9lrqhfxzgr-amsmath-78116-tex": {
+      "status": "upstream-cache",
+      "narBytes": 266816,
+      "upstreamCompressedBytes": 39572
+    },
+    "/nix/store/wikkqf4rj3pajv3ahz9nb2d4i77ia02z-gettitlestring-1.6-tex": {
+      "status": "upstream-cache",
+      "narBytes": 9184,
+      "upstreamCompressedBytes": 2769
+    },
+    "/nix/store/wjb91lc8ncps2p07gy8xkmr09qdvb09l-ltxmisc-75878-tex": {
+      "status": "upstream-cache",
+      "narBytes": 47792,
+      "upstreamCompressedBytes": 16649
+    },
+    "/nix/store/wmi6bqy0dwlarscsjlhsd5hbsjdqnq34-texlive-combined-basic-2025-final": {
+      "status": "additional",
+      "narBytes": 21427592,
+      "xzNarBytes": 11388220
+    },
+    "/nix/store/wrwxc9a4xfigpfz0nrfd5q5gbqhbcm1x-openjpeg-2.5.4": {
+      "status": "upstream-cache",
+      "narBytes": 1723168,
+      "upstreamCompressedBytes": 427679
+    },
+    "/nix/store/x3zgrqsv7jyx4fb89inyd3izbzz4hrx1-atveryend-1.12-tex": {
+      "status": "upstream-cache",
+      "narBytes": 2496,
+      "upstreamCompressedBytes": 937
+    },
+    "/nix/store/x98653bsjmblvihi738s9w72s8byc7gz-natbib-8.31b-tex": {
+      "status": "upstream-cache",
+      "narBytes": 128824,
+      "upstreamCompressedBytes": 19247
+    },
+    "/nix/store/xcr44zal906y17v76267my3m92j9mvq4-lua-alt-getopt-0.7.0-tex": {
+      "status": "upstream-cache",
+      "narBytes": 4640,
+      "upstreamCompressedBytes": 1776
+    },
+    "/nix/store/xzg2jp81bk7ny06vqy701qz9lw389kl0-tk-8.6.16": {
+      "status": "upstream-cache",
+      "narBytes": 3327648,
+      "upstreamCompressedBytes": 1256313
+    },
+    "/nix/store/y7gkwmzxarr6qg5frlpvwvhs1rcqmas5-knuth-local-57963-tex": {
+      "status": "upstream-cache",
+      "narBytes": 116248,
+      "upstreamCompressedBytes": 27466
+    },
+    "/nix/store/y958nmc6pghvhqnkyns68f5q68m2q5c1-l3backend-76924-tex": {
+      "status": "upstream-cache",
+      "narBytes": 201960,
+      "upstreamCompressedBytes": 22214
+    },
+    "/nix/store/yf6h22kcdzd9fbm9vsax0d8yd3dz5645-kpathsea-75425": {
+      "status": "upstream-cache",
+      "narBytes": 1376,
+      "upstreamCompressedBytes": 286
+    },
+    "/nix/store/yfg8f7h1fvn8mq8bggjpi7v4nh3qcmcm-babelbib-1.34-tex": {
+      "status": "upstream-cache",
+      "narBytes": 798184,
+      "upstreamCompressedBytes": 36439
+    },
+    "/nix/store/ygl5258iyp7qkvh204nd2wnynjr7vgkb-colortbl-1.0k-tex": {
+      "status": "upstream-cache",
+      "narBytes": 13504,
+      "upstreamCompressedBytes": 3905
+    },
+    "/nix/store/yjr7yyw9bgb1cpqnjqsrbqyxw8vv7x7p-texlive-bin-2025-kpathsea": {
+      "status": "upstream-cache",
+      "narBytes": 81944,
+      "upstreamCompressedBytes": 15885
+    },
+    "/nix/store/yxx1iv5i02dsb2r26n882l2ja7mxyw32-latex-76924-tex": {
+      "status": "upstream-cache",
+      "narBytes": 2874360,
+      "upstreamCompressedBytes": 364247
+    },
+    "/nix/store/z2wqyaqxcxidhjg56xym3hjca8v5dfqx-tlshell-75412": {
+      "status": "upstream-cache",
+      "narBytes": 99696,
+      "upstreamCompressedBytes": 28919
+    },
+    "/nix/store/z4r4p3rx09k3msvq64xpak179v7l0nz4-mfware-77677-texdoc": {
+      "status": "upstream-cache",
+      "narBytes": 163824,
+      "upstreamCompressedBytes": 110126
+    },
+    "/nix/store/z67yyrgjil3nqcmwvhssihrkl1dpvaxj-texlive-combined-basic-2025-final-texmfroot": {
+      "status": "additional",
+      "narBytes": 648,
+      "xzNarBytes": 292
+    },
+    "/nix/store/z75nd9fcvqkdnc57sk27c5wvxzl2407a-kvsetkeys-1.19-tex": {
+      "status": "upstream-cache",
+      "narBytes": 14616,
+      "upstreamCompressedBytes": 3698
+    },
+    "/nix/store/zcy0y3hc77lr7qan4dip7kayf379n69y-texlive.infra-76780-tlpdb-78234-tex": {
+      "status": "upstream-cache",
+      "narBytes": 471888,
+      "upstreamCompressedBytes": 129225
+    },
+    "/nix/store/zhff85y0i8vndwp16jwqrj10mjy8raqh-dehyph-48599-tex": {
+      "status": "upstream-cache",
+      "narBytes": 227960,
+      "upstreamCompressedBytes": 59459
+    },
+    "/nix/store/zn75ywwc3mdd8s1r8xwqrr0wcm60k5fk-ltxcmds-1.26-tex": {
+      "status": "upstream-cache",
+      "narBytes": 18664,
+      "upstreamCompressedBytes": 4438
+    },
+    "/nix/store/zxxm6k21ckl0yh388qr0kdp8gxi77n2f-makeindex-75712-tex": {
+      "status": "upstream-cache",
+      "narBytes": 16760,
+      "upstreamCompressedBytes": 4808
+    },
+    "/nix/store/091rwk3g688mlpf3whpqkl58k08hn1az-json2dir-ludka-unstable-d45ea9a": {
+      "status": "additional",
+      "narBytes": 40248,
+      "xzNarBytes": 11560
+    },
+    "/nix/store/lc0xjwbgnpc1wsp387x021f3w5b9ljk0-json2dir-malbolge-unstable": {
+      "status": "additional",
+      "narBytes": 251351464,
+      "xzNarBytes": 9289960
+    },
+    "/nix/store/rcrm24k48q0kqsskq6nsn4b9v4drziig-malbolge-unshackled-20": {
+      "status": "additional",
+      "narBytes": 21408,
+      "xzNarBytes": 6624
     },
     "/nix/store/5z2fc6igach4s04fdas20syzxbf8gkxc-json2dir-mercury-unstable": {
       "status": "additional",
@@ -1993,60 +3881,15 @@
       "narBytes": 107885320,
       "upstreamCompressedBytes": 38839617
     },
-    "/nix/store/85lj8x78s9z5v8z8b5ik5phdcwri22ac-gmp-6.3.0": {
-      "status": "upstream-cache",
-      "narBytes": 743968,
-      "upstreamCompressedBytes": 342340
-    },
-    "/nix/store/8wb7zk48s2iq3kix06vflp4dl5rpfsfs-binutils-2.46-lib": {
-      "status": "upstream-cache",
-      "narBytes": 3088552,
-      "upstreamCompressedBytes": 890781
-    },
-    "/nix/store/afhh51h1qz7f7jqhs4qs3ggxjipvn0i3-isl-0.20": {
-      "status": "upstream-cache",
-      "narBytes": 2736608,
-      "upstreamCompressedBytes": 1012480
-    },
-    "/nix/store/fy8mxgdjvjvmagv2igmj428a9j17hpcf-binutils-wrapper-2.46": {
-      "status": "upstream-cache",
-      "narBytes": 56672,
-      "upstreamCompressedBytes": 9424
-    },
-    "/nix/store/j1938gsbvbhkyz4kbmvjk56r479mkw3s-gcc-wrapper-16.2.0": {
-      "status": "upstream-cache",
-      "narBytes": 71680,
-      "upstreamCompressedBytes": 12812
-    },
     "/nix/store/psb1cy5dk6dj64klgy8xdyxcx1wwvslg-set-java-classpath-hook": {
       "status": "upstream-cache",
       "narBytes": 792,
       "upstreamCompressedBytes": 347
     },
-    "/nix/store/qa8pjnpxm0nkpci88dbig628hc7xxf67-mpfr-4.2.2": {
-      "status": "upstream-cache",
-      "narBytes": 830992,
-      "upstreamCompressedBytes": 397291
-    },
-    "/nix/store/qppfiapixbahy4nfvqky1dv5b2xgkdx5-expand-response-params": {
-      "status": "upstream-cache",
-      "narBytes": 16856,
-      "upstreamCompressedBytes": 3749
-    },
-    "/nix/store/s4mrmq9aciz9r5kb37jzfc7cvgk3lnxb-libmpc-1.4.1": {
-      "status": "upstream-cache",
-      "narBytes": 308776,
-      "upstreamCompressedBytes": 113687
-    },
     "/nix/store/w8lzirwk45f0376c5l9vxarr5c51y6pr-mercury-22.01.9": {
       "status": "upstream-cache",
       "narBytes": 975372040,
       "upstreamCompressedBytes": 169764678
-    },
-    "/nix/store/y5sgl0vvrpbcwgjwpjs60r1hg0gi7i0n-binutils-2.46": {
-      "status": "upstream-cache",
-      "narBytes": 34834384,
-      "upstreamCompressedBytes": 9348249
     },
     "/nix/store/zw4gqqs2ih4dyvmn3wbkc85pkabqb1im-openjdk-headless-8u504-b01": {
       "status": "upstream-cache",
@@ -2067,6 +3910,21 @@
       "status": "additional",
       "narBytes": 3311216,
       "xzNarBytes": 693756
+    },
+    "/nix/store/b8lqbpbgy4lyp46dwxks5x5i8mrvc806-dotnet-sdk-10.0.401": {
+      "status": "upstream-cache",
+      "narBytes": 727019400,
+      "upstreamCompressedBytes": 231349159
+    },
+    "/nix/store/lhkxvyd637wz8iamhdzgdjjgsh111cm6-json2dir-msbuild-2026-10-08": {
+      "status": "additional",
+      "narBytes": 13360,
+      "xzNarBytes": 4656
+    },
+    "/nix/store/qivn469nzs5z0527x873v90wywl0mflf-dotnet-sdk-wrapped-10.0.401": {
+      "status": "upstream-cache",
+      "narBytes": 13472,
+      "upstreamCompressedBytes": 3905
     },
     "/nix/store/11c13775fffi0ciahrfp54pw4r8p4xgv-json2dir-neovim-2026-10-07": {
       "status": "additional",
@@ -2132,11 +3990,6 @@
       "status": "upstream-cache",
       "narBytes": 410896,
       "upstreamCompressedBytes": 82355
-    },
-    "/nix/store/4x3rv1mk93k0avfrhyml91kf1h0ycwz2-tree-sitter-0.26.11": {
-      "status": "upstream-cache",
-      "narBytes": 12170896,
-      "upstreamCompressedBytes": 4255518
     },
     "/nix/store/59dasp46j7d5k7yq8iz7dp3g166yywip-perl5.42.3-HTML-Tagset-3.20": {
       "status": "upstream-cache",
@@ -2393,6 +4246,201 @@
       "narBytes": 150048,
       "xzNarBytes": 50172
     },
+    "/nix/store/0kvmmgh37mf3ghfr3994p3p1nmzipp3z-boost-1.89.0": {
+      "status": "upstream-cache",
+      "narBytes": 17295048,
+      "upstreamCompressedBytes": 4704232
+    },
+    "/nix/store/2jjk8k08agbp5hw193zx2krdywcwzb95-s2n-tls-1.7.8": {
+      "status": "upstream-cache",
+      "narBytes": 1459512,
+      "upstreamCompressedBytes": 419469
+    },
+    "/nix/store/2zgasbvd9mzmj145mxsmnzxiy7rnz82b-aws-c-http-0.11.0": {
+      "status": "upstream-cache",
+      "narBytes": 668816,
+      "upstreamCompressedBytes": 234700
+    },
+    "/nix/store/45ndmvc3vy9rd30mk71bq89gigzdx64p-aws-c-sdkutils-0.2.4": {
+      "status": "upstream-cache",
+      "narBytes": 163184,
+      "upstreamCompressedBytes": 57996
+    },
+    "/nix/store/5w514y0s25ym17bsrw43wl33fbxvy91a-aws-c-compression-0.3.1": {
+      "status": "upstream-cache",
+      "narBytes": 32392,
+      "upstreamCompressedBytes": 10118
+    },
+    "/nix/store/6gr0hcy9fn11impnsc3q77mifh095fkw-lowdown-3.0.1-lib": {
+      "status": "upstream-cache",
+      "narBytes": 357728,
+      "upstreamCompressedBytes": 167583
+    },
+    "/nix/store/a5cj3shgkjhnnv5sbwk4jj6pbc4kbcmj-nix-nswrapper-2.34.8": {
+      "status": "upstream-cache",
+      "narBytes": 134320,
+      "upstreamCompressedBytes": 43498
+    },
+    "/nix/store/ai6kkxbkfjgkmpkwamrvhc5d1m3l5v1d-aws-c-cal-0.9.2": {
+      "status": "upstream-cache",
+      "narBytes": 162496,
+      "upstreamCompressedBytes": 50786
+    },
+    "/nix/store/bg4d55k9sg2x763215brap5ndhnqil53-aws-c-auth-0.9.1": {
+      "status": "upstream-cache",
+      "narBytes": 400784,
+      "upstreamCompressedBytes": 126304
+    },
+    "/nix/store/cf610ccndgvh5nfhbarjbqpvr3zkb3vr-aws-c-event-stream-0.7.0": {
+      "status": "upstream-cache",
+      "narBytes": 184432,
+      "upstreamCompressedBytes": 58212
+    },
+    "/nix/store/cv7vd1i121mj84jb694gjc3xvr0da4xw-nix-2.34.8": {
+      "status": "upstream-cache",
+      "narBytes": 8848,
+      "upstreamCompressedBytes": 958
+    },
+    "/nix/store/dzz327n8yqa0pa7aq1x9m0x6cn1sv1q9-nix-util-2.34.8": {
+      "status": "upstream-cache",
+      "narBytes": 2526832,
+      "upstreamCompressedBytes": 860694
+    },
+    "/nix/store/f0rfa5pcykqbv313j74x7l7wa8nl4bj4-nix-2.34.8": {
+      "status": "upstream-cache",
+      "narBytes": 4113736,
+      "upstreamCompressedBytes": 1240540
+    },
+    "/nix/store/f7dmaqy6zny5m09h9nv2lkc1c22p8kwf-aws-crt-cpp-0.34.3": {
+      "status": "upstream-cache",
+      "narBytes": 1047008,
+      "upstreamCompressedBytes": 299466
+    },
+    "/nix/store/igm0j0xhbj57bn2sm4w07jnhz8fb22pc-aws-c-mqtt-0.13.3": {
+      "status": "upstream-cache",
+      "narBytes": 579624,
+      "upstreamCompressedBytes": 199670
+    },
+    "/nix/store/iqbif9ijw8yx2qnqvrgdi7rlk1w3a72y-json2dir-nix-2026-10-08": {
+      "status": "additional",
+      "narBytes": 31696,
+      "xzNarBytes": 9344
+    },
+    "/nix/store/jh7r5a4g4acfvdgs7p3dij1whdnxfgbc-nix-main-2.34.8": {
+      "status": "upstream-cache",
+      "narBytes": 401936,
+      "upstreamCompressedBytes": 141778
+    },
+    "/nix/store/lfrd8cr94c1diz15w6b16bsw9pasc4z3-libblake3-1.8.7": {
+      "status": "upstream-cache",
+      "narBytes": 116088,
+      "upstreamCompressedBytes": 30693
+    },
+    "/nix/store/llcqhmvybk9n7jmn56dmx2lwjqngy90g-nix-cmd-2.34.8": {
+      "status": "upstream-cache",
+      "narBytes": 1103496,
+      "upstreamCompressedBytes": 370431
+    },
+    "/nix/store/lpglqdmacwwq3csbqknbl8d427rky1ba-aws-c-common-0.12.4": {
+      "status": "upstream-cache",
+      "narBytes": 1168360,
+      "upstreamCompressedBytes": 306707
+    },
+    "/nix/store/m67rvjsvapjkk1b594prcmx3birghh8a-nix-fetchers-2.34.8": {
+      "status": "upstream-cache",
+      "narBytes": 1623264,
+      "upstreamCompressedBytes": 585258
+    },
+    "/nix/store/n7nr6awk0f0cgb1qc7v1g7gdd8l3v0iw-nix-flake-2.34.8": {
+      "status": "upstream-cache",
+      "narBytes": 1011160,
+      "upstreamCompressedBytes": 358966
+    },
+    "/nix/store/nmd0za0hz4xx58pak3xxwb6l01nqgbb5-onetbb-2022.3.0": {
+      "status": "upstream-cache",
+      "narBytes": 649400,
+      "upstreamCompressedBytes": 214954
+    },
+    "/nix/store/nsq717ajq55y28d6higl9pq0r1xllian-libcpuid-0.8.1": {
+      "status": "upstream-cache",
+      "narBytes": 334872,
+      "upstreamCompressedBytes": 77499
+    },
+    "/nix/store/qisd3xsm75vdcvp227x78939r4x256r0-editline-1.17.1-unstable-2025-05-24": {
+      "status": "upstream-cache",
+      "narBytes": 59928,
+      "upstreamCompressedBytes": 25071
+    },
+    "/nix/store/r04g2avwnxqafway7jq0m8c26pqqfrw5-libgit2-1.9.7-lib": {
+      "status": "upstream-cache",
+      "narBytes": 1746496,
+      "upstreamCompressedBytes": 823718
+    },
+    "/nix/store/r3rc5z2wvz9igh9gpf4323y3ds0xq3l9-aws-c-s3-0.8.7": {
+      "status": "upstream-cache",
+      "narBytes": 401664,
+      "upstreamCompressedBytes": 142365
+    },
+    "/nix/store/r6zw8gd10c7qv9sifzg4r7h1s5qmrxjp-busybox-1.37.0": {
+      "status": "upstream-cache",
+      "narBytes": 244168,
+      "upstreamCompressedBytes": 133008
+    },
+    "/nix/store/vp7v4g2kdbwk3vz0x85i2v6lxlykjp3i-hwloc-2.14.0-lib": {
+      "status": "upstream-cache",
+      "narBytes": 486440,
+      "upstreamCompressedBytes": 224602
+    },
+    "/nix/store/wd05q49fvcs37i5f711iga43d29rffpw-boehm-gc-8.2.12": {
+      "status": "upstream-cache",
+      "narBytes": 328576,
+      "upstreamCompressedBytes": 134126
+    },
+    "/nix/store/xfny2svskgrn131mvnfwigx0fwyiyrlk-nix-expr-2.34.8": {
+      "status": "upstream-cache",
+      "narBytes": 3539672,
+      "upstreamCompressedBytes": 1220447
+    },
+    "/nix/store/yg3c9ncnjvbzy11mxn2pwzqngw3h8j2a-nix-store-2.34.8": {
+      "status": "upstream-cache",
+      "narBytes": 6171592,
+      "upstreamCompressedBytes": 2089966
+    },
+    "/nix/store/yk25gm6nvm11mjkika1b00m41mh247di-aws-c-io-0.27.2": {
+      "status": "upstream-cache",
+      "narBytes": 671880,
+      "upstreamCompressedBytes": 198830
+    },
+    "/nix/store/yryxvlaj6vw4sdk3ryl4wspnaqhm6vxd-aws-checksums-0.2.7": {
+      "status": "upstream-cache",
+      "narBytes": 88656,
+      "upstreamCompressedBytes": 63436
+    },
+    "/nix/store/0hbwphk0sv6jj25s978qyg7k2jkxc36v-nginx-njs-root-1.31.6": {
+      "status": "additional",
+      "narBytes": 1480,
+      "xzNarBytes": 292
+    },
+    "/nix/store/2jwdacg8g77lpk9lm41x43hgyv0zbra6-nginx-1.31.6": {
+      "status": "additional",
+      "narBytes": 4625192,
+      "xzNarBytes": 1041356
+    },
+    "/nix/store/8gjx3y4pyfqypqlq136v4gknmr2w51qj-zlib-ng-2.3.3": {
+      "status": "upstream-cache",
+      "narBytes": 201240,
+      "upstreamCompressedBytes": 102450
+    },
+    "/nix/store/8rfsypg1qj64n6yagj71cbrwxjcig28h-openssl-4.0.3": {
+      "status": "upstream-cache",
+      "narBytes": 9354128,
+      "upstreamCompressedBytes": 3462822
+    },
+    "/nix/store/bvnbr3z8p26ci7nnwnzng1rd8g42g10g-json2dir-njs-unstable": {
+      "status": "additional",
+      "narBytes": 18048,
+      "xzNarBytes": 5796
+    },
     "/nix/store/i0cl7f30gjxdgf2hpni94wj4282ymn52-gcc-16.2.0-libgcc": {
       "status": "additional",
       "narBytes": 202344,
@@ -2418,10 +4466,465 @@
       "narBytes": 1914904,
       "xzNarBytes": 468424
     },
+    "/nix/store/0ly4wsms9j6ivn1crhw7g4cv3wfcxbsq-qrupdate-1.2.0": {
+      "status": "upstream-cache",
+      "narBytes": 412464,
+      "upstreamCompressedBytes": 90522
+    },
+    "/nix/store/0mw99rmgw8vsgj4pbcl63p7a03pg47xb-hdf5-cpp-1.14.6-dev": {
+      "status": "upstream-cache",
+      "narBytes": 2320040,
+      "upstreamCompressedBytes": 410796
+    },
+    "/nix/store/121p1pqz0dnkv4kc9mmgl7658lywcjn8-portaudio-190700_20210406": {
+      "status": "upstream-cache",
+      "narBytes": 440672,
+      "upstreamCompressedBytes": 136754
+    },
+    "/nix/store/12ppiwbz8fiymrbfc967kgkyz91ssrai-libde265-1.1.2": {
+      "status": "upstream-cache",
+      "narBytes": 1044728,
+      "upstreamCompressedBytes": 451782
+    },
+    "/nix/store/18xmx48y1p3q43ajivfgnqqaxj8jh0ss-libxinerama-1.1.6-dev": {
+      "status": "upstream-cache",
+      "narBytes": 7376,
+      "upstreamCompressedBytes": 2376
+    },
+    "/nix/store/1zfv0njjv5qpg026kmxr8srz39jw5rlv-libaec-1.1.7": {
+      "status": "upstream-cache",
+      "narBytes": 236024,
+      "upstreamCompressedBytes": 38421
+    },
+    "/nix/store/25fsigqyn8wpkjavqf74zcvlcrfzma4c-blas-3": {
+      "status": "upstream-cache",
+      "narBytes": 70695288,
+      "upstreamCompressedBytes": 17027495
+    },
+    "/nix/store/2cv1b5y6h029cvg07c944pq89fszwbya-openjdk-21.0.12.1+1": {
+      "status": "upstream-cache",
+      "narBytes": 599683440,
+      "upstreamCompressedBytes": 438151617
+    },
+    "/nix/store/2fhx5hvmnmg9cxm00fd0nv3xyl4kkp8v-glibc-iconv-2.44": {
+      "status": "upstream-cache",
+      "narBytes": 528,
+      "upstreamCompressedBytes": 201
+    },
+    "/nix/store/2g8d8m8r7i7bi00rm56fbk99scd7303z-expat-2.8.5-dev": {
+      "status": "upstream-cache",
+      "narBytes": 122984,
+      "upstreamCompressedBytes": 43349
+    },
+    "/nix/store/2ldmzijhjd8lj2khqk835g476lazscj8-suitesparse-7.10.0-dev": {
+      "status": "upstream-cache",
+      "narBytes": 1764920,
+      "upstreamCompressedBytes": 265087
+    },
+    "/nix/store/30axrdkfr53iadyx4445b91x4qnmmc75-binutils-wrapper-2.46": {
+      "status": "upstream-cache",
+      "narBytes": 56672,
+      "upstreamCompressedBytes": 9429
+    },
+    "/nix/store/32cf1rhlcgg98cfsm3ls6y6d387i4g16-libedit-20260508-3.1": {
+      "status": "upstream-cache",
+      "narBytes": 280208,
+      "upstreamCompressedBytes": 118135
+    },
+    "/nix/store/3768qszhlspwxjfzqazpd1qa2hdvd35i-cairo-1.18.4-dev": {
+      "status": "upstream-cache",
+      "narBytes": 188456,
+      "upstreamCompressedBytes": 38432
+    },
+    "/nix/store/45j41zq5p41grc2c5szg1myjkl9nva4y-libidn2-2.3.8-dev": {
+      "status": "upstream-cache",
+      "narBytes": 16072,
+      "upstreamCompressedBytes": 4771
+    },
+    "/nix/store/463gimkcnpfm4a2lmpj1lm2w7mc9gaql-json2dir-octave-2026-10-08": {
+      "status": "additional",
+      "narBytes": 15712,
+      "xzNarBytes": 4992
+    },
+    "/nix/store/4gr21rrlw6kv3zdp5j5c3cxinkpp26y6-fltk-1.3.11": {
+      "status": "upstream-cache",
+      "narBytes": 7776144,
+      "upstreamCompressedBytes": 2447002
+    },
+    "/nix/store/5g4nawvc20vv5dqjw1y2vlg390pyhxdm-libjpeg-turbo-3.1.4.1-bin": {
+      "status": "upstream-cache",
+      "narBytes": 348624,
+      "upstreamCompressedBytes": 119902
+    },
+    "/nix/store/6m5hc0gdlahnb1w9vnwl39p56amqglw5-gfortran-16.2.0-libgcc": {
+      "status": "upstream-cache",
+      "narBytes": 202344,
+      "upstreamCompressedBytes": 95675
+    },
+    "/nix/store/7f1lgy62r86pki5gbvsi493rmcrhdd59-openblas-0.3.33": {
+      "status": "upstream-cache",
+      "narBytes": 34787880,
+      "upstreamCompressedBytes": 8483761
+    },
+    "/nix/store/7f7ymii5zcx1jv670cdlvbxj8h3wx0ay-gnum4-1.4.21": {
+      "status": "upstream-cache",
+      "narBytes": 1114520,
+      "upstreamCompressedBytes": 341748
+    },
+    "/nix/store/7vlv3kqi1i1q7h3w8x9vfqnswgwx2586-libjack2-1.9.22": {
+      "status": "upstream-cache",
+      "narBytes": 442520,
+      "upstreamCompressedBytes": 149671
+    },
+    "/nix/store/7x3w0icc4dskd77cryxh3jvqd30xz6zy-fftw-double-3.3.11": {
+      "status": "upstream-cache",
+      "narBytes": 4073160,
+      "upstreamCompressedBytes": 1591880
+    },
+    "/nix/store/92dzxjr3i90dbcbw5wp7dw6dv86c1n1h-fftw-double-3.3.11-dev": {
+      "status": "upstream-cache",
+      "narBytes": 215816,
+      "upstreamCompressedBytes": 41398
+    },
+    "/nix/store/9q3nrhbk8a60rv9i351dsj1pmw939xv3-libsamplerate-0.2.2": {
+      "status": "upstream-cache",
+      "narBytes": 1578112,
+      "upstreamCompressedBytes": 1415917
+    },
+    "/nix/store/aph5dkajglxjn9642bp0h3x7cwzijr52-curl-8.22.0-dev": {
+      "status": "upstream-cache",
+      "narBytes": 283824,
+      "upstreamCompressedBytes": 63224
+    },
+    "/nix/store/blynsm1j9bjsld7rqrz0x4zgls7ir989-blas-3-dev": {
+      "status": "upstream-cache",
+      "narBytes": 38344,
+      "upstreamCompressedBytes": 3870
+    },
+    "/nix/store/bsg28ffmh6iy5vfncjd4a4mqnny3blvd-libsndfile-1.2.2-bin": {
+      "status": "upstream-cache",
+      "narBytes": 316792,
+      "upstreamCompressedBytes": 50646
+    },
+    "/nix/store/bxmrq5l557c0c8zsgjcm6ry938ybdsi4-libxft-2.3.9-dev": {
+      "status": "upstream-cache",
+      "narBytes": 20424,
+      "upstreamCompressedBytes": 5431
+    },
+    "/nix/store/c0ilq1av6cmmf1dj9m3j8rzl6yqf53rl-krb5-1.22.2-dev": {
+      "status": "upstream-cache",
+      "narBytes": 766104,
+      "upstreamCompressedBytes": 151928
+    },
+    "/nix/store/ca5a9x0y311vmw1a1sj6d00z0jwaviwv-libxau-1.0.12-dev": {
+      "status": "upstream-cache",
+      "narBytes": 7000,
+      "upstreamCompressedBytes": 2404
+    },
+    "/nix/store/ck6vw204rkhgay9bvbn9bmv19lrqyqhc-ncurses-6.6-man": {
+      "status": "upstream-cache",
+      "narBytes": 668376,
+      "upstreamCompressedBytes": 478942
+    },
+    "/nix/store/d9jhmdg93fvwr7miqxc2bvwk990lyi63-x265-4.2": {
+      "status": "upstream-cache",
+      "narBytes": 24920896,
+      "upstreamCompressedBytes": 4526628
+    },
+    "/nix/store/dgvn2c174c1fy0lcfyx0hzq76qn6jmnn-ncurses-6.6-dev": {
+      "status": "upstream-cache",
+      "narBytes": 392264,
+      "upstreamCompressedBytes": 77613
+    },
+    "/nix/store/f0331qwr27sbwd8kk7rr6x6yrcraj8i9-pcre2-10.48-bin": {
+      "status": "upstream-cache",
+      "narBytes": 402152,
+      "upstreamCompressedBytes": 162527
+    },
+    "/nix/store/f7r47nc0d13xa4c2xaaxa6dp3pzm9sp1-graphviz-15.1.1": {
+      "status": "upstream-cache",
+      "narBytes": 7994088,
+      "upstreamCompressedBytes": 3204252
+    },
+    "/nix/store/fl7xj4bahw025r9nw6d9vgb4043665mj-libxext-1.3.7-dev": {
+      "status": "upstream-cache",
+      "narBytes": 60336,
+      "upstreamCompressedBytes": 11800
+    },
+    "/nix/store/fmxbww7fzk5mva0lnb1liwm1mfn2mdk9-fftw-single-3.3.11-dev": {
+      "status": "upstream-cache",
+      "narBytes": 215896,
+      "upstreamCompressedBytes": 41501
+    },
+    "/nix/store/fvfwyxvwsmpkcg0x7lffdc1a5l4dn4n8-hdf5-cpp-1.14.6-bin": {
+      "status": "upstream-cache",
+      "narBytes": 951904,
+      "upstreamCompressedBytes": 285361
+    },
+    "/nix/store/fzvqxbiqgr82ynp5h64kyxxjdmh2c76j-gd-2.3.3": {
+      "status": "upstream-cache",
+      "narBytes": 566848,
+      "upstreamCompressedBytes": 222214
+    },
+    "/nix/store/g83apimnl8wl0cn9y53c6bydxk398sib-libsndfile-1.2.2-dev": {
+      "status": "upstream-cache",
+      "narBytes": 45168,
+      "upstreamCompressedBytes": 13378
+    },
+    "/nix/store/gz6baw96bf48pxs93kc7rxmnr1ra7g4m-bzip2-1.0.8-bin": {
+      "status": "upstream-cache",
+      "narBytes": 69296,
+      "upstreamCompressedBytes": 24864
+    },
+    "/nix/store/gzglyzclxjf4iynm3w4lqdkwdhnsp1pw-ghostscript-with-X-10.08.0": {
+      "status": "upstream-cache",
+      "narBytes": 48088984,
+      "upstreamCompressedBytes": 21169642
+    },
+    "/nix/store/i4a125l0m5bv4xg1zm6rv9mnqggycwq7-expand-response-params": {
+      "status": "upstream-cache",
+      "narBytes": 16976,
+      "upstreamCompressedBytes": 3834
+    },
+    "/nix/store/i5gfbd3rr34m7xhkg62gwlhnvw2y2lkq-libxcursor-1.2.3-dev": {
+      "status": "upstream-cache",
+      "narBytes": 15440,
+      "upstreamCompressedBytes": 4581
+    },
+    "/nix/store/ilx7fb8f1dj7mdknqpv1wd7mnja391xg-rapidjson-1.1.0-unstable-2025-02-05": {
+      "status": "upstream-cache",
+      "narBytes": 779896,
+      "upstreamCompressedBytes": 145441
+    },
+    "/nix/store/ivzfr36mlf3yk3ilcg3q92dzjfh81r50-gfortran-wrapper-16.2.0": {
+      "status": "upstream-cache",
+      "narBytes": 79192,
+      "upstreamCompressedBytes": 11295
+    },
+    "/nix/store/j0gl9gw25mx3y850rpry9hpy30zwnb09-libidn2-2.3.8-bin": {
+      "status": "upstream-cache",
+      "narBytes": 38488,
+      "upstreamCompressedBytes": 13575
+    },
+    "/nix/store/jipb8y1xzhxjga5iccw8jmas0bc0px47-glib-2.88.3-dev": {
+      "status": "upstream-cache",
+      "narBytes": 15781632,
+      "upstreamCompressedBytes": 1879339
+    },
+    "/nix/store/jrh7qrz5570y72zlhcmb29i3p351351d-libxrender-0.9.12-dev": {
+      "status": "upstream-cache",
+      "narBytes": 36160,
+      "upstreamCompressedBytes": 7461
+    },
+    "/nix/store/jxqrv7q8ydpsc2m9zli83bjsabq0rxs0-libxfixes-6.0.2-dev": {
+      "status": "upstream-cache",
+      "narBytes": 9992,
+      "upstreamCompressedBytes": 3184
+    },
+    "/nix/store/k912i26ymk5ns8wngd50g5qp0zzhndzf-arpack-3.9.1": {
+      "status": "upstream-cache",
+      "narBytes": 407048,
+      "upstreamCompressedBytes": 143582
+    },
+    "/nix/store/kcppfgrlcc6vccvy55gqipcv6gnn57pa-fontconfig-2.18.3-bin": {
+      "status": "upstream-cache",
+      "narBytes": 211216,
+      "upstreamCompressedBytes": 46545
+    },
+    "/nix/store/kipa2g80374s8pns29p8q65vd7hq1mxp-cups-2.4.19": {
+      "status": "upstream-cache",
+      "narBytes": 9232368,
+      "upstreamCompressedBytes": 5173552
+    },
+    "/nix/store/krdjganpq6d3pr8pf0kavbprr1lh7lhx-libheif-1.23.5-lib": {
+      "status": "upstream-cache",
+      "narBytes": 3212080,
+      "upstreamCompressedBytes": 1157104
+    },
+    "/nix/store/ks248a45czvgkh0qiqg2gmg6h8bc464h-sundials-7.6.0": {
+      "status": "upstream-cache",
+      "narBytes": 8020176,
+      "upstreamCompressedBytes": 1417327
+    },
+    "/nix/store/kwl4jcgx7q2n4b2h6dc6m2gwqz7cg1lk-krb5-1.22.2": {
+      "status": "upstream-cache",
+      "narBytes": 1362624,
+      "upstreamCompressedBytes": 432849
+    },
+    "/nix/store/l650rzaw3wnwc49ixcm7hsl3aw4zlf6j-libjpeg-turbo-3.1.4.1-dev": {
+      "status": "upstream-cache",
+      "narBytes": 222048,
+      "upstreamCompressedBytes": 50423
+    },
+    "/nix/store/lppdjhzf5vp1gvz4c7r5y7fcxkr69dyr-mpfr-4.2.2-dev": {
+      "status": "upstream-cache",
+      "narBytes": 66232,
+      "upstreamCompressedBytes": 15704
+    },
+    "/nix/store/ly7344dfzabfjwi9sjm0b55hpvjnd683-pcre2-10.48-dev": {
+      "status": "upstream-cache",
+      "narBytes": 66896,
+      "upstreamCompressedBytes": 14865
+    },
+    "/nix/store/mc7dwhpksng0rmfbdq68z6vvlm9nsd8k-fontconfig-2.18.3-dev": {
+      "status": "upstream-cache",
+      "narBytes": 45032,
+      "upstreamCompressedBytes": 10448
+    },
+    "/nix/store/mk1mvd4icjfvz8mrlhb3cmvslkgxa2wz-ghostscript-with-X-10.08.0-fonts": {
+      "status": "upstream-cache",
+      "narBytes": 6393288,
+      "upstreamCompressedBytes": 4398515
+    },
+    "/nix/store/mlx1krf7f39qgbnvyl4yqpasf5bd4dni-flex-2.6.4": {
+      "status": "upstream-cache",
+      "narBytes": 1305248,
+      "upstreamCompressedBytes": 359037
+    },
+    "/nix/store/mqxjifyyqbgjs66hvghd1zw26sdf5hw1-freetype-2.14.3-dev": {
+      "status": "upstream-cache",
+      "narBytes": 905624,
+      "upstreamCompressedBytes": 188929
+    },
+    "/nix/store/nx9j3q419nwyaamffff9qnw25wmn3p5b-readline-8.3p3-dev": {
+      "status": "upstream-cache",
+      "narBytes": 72632,
+      "upstreamCompressedBytes": 19473
+    },
+    "/nix/store/nzn56qpiz5vm9zp7isv8q6ma7i900hqv-libpsl-0.21.5-dev": {
+      "status": "upstream-cache",
+      "narBytes": 7800,
+      "upstreamCompressedBytes": 2907
+    },
+    "/nix/store/p2vsdksfsg86fd3ynk95hk8s15363g8h-suitesparse-7.10.0": {
+      "status": "upstream-cache",
+      "narBytes": 84049720,
+      "upstreamCompressedBytes": 20805921
+    },
+    "/nix/store/pbfxx4jp38wqrvb7wymdp8xkmjk4pp6f-octave-11.3.0": {
+      "status": "upstream-cache",
+      "narBytes": 84753976,
+      "upstreamCompressedBytes": 23729121
+    },
+    "/nix/store/pdcwbw6z36grx39dfhb4y0g9p00i2ajf-libglvnd-1.7.0-dev": {
+      "status": "upstream-cache",
+      "narBytes": 2268088,
+      "upstreamCompressedBytes": 222744
+    },
+    "/nix/store/plzb49mwsq8443vrzdmyzjsz8fgg97jy-bzip2-1.0.8-dev": {
+      "status": "upstream-cache",
+      "narBytes": 8168,
+      "upstreamCompressedBytes": 2307
+    },
+    "/nix/store/pp5sqyf3d3hclllfn24krg52i0psxpyj-glu-9.0.3-dev": {
+      "status": "upstream-cache",
+      "narBytes": 19128,
+      "upstreamCompressedBytes": 4623
+    },
+    "/nix/store/q2yp5skwnsky7fxszdlz5kmy02ym20dy-curl-8.22.0-man": {
+      "status": "upstream-cache",
+      "narBytes": 84072,
+      "upstreamCompressedBytes": 84081
+    },
+    "/nix/store/qar8f28v59zd0h6m98ji9vjwqy0d1rp1-graphicsmagick-1.3.48": {
+      "status": "upstream-cache",
+      "narBytes": 14142424,
+      "upstreamCompressedBytes": 3545616
+    },
+    "/nix/store/r22qfr7pkzplgj8di1jzyrn5qqyrmhqj-qhull-2020.2": {
+      "status": "upstream-cache",
+      "narBytes": 6877968,
+      "upstreamCompressedBytes": 1453619
+    },
+    "/nix/store/r9qrazqq1y9zxdkigzxw8h7lp23hw5f3-freeglut-3.8.0": {
+      "status": "upstream-cache",
+      "narBytes": 1361064,
+      "upstreamCompressedBytes": 315166
+    },
+    "/nix/store/rf9ppiqgnnk417nagjk57knsccn6738w-hdf5-cpp-1.14.6": {
+      "status": "upstream-cache",
+      "narBytes": 6368384,
+      "upstreamCompressedBytes": 2401541
+    },
+    "/nix/store/s7gf99n37i9i8cf3k3b21jrs7vjbrm2v-check-phase-thread-limit-hook": {
+      "status": "upstream-cache",
+      "narBytes": 1552,
+      "upstreamCompressedBytes": 719
+    },
+    "/nix/store/sv7pxhijbx78q5ppq0h2111bb8yai0p4-libffi-3.8.0-dev": {
+      "status": "upstream-cache",
+      "narBytes": 24056,
+      "upstreamCompressedBytes": 7377
+    },
+    "/nix/store/v5i62bjy7v2gfd7mr5rynf3gkj3ami1p-gfortran-16.2.0-lib": {
+      "status": "upstream-cache",
+      "narBytes": 14536872,
+      "upstreamCompressedBytes": 4674848
+    },
+    "/nix/store/vy5s2w82bb0mbkh52d5s8mnxd0r4rmmp-gfortran-16.2.0": {
+      "status": "upstream-cache",
+      "narBytes": 351103040,
+      "upstreamCompressedBytes": 116875032
+    },
+    "/nix/store/w8shsx7zvvf3ll926lx0q7jcm1djpbgp-glpk-5.0": {
+      "status": "upstream-cache",
+      "narBytes": 1164920,
+      "upstreamCompressedBytes": 563945
+    },
+    "/nix/store/wnsn25jckvrz5pa4b0f9f78frnxsdq90-gts-0.7.6": {
+      "status": "upstream-cache",
+      "narBytes": 472160,
+      "upstreamCompressedBytes": 212394
+    },
+    "/nix/store/wv0waflchr84an8wrm5v0jhbhz3kp6gs-libxcb-1.17.0-dev": {
+      "status": "upstream-cache",
+      "narBytes": 2154664,
+      "upstreamCompressedBytes": 210059
+    },
+    "/nix/store/wvpd158scl36bn937mc1kcr8a560zilh-lapack-3-dev": {
+      "status": "upstream-cache",
+      "narBytes": 1655880,
+      "upstreamCompressedBytes": 123042
+    },
+    "/nix/store/xnlbdnwp1gi4r1gm0gzgfg7p6ylbxv1j-libssh2-1.11.1-dev": {
+      "status": "upstream-cache",
+      "narBytes": 85640,
+      "upstreamCompressedBytes": 18984
+    },
+    "/nix/store/xpmygb563fgdyk9alcjh92a003v8q9n6-lapack-3": {
+      "status": "upstream-cache",
+      "narBytes": 70695304,
+      "upstreamCompressedBytes": 17064060
+    },
+    "/nix/store/yb5lz2i7rvlcxjz62764cvbw9fvfwkx2-libpng-apng-1.6.58-dev": {
+      "status": "upstream-cache",
+      "narBytes": 271864,
+      "upstreamCompressedBytes": 82541
+    },
+    "/nix/store/z2cdsvlsfsfkzdblghdgl9z8a6k8nss1-gl2ps-1.4.2": {
+      "status": "upstream-cache",
+      "narBytes": 373864,
+      "upstreamCompressedBytes": 99079
+    },
+    "/nix/store/4f7x3n89p0h4v8q9x0pahc5l758iz28g-json2dir-octave-pure-2026-10-08": {
+      "status": "additional",
+      "narBytes": 16328,
+      "xzNarBytes": 5192
+    },
     "/nix/store/99b3r957sn73wcvvdgg9qg40h7zsq35f-json2dir-odin-unstable-88e9ed6": {
       "status": "additional",
       "narBytes": 61392,
       "xzNarBytes": 20980
+    },
+    "/nix/store/91wrqrdyfazisqff9qprknh74ax6ixpv-json2dir-ook-unstable": {
+      "status": "additional",
+      "narBytes": 1229128,
+      "xzNarBytes": 16804
+    },
+    "/nix/store/a2hv0dsl11ilcazgr5yfxsfclwpmychj-ook-runtime-525d346": {
+      "status": "additional",
+      "narBytes": 66352,
+      "xzNarBytes": 21616
     },
     "/nix/store/3xq4gy2p8hraik4vxymqg20skwrba0m9-json2dir-perl-2026-10-07": {
       "status": "additional",
@@ -2452,11 +4955,6 @@
       "status": "upstream-cache",
       "narBytes": 159928,
       "upstreamCompressedBytes": 42096
-    },
-    "/nix/store/1h05qaf3qn0rc6bcr2f5qfi7dnk78p0x-system-sendmail-1.0": {
-      "status": "upstream-cache",
-      "narBytes": 984,
-      "upstreamCompressedBytes": 411
     },
     "/nix/store/1j7crla6j0ycypyrykzdazxqlmxn8s44-php-filter-8.4.26": {
       "status": "upstream-cache",
@@ -2513,11 +5011,6 @@
       "narBytes": 97192,
       "upstreamCompressedBytes": 33555
     },
-    "/nix/store/c7a6kn398lml23ghr2k89fsj930a9k0q-libxpm-3.5.19": {
-      "status": "upstream-cache",
-      "narBytes": 90016,
-      "upstreamCompressedBytes": 42824
-    },
     "/nix/store/d8n2q2l641gl63id6nhz4abzzw8bqjah-php-session-8.4.26": {
       "status": "upstream-cache",
       "narBytes": 138400,
@@ -2537,11 +5030,6 @@
       "status": "upstream-cache",
       "narBytes": 280024,
       "upstreamCompressedBytes": 110787
-    },
-    "/nix/store/fzvqxbiqgr82ynp5h64kyxxjdmh2c76j-gd-2.3.3": {
-      "status": "upstream-cache",
-      "narBytes": 566848,
-      "upstreamCompressedBytes": 222214
     },
     "/nix/store/h43pih2msx7b96l5yihha6qnjycjvlvg-icu4c-73.2": {
       "status": "upstream-cache",
@@ -2567,11 +5055,6 @@
       "status": "upstream-cache",
       "narBytes": 64088,
       "upstreamCompressedBytes": 23618
-    },
-    "/nix/store/jn3b4qd96ni82spqlsdvrxfw201p8d7a-libsodium-1.0.22-unstable-2026-08-13": {
-      "status": "upstream-cache",
-      "narBytes": 689536,
-      "upstreamCompressedBytes": 312866
     },
     "/nix/store/k1mkl7rrzlglhvp18lxldihxmvp36zcy-php-intl-8.4.26": {
       "status": "upstream-cache",
@@ -2608,11 +5091,6 @@
       "narBytes": 69800,
       "upstreamCompressedBytes": 24072
     },
-    "/nix/store/m419ayyrwpqfkgazp2iyv0x7jfj973bn-cyrus-sasl-2.1.28": {
-      "status": "upstream-cache",
-      "narBytes": 654944,
-      "upstreamCompressedBytes": 192288
-    },
     "/nix/store/n648sfa2z11nyrdiqs0aanyll76gl09a-php-soap-8.4.26": {
       "status": "upstream-cache",
       "narBytes": 401096,
@@ -2628,11 +5106,6 @@
       "narBytes": 69304,
       "upstreamCompressedBytes": 21271
     },
-    "/nix/store/pi83s3zgnn4ixsm81xl1h491spqgw902-ncompress-5.0": {
-      "status": "upstream-cache",
-      "narBytes": 76536,
-      "upstreamCompressedBytes": 16449
-    },
     "/nix/store/pmq7d00f0jkx4h9z7r3ahzwwysrx5dn4-php-pdo_pgsql-8.4.26": {
       "status": "upstream-cache",
       "narBytes": 85656,
@@ -2647,11 +5120,6 @@
       "status": "upstream-cache",
       "narBytes": 1037528,
       "upstreamCompressedBytes": 321607
-    },
-    "/nix/store/qbwf85wwmckg8h3qq6xm3h6ihbhvkk5c-openldap-2.6.13": {
-      "status": "upstream-cache",
-      "narBytes": 4727624,
-      "upstreamCompressedBytes": 1651340
     },
     "/nix/store/r8lgvh4kv960cgchvygf3cqbpmlqbi1n-php-tokenizer-8.4.26": {
       "status": "upstream-cache",
@@ -2703,15 +5171,70 @@
       "narBytes": 67560,
       "upstreamCompressedBytes": 22463
     },
-    "/nix/store/yr6ar7lsk3yfas4d464z1ysaxwcq2gc5-gzip-1.14": {
-      "status": "upstream-cache",
-      "narBytes": 163528,
-      "upstreamCompressedBytes": 74479
-    },
     "/nix/store/zidcc3dhz7gn9fnblr9dv0k8cknrahsm-php-gd-8.4.26": {
       "status": "upstream-cache",
       "narBytes": 192472,
       "upstreamCompressedBytes": 58127
+    },
+    "/nix/store/067g9yh0rph0p0vlkdb10cifffiqmh51-npiet-1.3f": {
+      "status": "upstream-cache",
+      "narBytes": 141496,
+      "upstreamCompressedBytes": 62818
+    },
+    "/nix/store/2ms65rsbbja333n7dih4m0kc545pd7xl-json2dir-piet-unstable": {
+      "status": "additional",
+      "narBytes": 54808,
+      "xzNarBytes": 45480
+    },
+    "/nix/store/0jhm9nmvak014kwwh6adrkv6h5yvndim-pikalang-unstable-2026-10-08": {
+      "status": "additional",
+      "narBytes": 21848,
+      "xzNarBytes": 5496
+    },
+    "/nix/store/0maffpn1kwwrrvz68gxyj3n9iqyrx98d-json2dir-pikachu-unstable": {
+      "status": "additional",
+      "narBytes": 596240,
+      "xzNarBytes": 17112
+    },
+    "/nix/store/53pxakn1y52i0m0fklnb8xfhas93l3fi-tcb-1.2": {
+      "status": "upstream-cache",
+      "narBytes": 91088,
+      "upstreamCompressedBytes": 24796
+    },
+    "/nix/store/59sv9nvpm77ff4mazcandbx3q2367qsh-util-linux-2.42.3-login": {
+      "status": "upstream-cache",
+      "narBytes": 98664,
+      "upstreamCompressedBytes": 37803
+    },
+    "/nix/store/ck0idn9br0rq7a823q5fcm5njkmnzkl7-util-linux-2.42.3-lib": {
+      "status": "upstream-cache",
+      "narBytes": 14656584,
+      "upstreamCompressedBytes": 3592184
+    },
+    "/nix/store/kl6x1s2x7wm1m3zn7l90gv0g35yd49ds-util-linux-2.42.3-swap": {
+      "status": "upstream-cache",
+      "narBytes": 148584,
+      "upstreamCompressedBytes": 52588
+    },
+    "/nix/store/vhz3kzcdznprs2wflg44szkbrfji9z3v-util-linux-2.42.3-bin": {
+      "status": "upstream-cache",
+      "narBytes": 10078432,
+      "upstreamCompressedBytes": 2122336
+    },
+    "/nix/store/x890di8agmyh7h7cbnrpj5rajlfs7ghk-shadow-4.20.2": {
+      "status": "upstream-cache",
+      "narBytes": 4653808,
+      "upstreamCompressedBytes": 897984
+    },
+    "/nix/store/xx02hjyazza7h8dw0jx8zamsxhl16g8q-util-linux-2.42.3-lastlog": {
+      "status": "upstream-cache",
+      "narBytes": 61936,
+      "upstreamCompressedBytes": 22382
+    },
+    "/nix/store/z8ly41hqdg0hmdv4idlvpsxsdk2rbanj-util-linux-2.42.3-mount": {
+      "status": "upstream-cache",
+      "narBytes": 182712,
+      "upstreamCompressedBytes": 52066
     },
     "/nix/store/2kmkqpdiy43z80v9d5kdzz2s386rbghp-json2dir-pli-unstable": {
       "status": "additional",
@@ -2722,16 +5245,6 @@
       "status": "additional",
       "narBytes": 212456,
       "xzNarBytes": 64876
-    },
-    "/nix/store/2cv1b5y6h029cvg07c944pq89fszwbya-openjdk-21.0.12.1+1": {
-      "status": "upstream-cache",
-      "narBytes": 599683440,
-      "upstreamCompressedBytes": 438151617
-    },
-    "/nix/store/4cr8k5yydn0jshlxswvvql9qcmnmp1lf-libyaml-0.2.5": {
-      "status": "upstream-cache",
-      "narBytes": 155600,
-      "upstreamCompressedBytes": 64016
     },
     "/nix/store/5slmgaqfj3g7garqjsmimpf1rhl4rmqg-gperftools-2.18.1": {
       "status": "upstream-cache",
@@ -2918,15 +5431,85 @@
       "narBytes": 7920,
       "xzNarBytes": 2784
     },
+    "/nix/store/09qizimlcggkv4zqaw2yzdhh00vfx1k7-xz-5.8.4-dev": {
+      "status": "upstream-cache",
+      "narBytes": 234464,
+      "upstreamCompressedBytes": 54488
+    },
+    "/nix/store/2833kks5xyn4nws51ba6chwp6zd1s8jm-libtiff-4.7.2-dev": {
+      "status": "upstream-cache",
+      "narBytes": 109928,
+      "upstreamCompressedBytes": 31707
+    },
+    "/nix/store/2l1qa9r0484qgndb6j1fcrlvrvxwc6b1-R-4.6.1-man": {
+      "status": "upstream-cache",
+      "narBytes": 4288,
+      "upstreamCompressedBytes": 3496
+    },
+    "/nix/store/48m7kz9i7dhc0c145a8r4aixcmq7a7k4-pango-1.57.1-dev": {
+      "status": "upstream-cache",
+      "narBytes": 1601512,
+      "upstreamCompressedBytes": 192530
+    },
+    "/nix/store/7wszjs7s6cfvcby6p2qvbgipbjgmqbbp-harfbuzz-13.2.1-dev": {
+      "status": "upstream-cache",
+      "narBytes": 2131488,
+      "upstreamCompressedBytes": 277439
+    },
+    "/nix/store/a9s00ipfir272pdpyc7w3cjxhnx9ihil-lerc-4.2.0-dev": {
+      "status": "upstream-cache",
+      "narBytes": 26688,
+      "upstreamCompressedBytes": 6330
+    },
+    "/nix/store/b8xp18fjw7gvnpf3ajxr9mkzyy0x5m36-R-4.6.1": {
+      "status": "upstream-cache",
+      "narBytes": 46681432,
+      "upstreamCompressedBytes": 29787413
+    },
+    "/nix/store/d1x966y2brfy9pwlrzwjmbnq9rpir7xb-gnutar-1.35": {
+      "status": "upstream-cache",
+      "narBytes": 2861168,
+      "upstreamCompressedBytes": 741505
+    },
+    "/nix/store/f10qh0sgpx38n3azj08dgbbnlxspv26n-xz-5.8.4-bin": {
+      "status": "upstream-cache",
+      "narBytes": 223840,
+      "upstreamCompressedBytes": 71078
+    },
+    "/nix/store/h1dr3dsr8bvjvigignm6y1nqb6yl74ah-json2dir-r-2026-10-08": {
+      "status": "additional",
+      "narBytes": 13920,
+      "xzNarBytes": 4592
+    },
+    "/nix/store/jx61yqdc4xl72j9fad97p841y2q33kw7-R-4.6.1-tex": {
+      "status": "upstream-cache",
+      "narBytes": 517672,
+      "upstreamCompressedBytes": 92372
+    },
+    "/nix/store/vc2pivkizfp7r2qprr1x8gfd1k3jvxl6-graphite2-1.3.15-dev": {
+      "status": "upstream-cache",
+      "narBytes": 43144,
+      "upstreamCompressedBytes": 11458
+    },
+    "/nix/store/vnpv8apr10cqgc5ph09946n1f72hy9xq-libtiff-4.7.2-bin": {
+      "status": "upstream-cache",
+      "narBytes": 782104,
+      "upstreamCompressedBytes": 260846
+    },
+    "/nix/store/yvcng3bg7k4jxn84qbj2v7g35m70p7lv-tk-8.6.16-dev": {
+      "status": "upstream-cache",
+      "narBytes": 618752,
+      "upstreamCompressedBytes": 134920
+    },
+    "/nix/store/znkfkqlm6n7b3ihhxf53qxajskkqfvy3-pango-1.57.1-bin": {
+      "status": "upstream-cache",
+      "narBytes": 138584,
+      "upstreamCompressedBytes": 43247
+    },
     "/nix/store/g74kkxb1gz0r6gn1bgv6akyh4qgyvx9p-libz-1.2.8.2025.03.07": {
       "status": "upstream-cache",
       "narBytes": 110712,
       "upstreamCompressedBytes": 57087
-    },
-    "/nix/store/gfkkr23q11kvyz6xxyxz3qbsp1msxdcv-gettext-1.0": {
-      "status": "upstream-cache",
-      "narBytes": 24845480,
-      "upstreamCompressedBytes": 4953449
     },
     "/nix/store/ig5ylfz7qcgpmvzip4pxfkp2pfi76s2j-glibc-locales-2.44-25": {
       "status": "upstream-cache",
@@ -2963,11 +5546,6 @@
       "narBytes": 66274352,
       "upstreamCompressedBytes": 12646516
     },
-    "/nix/store/i4a125l0m5bv4xg1zm6rv9mnqggycwq7-expand-response-params": {
-      "status": "upstream-cache",
-      "narBytes": 16976,
-      "upstreamCompressedBytes": 3834
-    },
     "/nix/store/kdz1pjfdf905rzjv6c2lcxs4g0ml21fn-moarvm-2026.07": {
       "status": "upstream-cache",
       "narBytes": 14579624,
@@ -2998,6 +5576,31 @@
       "narBytes": 7963984,
       "xzNarBytes": 1188160
     },
+    "/nix/store/l728ymzzd7bq5l7gpd427rv4zq5vqsxm-json2dir-roc-unstable-e25e583": {
+      "status": "additional",
+      "narBytes": 487984,
+      "xzNarBytes": 199536
+    },
+    "/nix/store/39pqvwxb0fiffawbyb61a8awf1c3cyms-json2dir-rockstar-unstable": {
+      "status": "additional",
+      "narBytes": 19240,
+      "xzNarBytes": 4672
+    },
+    "/nix/store/abbkzygy9aix7b6m9vqlm1xw766mlrf1-dotnet-sdk-9.0.318": {
+      "status": "upstream-cache",
+      "narBytes": 593412376,
+      "upstreamCompressedBytes": 196949315
+    },
+    "/nix/store/dpy1vv0mg7ci49fqiwwm1i43mcix5pjc-rockstar-runtime-1.0.0-unstable.20261008": {
+      "status": "additional",
+      "narBytes": 794792,
+      "xzNarBytes": 391968
+    },
+    "/nix/store/g6lfw3lizv0ayzy7yhq5g0rk9swxysii-dotnet-sdk-wrapped-9.0.318": {
+      "status": "upstream-cache",
+      "narBytes": 13216,
+      "upstreamCompressedBytes": 3896
+    },
     "/nix/store/k6d6zjmab4apwm7x3629ml0jyd4i1alj-json2dir-rocq-unstable-ee71269": {
       "status": "additional",
       "narBytes": 1929440,
@@ -3012,6 +5615,36 @@
       "status": "additional",
       "narBytes": 9905968,
       "xzNarBytes": 9110836
+    },
+    "/nix/store/b0bhxs90l3i0bpf1042dr7jhaqqpv07k-guile-3.0.11": {
+      "status": "upstream-cache",
+      "narBytes": 61055872,
+      "upstreamCompressedBytes": 12445132
+    },
+    "/nix/store/k51rd48iq3k0k9qyfz0349pgn65na0ms-json2dir-scheme-2026-10-08": {
+      "status": "additional",
+      "narBytes": 48584,
+      "xzNarBytes": 12780
+    },
+    "/nix/store/m7w1y2b2a2d2kq784gq1pbr3jzwxypbb-boehm-gc-8.2.12-dev": {
+      "status": "upstream-cache",
+      "narBytes": 263000,
+      "upstreamCompressedBytes": 66080
+    },
+    "/nix/store/z6yhaz75pyyp1xailxzd1yy6vv1rnshj-libunistring-1.4.2-dev": {
+      "status": "upstream-cache",
+      "narBytes": 202984,
+      "upstreamCompressedBytes": 31678
+    },
+    "/nix/store/qda3qm784y8r34icncc5386zrl4hqqmm-json2dir-sed-2026-10-08": {
+      "status": "additional",
+      "narBytes": 18416,
+      "xzNarBytes": 5280
+    },
+    "/nix/store/5s6gcr9fx9g3cg54zzip475qc7synwsz-json2dir-shakespeare-unstable": {
+      "status": "additional",
+      "narBytes": 264192,
+      "xzNarBytes": 65820
     },
     "/nix/store/0567p88wh15zdai4x2s9mfll5hjygj5q-rtmpdump-2.6": {
       "status": "upstream-cache",
@@ -3068,11 +5701,6 @@
       "narBytes": 252096,
       "upstreamCompressedBytes": 99392
     },
-    "/nix/store/12ppiwbz8fiymrbfc967kgkyz91ssrai-libde265-1.1.2": {
-      "status": "upstream-cache",
-      "narBytes": 1044728,
-      "upstreamCompressedBytes": 451782
-    },
     "/nix/store/181dcka5aqx9b3ivbxkbgx0bzsiflady-v4l-utils-1.32.0": {
       "status": "upstream-cache",
       "narBytes": 821272,
@@ -3128,11 +5756,6 @@
       "narBytes": 1692648,
       "upstreamCompressedBytes": 684223
     },
-    "/nix/store/4p7ra96aacv9jhpbbw63slhg0w5v6l92-libssh-0.12.2": {
-      "status": "upstream-cache",
-      "narBytes": 731856,
-      "upstreamCompressedBytes": 323981
-    },
     "/nix/store/4rm48xmdz5m553pwf7gkv8ccb9zcbi0b-ldacbt-2.0.72": {
       "status": "upstream-cache",
       "narBytes": 105168,
@@ -3172,21 +5795,6 @@
       "status": "upstream-cache",
       "narBytes": 698872,
       "upstreamCompressedBytes": 321954
-    },
-    "/nix/store/7f7ymii5zcx1jv670cdlvbxj8h3wx0ay-gnum4-1.4.21": {
-      "status": "upstream-cache",
-      "narBytes": 1114520,
-      "upstreamCompressedBytes": 341748
-    },
-    "/nix/store/7vlv3kqi1i1q7h3w8x9vfqnswgwx2586-libjack2-1.9.22": {
-      "status": "upstream-cache",
-      "narBytes": 442520,
-      "upstreamCompressedBytes": 149671
-    },
-    "/nix/store/7x3w0icc4dskd77cryxh3jvqd30xz6zy-fftw-double-3.3.11": {
-      "status": "upstream-cache",
-      "narBytes": 4073160,
-      "upstreamCompressedBytes": 1591880
     },
     "/nix/store/804nzv41xjk0kfq8lwmjqcgn6i7ykg78-libnice-0.1.24": {
       "status": "upstream-cache",
@@ -3238,11 +5846,6 @@
       "narBytes": 245688,
       "upstreamCompressedBytes": 99465
     },
-    "/nix/store/9q3nrhbk8a60rv9i351dsj1pmw939xv3-libsamplerate-0.2.2": {
-      "status": "upstream-cache",
-      "narBytes": 1578112,
-      "upstreamCompressedBytes": 1415917
-    },
     "/nix/store/9vv32bla0dfb06bnkcfg2g45zk1wirdq-wildmidi.cfg": {
       "status": "upstream-cache",
       "narBytes": 264,
@@ -3282,11 +5885,6 @@
       "status": "upstream-cache",
       "narBytes": 5004728,
       "upstreamCompressedBytes": 1677176
-    },
-    "/nix/store/d9jhmdg93fvwr7miqxc2bvwk990lyi63-x265-4.2": {
-      "status": "upstream-cache",
-      "narBytes": 24920896,
-      "upstreamCompressedBytes": 4526628
     },
     "/nix/store/dsa4ky2h1m6khl1hf0g1vvl4bvx4hxg8-pipewire-1.6.9": {
       "status": "upstream-cache",
@@ -3388,11 +5986,6 @@
       "narBytes": 56800,
       "upstreamCompressedBytes": 18453
     },
-    "/nix/store/lfrd8cr94c1diz15w6b16bsw9pasc4z3-libblake3-1.8.7": {
-      "status": "upstream-cache",
-      "narBytes": 116088,
-      "upstreamCompressedBytes": 30693
-    },
     "/nix/store/lhi2553l8xiwnx3vb23hba8jkv3q8y9q-libopenmpt-0.8.9": {
       "status": "upstream-cache",
       "narBytes": 3565592,
@@ -3427,11 +6020,6 @@
       "status": "upstream-cache",
       "narBytes": 1035104,
       "upstreamCompressedBytes": 336093
-    },
-    "/nix/store/nmd0za0hz4xx58pak3xxwb6l01nqgbb5-onetbb-2022.3.0": {
-      "status": "upstream-cache",
-      "narBytes": 649400,
-      "upstreamCompressedBytes": 214954
     },
     "/nix/store/p7b24wzh9irf1q0683lbsz074wzs3ggj-xvidcore-1.3.7": {
       "status": "upstream-cache",
@@ -3523,11 +6111,6 @@
       "narBytes": 756632,
       "upstreamCompressedBytes": 226633
     },
-    "/nix/store/vp7v4g2kdbwk3vz0x85i2v6lxlykjp3i-hwloc-2.14.0-lib": {
-      "status": "upstream-cache",
-      "narBytes": 486440,
-      "upstreamCompressedBytes": 224602
-    },
     "/nix/store/vqqj10244iqc3s3drsbjbiy5cz9xsjpd-sdl12-compat-1.2.78": {
       "status": "upstream-cache",
       "narBytes": 760280,
@@ -3542,11 +6125,6 @@
       "status": "upstream-cache",
       "narBytes": 2492760,
       "upstreamCompressedBytes": 892152
-    },
-    "/nix/store/wrwxc9a4xfigpfz0nrfd5q5gbqhbcm1x-openjpeg-2.5.4": {
-      "status": "upstream-cache",
-      "narBytes": 1723168,
-      "upstreamCompressedBytes": 427679
     },
     "/nix/store/x55xriyszvlk41rwspcg6lxh2v3xqwip-openal-soft-1.24.3": {
       "status": "upstream-cache",
@@ -3613,11 +6191,6 @@
       "narBytes": 950944,
       "upstreamCompressedBytes": 265017
     },
-    "/nix/store/zhqvgsbq8ridrhr67qbxnq8rrbx6hvfj-xorgproto-2025.1": {
-      "status": "upstream-cache",
-      "narBytes": 1715192,
-      "upstreamCompressedBytes": 324476
-    },
     "/nix/store/zz4kdrlcpqly8l4cprzsrlyvrxlyczzc-serd-0.32.10": {
       "status": "upstream-cache",
       "narBytes": 148872,
@@ -3627,11 +6200,6 @@
       "status": "additional",
       "narBytes": 285432,
       "xzNarBytes": 79268
-    },
-    "/nix/store/338gwr2718cdha9m9zavkpc9rvkrqd4q-tcl-8.6.16": {
-      "status": "upstream-cache",
-      "narBytes": 7906384,
-      "upstreamCompressedBytes": 2802146
     },
     "/nix/store/7x203j530255dan31bmrz0lmizdycxix-json2dir-snobol4-2026-10-07": {
       "status": "additional",
@@ -3647,6 +6215,11 @@
       "status": "upstream-cache",
       "narBytes": 979776,
       "upstreamCompressedBytes": 301167
+    },
+    "/nix/store/kwj1d5ri101b36ba226bbz2qlaj439lh-json2dir-sqlite-2026-10-08": {
+      "status": "additional",
+      "narBytes": 10448,
+      "xzNarBytes": 3720
     },
     "/nix/store/3y8biawfh2yssaawvhfcp1x4akshz580-json2dir-subleq-unstable": {
       "status": "additional",
@@ -3673,6 +6246,161 @@
       "narBytes": 24755760,
       "upstreamCompressedBytes": 7173910
     },
+    "/nix/store/0dgpfniyjvjni59z78abr1d70k380cvi-brltty-6.9.1": {
+      "status": "upstream-cache",
+      "narBytes": 9805176,
+      "upstreamCompressedBytes": 2229148
+    },
+    "/nix/store/2hff2c5ng9yi858czvkk4ddzkzr4qi73-libcacard-2.8.2": {
+      "status": "upstream-cache",
+      "narBytes": 145224,
+      "upstreamCompressedBytes": 54708
+    },
+    "/nix/store/40sj49vfl7x5dhjayc0gvlswmdibijhq-spice-0.16.0": {
+      "status": "upstream-cache",
+      "narBytes": 1619624,
+      "upstreamCompressedBytes": 562840
+    },
+    "/nix/store/518vmjzl46zd8c3g5fp52f3g98v8kl8n-acl-2.4.0-bin": {
+      "status": "upstream-cache",
+      "narBytes": 112872,
+      "upstreamCompressedBytes": 34486
+    },
+    "/nix/store/5310q6rv2bqxq9k9qiam7v3d1ljwysq0-util-linux-minimal-2.42.3-bin": {
+      "status": "upstream-cache",
+      "narBytes": 9143880,
+      "upstreamCompressedBytes": 1879308
+    },
+    "/nix/store/54d48zha894gws2llmdm35ixlix8kjwm-vte-0.84.1": {
+      "status": "upstream-cache",
+      "narBytes": 1972192,
+      "upstreamCompressedBytes": 692483
+    },
+    "/nix/store/54gp44imam33m0fmai7jmp94mldrvnf7-json2dir-syscall-unstable-6c14aad": {
+      "status": "additional",
+      "narBytes": 3840,
+      "xzNarBytes": 1712
+    },
+    "/nix/store/56a45nmwdrqfk816gzh8kfv8lqma0qn7-snappy-1.2.2": {
+      "status": "upstream-cache",
+      "narBytes": 73424,
+      "upstreamCompressedBytes": 30041
+    },
+    "/nix/store/6hdd2l4r6pzmfbrzhiih7k3jcii5dn20-rutabaga_gfx-0.1.6": {
+      "status": "upstream-cache",
+      "narBytes": 11062176,
+      "upstreamCompressedBytes": 2701029
+    },
+    "/nix/store/7lx6njpbk6mknl3rpynn482i5sbixqnp-virglrenderer-1.3.0": {
+      "status": "upstream-cache",
+      "narBytes": 4164928,
+      "upstreamCompressedBytes": 819762
+    },
+    "/nix/store/7r0lbmgxghr7pkrwnckhp46mblbiw7hb-json2dir-syscall-initrd": {
+      "status": "additional",
+      "narBytes": 19176944,
+      "xzNarBytes": 18778088
+    },
+    "/nix/store/7v9p68ylbqfcj7mapysfhff2vzwl75aw-dtc-1.8.1": {
+      "status": "upstream-cache",
+      "narBytes": 581400,
+      "upstreamCompressedBytes": 155952
+    },
+    "/nix/store/8pcrdazxyw8b1n3i0v9d2r3g38hrgw63-nspr-4.40": {
+      "status": "upstream-cache",
+      "narBytes": 374576,
+      "upstreamCompressedBytes": 161744
+    },
+    "/nix/store/9ihv5zpj6l7fl12mdcxrbmiih3wgrmhw-qemu-11.1.1": {
+      "status": "upstream-cache",
+      "narBytes": 1040964728,
+      "upstreamCompressedBytes": 216473373
+    },
+    "/nix/store/cqf2cj006jvnk9bsd8hli2dripf58rpm-qemu-11.1.1-ga": {
+      "status": "upstream-cache",
+      "narBytes": 1196384,
+      "upstreamCompressedBytes": 395188
+    },
+    "/nix/store/dsdapj04rzhg40cz5jprz1jwy3vvf1lx-liburing-2.14": {
+      "status": "upstream-cache",
+      "narBytes": 107304,
+      "upstreamCompressedBytes": 28720
+    },
+    "/nix/store/dzapcr7zrasyn3d0p007023wv2pdyrqf-nss-3.112.5": {
+      "status": "upstream-cache",
+      "narBytes": 4356488,
+      "upstreamCompressedBytes": 1761051
+    },
+    "/nix/store/fdcgbw466f08xraxj85pf0mv84grh5b1-libiscsi-1.20.3": {
+      "status": "upstream-cache",
+      "narBytes": 576632,
+      "upstreamCompressedBytes": 162602
+    },
+    "/nix/store/gb06ab7h7dw9jf5vl0hfzyz6hi64sdwb-libpcap-1.10.7-lib": {
+      "status": "upstream-cache",
+      "narBytes": 914872,
+      "upstreamCompressedBytes": 221009
+    },
+    "/nix/store/hk0mjj0d9jbwz04yp67hd3x74vf5hh5q-source": {
+      "status": "additional",
+      "narBytes": 116248,
+      "xzNarBytes": 19816
+    },
+    "/nix/store/hn1dsq3zvi23yc78rn00aqbslbwmp3xc-linux-7.2.9": {
+      "status": "upstream-cache",
+      "narBytes": 24521240,
+      "upstreamCompressedBytes": 16048056
+    },
+    "/nix/store/km37jrm231l5vlwnz29r322bn1v9dpdm-libaio-0.3.113": {
+      "status": "upstream-cache",
+      "narBytes": 46056,
+      "upstreamCompressedBytes": 8433
+    },
+    "/nix/store/kmagck9m8kw07026nag86l9zprr1icfg-libslirp-4.9.5": {
+      "status": "upstream-cache",
+      "narBytes": 192952,
+      "upstreamCompressedBytes": 89187
+    },
+    "/nix/store/lwaxip7bab76znzlf419mzk2jqs588xl-rdma-core-65.0": {
+      "status": "upstream-cache",
+      "narBytes": 4516248,
+      "upstreamCompressedBytes": 1358781
+    },
+    "/nix/store/mc3fr0rrrakm55gmh1384cdvi610mil3-usbredir-0.15.0": {
+      "status": "upstream-cache",
+      "narBytes": 140824,
+      "upstreamCompressedBytes": 47385
+    },
+    "/nix/store/ppfy7c5nr5rd1xfwzlv3l8l6rridbnsm-libnl-3.12.0": {
+      "status": "upstream-cache",
+      "narBytes": 1613824,
+      "upstreamCompressedBytes": 510337
+    },
+    "/nix/store/qr65fhrp4vk0lmzc924xqli6ij8i60mz-fuse-3.18.2": {
+      "status": "upstream-cache",
+      "narBytes": 395720,
+      "upstreamCompressedBytes": 109159
+    },
+    "/nix/store/w0h86x0g5kkprjdk2c2jrdr5lmngw8il-capstone-5.0.9": {
+      "status": "upstream-cache",
+      "narBytes": 31069232,
+      "upstreamCompressedBytes": 4027994
+    },
+    "/nix/store/x7k9dfs20p6a81138sy4br5mbd785i0d-SDL2_image-2.8.12": {
+      "status": "upstream-cache",
+      "narBytes": 215336,
+      "upstreamCompressedBytes": 112380
+    },
+    "/nix/store/xzf0xrxm9sfs16q4877d4d0r0hiw5fmw-vde2-2.3.3": {
+      "status": "upstream-cache",
+      "narBytes": 753976,
+      "upstreamCompressedBytes": 237953
+    },
+    "/nix/store/zgdmd9kskim2wv1ks389m6d6x0b9rgyf-gfxstream-0.1.2": {
+      "status": "upstream-cache",
+      "narBytes": 8480008,
+      "upstreamCompressedBytes": 2338378
+    },
     "/nix/store/5n15958bpb2iyk48gbrn5yfm9bm81v9x-json2dir-systemverilog-unstable": {
       "status": "additional",
       "narBytes": 70624,
@@ -3682,6 +6410,31 @@
       "status": "upstream-cache",
       "narBytes": 8694720,
       "upstreamCompressedBytes": 3160924
+    },
+    "/nix/store/4xdwk8bhn9il89n9sqzj2bdsyzhyzjg3-taxi-runtime-1.7": {
+      "status": "additional",
+      "narBytes": 123872,
+      "xzNarBytes": 40396
+    },
+    "/nix/store/bg6xxh1fpz3wml00wjx22lh94i8bnids-json2dir-taxi-unstable": {
+      "status": "additional",
+      "narBytes": 2205328,
+      "xzNarBytes": 31916
+    },
+    "/nix/store/f8hi0nviak8n279jfsc0j9zm345q560w-json2dir-tcl-2026-10-08": {
+      "status": "additional",
+      "narBytes": 15080,
+      "xzNarBytes": 4460
+    },
+    "/nix/store/6cn8a6k4bj1gzmwh9j02y334qmcwc6rp-typst-0.15.1": {
+      "status": "upstream-cache",
+      "narBytes": 49962624,
+      "upstreamCompressedBytes": 21472844
+    },
+    "/nix/store/cfajgxbk8b9glzz0ibvs93mhr8nji5pf-json2dir-thesis-2026-10-08": {
+      "status": "additional",
+      "narBytes": 514352,
+      "xzNarBytes": 253284
     },
     "/nix/store/ibjag1j0x8v5dwxjwdr6b2zyag8v4b1n-thue-0.0.1": {
       "status": "additional",
@@ -3713,6 +6466,16 @@
       "narBytes": 8104,
       "xzNarBytes": 2832
     },
+    "/nix/store/2gq28zrgrmwkwar8ikcxb27di1mpxa2y-json2dir-uiua-2026-10-08": {
+      "status": "additional",
+      "narBytes": 32256,
+      "xzNarBytes": 9232
+    },
+    "/nix/store/dsknvm1680aph15ianfg5p758f2sjvfi-uiua-0.19.1": {
+      "status": "upstream-cache",
+      "narBytes": 52604320,
+      "upstreamCompressedBytes": 14365979
+    },
     "/nix/store/qxb8aw9lbw9g729f1hkglndki8i5wk9h-json2dir-unicon-unstable": {
       "status": "additional",
       "narBytes": 32968,
@@ -3722,6 +6485,16 @@
       "status": "upstream-cache",
       "narBytes": 42679160,
       "upstreamCompressedBytes": 9655876
+    },
+    "/nix/store/83ss90byhyvb02hdyd2p9mccjkh1wk5f-unlambda-2.0.0": {
+      "status": "additional",
+      "narBytes": 547480,
+      "xzNarBytes": 171448
+    },
+    "/nix/store/xyv99s7d7ng58qi0d7qbinfi80wx1bcp-json2dir-unlambda-unstable": {
+      "status": "additional",
+      "narBytes": 187512,
+      "xzNarBytes": 7028
     },
     "/nix/store/d4v5qq4xb8cv5r20qzjv3zhqk2yiiw8i-json2dir-v-unstable-c212b0d": {
       "status": "additional",
@@ -3738,6 +6511,11 @@
       "narBytes": 1579616,
       "xzNarBytes": 606716
     },
+    "/nix/store/bys6b7f731y93nyfi8p9x647gyk0w786-json2dir-vbs-unstable": {
+      "status": "additional",
+      "narBytes": 21720,
+      "xzNarBytes": 6480
+    },
     "/nix/store/722ck00vh647as9vs0jxzjx7l8s5zv9v-json2dir-velato-unstable": {
       "status": "additional",
       "narBytes": 33984,
@@ -3752,16 +6530,6 @@
       "status": "upstream-cache",
       "narBytes": 27301544,
       "upstreamCompressedBytes": 7766309
-    },
-    "/nix/store/7nmnmanynvbsawhpw8mrx4xdfyi3jsyh-isl-0.20": {
-      "status": "upstream-cache",
-      "narBytes": 2736608,
-      "upstreamCompressedBytes": 1012475
-    },
-    "/nix/store/9b7xq5hvj9fbz9clyd2xx18ghpva80qz-libmpc-1.4.1": {
-      "status": "upstream-cache",
-      "narBytes": 308776,
-      "upstreamCompressedBytes": 113691
     },
     "/nix/store/awnj011z0n4s8pzv8x0qykbscaix2aym-gnat-16.2.0-libgcc": {
       "status": "upstream-cache",
@@ -3788,6 +6556,16 @@
       "narBytes": 10956736,
       "upstreamCompressedBytes": 3377977
     },
+    "/nix/store/84pzjmkqz0dkzhk05gw0yagys72rqqq7-json2dir-vim-2026-10-08": {
+      "status": "additional",
+      "narBytes": 16096,
+      "xzNarBytes": 4880
+    },
+    "/nix/store/9swnd5pf8p8w1gwcbhdpm2yx705kbp38-vim-9.2.1001": {
+      "status": "upstream-cache",
+      "narBytes": 45705984,
+      "upstreamCompressedBytes": 13158432
+    },
     "/nix/store/216mr46yy8xspaydgapjhf4a21y643ji-bun-1.4.2": {
       "status": "upstream-cache",
       "narBytes": 79580840,
@@ -3813,6 +6591,26 @@
       "narBytes": 1488896,
       "xzNarBytes": 356996
     },
+    "/nix/store/fq09rn5hi8dms2fc554n610jwhvpca9w-json2dir-xslt-2026-10-08": {
+      "status": "additional",
+      "narBytes": 16672,
+      "xzNarBytes": 5044
+    },
+    "/nix/store/imyjysbcf6m644glbzyndhgw05bf5i9y-saxon-he-12.10": {
+      "status": "upstream-cache",
+      "narBytes": 7644736,
+      "upstreamCompressedBytes": 7088812
+    },
+    "/nix/store/wppd2j6g64i2mw646g1bzns2ca0xwjz4-openjdk-headless-21.0.12.1+1": {
+      "status": "upstream-cache",
+      "narBytes": 595688200,
+      "upstreamCompressedBytes": 435721251
+    },
+    "/nix/store/f4nkdx6r8h4yds333ljh9scfbxhj9xk3-json2dir-zig-unstable-aa7c89b": {
+      "status": "additional",
+      "narBytes": 730976,
+      "xzNarBytes": 234512
+    },
     "/nix/store/p70xdkyj363ml0dgyvl8879l07vyhgki-json2dir-zsh-2026-10-07": {
       "status": "additional",
       "narBytes": 12424,
@@ -3822,6 +6620,16 @@
       "status": "upstream-cache",
       "narBytes": 7714528,
       "upstreamCompressedBytes": 2494095
+    },
+    "/nix/store/3ppjkfrmkr0s0c74hs4ddmld3c9cqkzr-iana-etc-20251215": {
+      "status": "upstream-cache",
+      "narBytes": 571168,
+      "upstreamCompressedBytes": 137194
+    },
+    "/nix/store/q7ks582932l1ppj7y3vp01y87np1x5a9-json2llm-unstable-14cd2aa": {
+      "status": "additional",
+      "narBytes": 7509264,
+      "xzNarBytes": 2378640
     },
     "/nix/store/rm37dkx55bihg07jms1sisc7aijhkj5s-nushell-0.115.1": {
       "status": "upstream-cache",

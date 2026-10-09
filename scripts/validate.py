@@ -2,6 +2,7 @@
 """Run the tester's complete applicable suites against built package executables."""
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import shlex
@@ -45,6 +46,13 @@ def main():
             shutil.rmtree(work / folder)
         shutil.copytree(tester / folder, work / folder, dirs_exist_ok=True,
                         ignore=shutil.ignore_patterns("bin", "obj"))
+    # Identify the actual copied snapshot, including uncommitted tester changes.
+    snapshot = hashlib.sha256()
+    for folder in ("cases", "src"):
+        for path in sorted((work / folder).rglob("*")):
+            if path.is_file():
+                snapshot.update(path.relative_to(work).as_posix().encode() + b"\0")
+                snapshot.update(hashlib.sha256(path.read_bytes()).digest())
     manifests = work / "implementations"
     manifests.mkdir(exist_ok=True)
     for path in manifests.glob("*.json"):
@@ -56,8 +64,9 @@ def main():
         item = original[name]
         manifest = {"name": name, "repo": item["repo"], "description": item["description"],
                     "language": item["language"], "command": "PATH=/nonexistent " + shlex.quote(str(executable)), "source": "."}
-        if "timeout" in item["manifest"]:
-            manifest["timeout"] = item["manifest"]["timeout"]
+        for field in ("timeout", "suites"):
+            if field in item["manifest"]:
+                manifest[field] = item["manifest"][field]
         (manifests / (name + ".json")).write_text(json.dumps(manifest) + "\n")
     subprocess.run(["dotnet", "build", str(work / "src/Json2dirTester"), "-c", "Release", "--nologo"], check=True)
     log_path = work / "validation.log"
@@ -71,6 +80,7 @@ def main():
         report = json.loads(output.read_text())
         report["testerRevision"] = subprocess.check_output(
             ["git", "-C", str(tester), "rev-parse", "HEAD"], text=True).strip()
+        report["testerSnapshotSha256"] = snapshot.hexdigest()
         report["validationLog"] = str(log_path.relative_to(ROOT))
         report["packageSources"] = {name: packages[name]["source"] for name in names}
         report["packageOutputs"] = {name: packages[name]["outputs"] for name in names}
