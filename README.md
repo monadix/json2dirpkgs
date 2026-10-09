@@ -3,11 +3,15 @@
 Nix packages for json2dir implementations, using Nixpkgs builders and a shared,
 pinned dependency set. The initial target is `x86_64-linux`.
 
-The initial selection is recorded in `data/selection.json`: implementations with
-completed full-suite results, zero failures and zero skips in Awesome's recorded
-tester results. Sources are pinned separately in `sources/`. These historical
-results select packages; validation of the packaged programs is recorded
-separately.
+The package inventory is recorded in `data/selection.json`, alongside historical
+tester results from Awesome. The first packaging wave selected implementations
+with zero failures and skips; the inventory now includes the remaining
+implementations, including those with known failures. Sources are pinned
+separately in `sources/`. Fresh validation of packaged programs is recorded
+separately; a historical result does not establish their current behavior.
+The recorded local validation covers 158 of 160 packages. Malbolge and Taxi were
+intentionally skipped; the report records these exclusions rather than claiming
+complete local coverage.
 
 ## Use
 
@@ -23,6 +27,10 @@ their original compiler and build approach.
 Swift uses a shared standard library because the pinned Nixpkgs toolchain omits
 the static Swift runtime; account for this difference when comparing benchmarks
 with the original tester build.
+`json2dir-syscall` loads its module only inside a fresh QEMU TCG guest, using the
+matching pinned kernel and 9p access to the caller's directory and its siblings.
+The guest writer uses the caller's uid, gid and umask. Its benchmarks include VM
+startup and filesystem transport, as in the tester's kernel-module adapter.
 
 Prebuilt packages are available from the public binary cache at
 <https://json2dirpkgs.cachix.org>. Add these settings to `nix.conf` to use it:
@@ -61,9 +69,11 @@ python3 scripts/cache_size.py
 `measure.py` writes package output sizes, individual closures and their shared
 union to `data/sizes.json`. Its report includes failed builds. `validate.py`
 copies the tester into the ignored work directory and replaces only its command
-manifests with packaged executables; it runs all applicable cases without suite
-filters and writes `data/validation.json`. The development shell provides Python
+manifests with packaged executables; it preserves each implementation's declared
+suite restrictions and timeouts, runs all applicable cases, and writes
+`data/validation.json`. The development shell provides Python
 and the .NET 10 SDK from the same pinned Nixpkgs.
+The report hashes the copied tester snapshot to identify uncommitted changes too.
 The packaged commands start with an empty search path, so undeclared runtime
 tools installed on the host cannot silently satisfy wrapper dependencies.
 `cache_size.py` checks the official cache and compresses the actual NAR streams

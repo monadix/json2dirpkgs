@@ -1,0 +1,26 @@
+#!/bin/busybox sh
+export PATH=/bin
+/bin/busybox --install -s /bin
+mkdir -p /proc /sys /dev
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t devtmpfs devtmpfs /dev
+fail() { echo J2D_INFRA_FAILURE; poweroff -f; }
+@kmod@/bin/modprobe virtio_pci || fail
+@kmod@/bin/modprobe 9pnet_virtio || fail
+@kmod@/bin/modprobe 9p || fail
+insmod /json2dir.ko || fail
+cwd=$(cat /cwd; printf x)
+cwd=${cwd%x}
+uid=$(cat /uid)
+gid=$(cat /gid)
+mkdir -p /host || fail
+mount -t 9p -o trans=virtio,version=9p2000.L,cache=none,access=client host /host || fail
+cd "/host/$cwd" || fail
+/client /dev/json2dir "$uid" "$gid" "$(cat /mask)" < /input
+result=$?
+echo "J2D_RESULT=$result"
+cd /
+umount /host || fail
+echo J2D_DONE
+poweroff -f
